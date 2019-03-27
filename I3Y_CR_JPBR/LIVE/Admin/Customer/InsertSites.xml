@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(11) Hunan Province Tumor Hospital"    MNEMONIC="11"
+ADDRESS="283 Tongzipo Road Yuelu District
+Changsha Hunan 410013
+China"
+COUNTRY="CHINA"
+PHONE="86073188651269"
+ALTPHONE="86"
+FAX="86"
+TIMEZONE="(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="03/15/2017"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(10) Sun Yat-sen University Cancer Center"    MNEMONIC="10"
+ADDRESS="No.651 Dongfeng Dong Road
+guangzhou Guangdong 510060
+China"
+COUNTRY="CHINA"
+PHONE="86862087343000"
+ALTPHONE="86"
+FAX="86"
+TIMEZONE="(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="03/15/2017"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+</MEDMLDATA>

@@ -1,0 +1,278 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+%s<!--1-->
+<title>Login to InForm</title>
+<script type="text/javascript" src="./pfts.dll?C=ResMgr_1&pfLang=en-US&pfR=BCDSCR"></script>
+<script language=JavaScript>
+
+var bHTTP11=%s/*2*/, prevCacheSeed=%ld/*3*/, firstLogin=%s/*4*/;
+if(firstLogin)window.location.replace('./pfts.dll?%s='/*5*/+cacheSeed.toString()+'&LogoutLangID=%ld'/*6*/)
+var cacheOn=cacheSeed==prevCacheSeed||prevCacheSeed==0?true:false
+var d=document,pfWidth=641,pfHeight=481,pfColorDepth=8,graphics=false,colorbits=0,height=0,width=0
+var pfReqRes=308321// > 641*481
+var lmsg="Logging in..."
+function Is(){
+	var agt=navigator.userAgent.toLowerCase();
+	var version_location, index;
+
+	this.win=(agt.indexOf("win")!=-1);
+	this.mac=(agt.indexOf("mac")!=-1);
+
+	this.ie=(agt.indexOf("msie")!=-1);
+	if(this.ie!=false)
+	{	version_location = agt.substring(agt.indexOf("msie")+5); }
+	this.safari=(agt.indexOf("safari")!=-1);
+	if(this.safari!=false)
+	{	version_location = agt.substring(agt.indexOf("version")+8); }
+	this.firefox=(agt.indexOf("firefox")!=-1)
+	if(this.firefox!=false)
+	{	version_location = agt.substring(agt.indexOf("firefox")+8); }
+
+	if(this.ie || this.safari || this.firefox)
+	{
+		if ((index=version_location.indexOf(" "))!=-1) version_location=version_location.substring(0,index);
+		if ((index=version_location.indexOf(";"))!=-1) version_location=version_location.substring(0,index);
+		this.major = parseInt(version_location);
+		this.minor = parseInt(version_location.substring(version_location.indexOf(".")+1));
+	}
+	else
+	{	this.major = 0;
+		this.minor = 0;
+	}
+}
+var IS=new Is
+function OnImg(){graphics=true}
+function display(){
+	this.height=screen.height
+	this.width=screen.width
+	this.color=screen.colorDepth}
+function getType(is){
+	if(is.ie)return "ie";
+	if(is.safari) return "safari";
+	if(is.firefox) return "firefox";
+	return "unknown";}
+function getPlatform(is){
+	if(is.win)return "pc"
+	if(is.mac)return "mac"
+	return "unknown"}
+function IsCompatible(){
+	var s=new display
+	if(s.height*s.width<pfReqRes){height=s.height;width=s.width;return -2}//resolution not supported
+	return 1}
+function ErrMsg(e){
+	var err1,err2
+	switch(e){
+	case -1:
+		err1='Unsupported browser detected: '+navigator.userAgent
+		err2='InForm supports Internet Explorer 6+ and Firefox 3.5+ on Microsoft<sup>&#174;</sup> Windows and Safari 3.2.1+ on Apple<sup>&#174;</sup> Mac'
+		break
+	case -2:
+		err1='Desktop area of '+width+' x '+height+' detected.'
+		err2='InForm requires a display resolution of at least 800x600 pixels.'
+	}
+	d.write('<tr><td class=err2>',err1,'<br>',err2,'</td></tr>')}
+function isimgloaded(){
+	if(graphics)return true
+	alert('Disabled graphics browser setting detected. InForm requires graphics to be enabled.')
+	return false}
+function SetFmFields(){
+	if(top!=window)d.forms[0].submit()
+	else{
+		var f=d.forms[0];
+		f.pwdpfUser.focus();
+		f.ColorBits.value=colorbits;
+		f.BrowserType.value=getType(IS);
+		f.BrowserMajVer.value=IS.major;
+		f.BrowserMinVer.value=IS.minor;
+		f.Platform.value=getPlatform(IS);
+		f.pwdpfLogType.value="";
+		f.pwdpfCacheOn.value=cacheOn?1:0;
+		f.pwdpfHTTP11.value=bHTTP11?1:0;
+	}
+}
+function fgtpwd(){d.frmLogin.pwdpfForgotPWD.value=1;d.frmLogin.submit()}
+
+var login=IsCompatible(), bExpired=%s/*7*/, bLogout=%s/*8*/,bPWDExpired=%s/*9*/,
+    bInactiveUser=%s/*10*/, bNoMsg=%s/*11*/, bForgotPwd=%s/*12*/, bEnableFgtPwdFn=%s/*13*/;
+
+</script>
+
+<link rel=stylesheet type=text/css href=%s><!--14-->
+
+<script language=JavaScript>
+var sW='%s'/*15*/, sM='%s'/*16*/;
+</script>
+
+</head>
+<body><br><form name=frmLogin action=%s method=post target=_top autocomplete="off"> <!--17-->
+<table cellpadding=0 cellspacing=0 align=center >
+<tr><td>
+<input type="hidden" name="C" value="AppMgr_LogIn"/>
+<input type="hidden" name="ColorBits" value="0"/>
+<input type="hidden" name="BrowserType" value="unknown"/>
+<input type="hidden" name="BrowserMajVer" value="0"/>
+<input type="hidden" name="BrowserMinVer" value="0"/>
+<input type="hidden" name="Platform" value="unknown"/>
+<input type="hidden" name="pwdpfLogType" value="%ld"/><!--18-->
+<input type="hidden" id="pwdpfCacheOn" name="pwdpfCacheOn" value=""/>
+<input type="hidden" id="pwdpfHTTP11" name="pwdpfHTTP11" value=""/>
+</td></tr>
+
+%s<!--19-->
+
+<script language=JavaScript>
+function setQuestion(dropDownListID, questVal) {
+    var dropDownListCtrl = document.getElementById(dropDownListID);
+    if (dropDownListCtrl != null) {
+        for (var i = 0; i < dropDownListCtrl.options.length; i++) {
+            if (dropDownListCtrl.options[i].text == questVal) {
+                dropDownListCtrl.options[i].selected = true;
+                return;
+            }
+        }
+    }
+}
+
+var st = bPWDExpired ? (bEnableFgtPwdFn ? 2 : 1) : 0, aBT, pr, bDisp = (top == window || !(bExpired || bLogout)) && login > 0;
+
+//Populate Drop down lists with actual questions
+var Quest = ["What is your mother's maiden name?", "What is the name of your pet?", "What is the city of your birth?", "What is your favorite color?"];
+var inpCtrlData = new Array(%s);  /*20*/
+var loginBtnTop, loginBtnLeft;
+
+switch(st){
+case 0:pr='Please enter your name and password for trial %s';break;/*21 trial name*/
+case 1:pr='Change password, if desired';break;
+case 2:pr='Change password options'}
+if(bNoMsg)d.write('<input type=hidden name=pwdpfNoMsg value=1>')
+if(bDisp){
+	d.write('<tr><td  style="position:relative;width:200px;height:350px" class=',st==2?'login2':'login','></td>',
+	            '<td>',
+	                '<table align=center>',
+						'<tr>',
+		                    '<td colspan="2" class="label" style="position:relative;width:150px;height:10px"><img src="./pfts.dll?C=ResMgr_1&pfLang=en-US&pfR=151"></td>',
+		                '</tr>',
+						'<tr>',
+		                    '<td colspan="2" class="label" align=center style="position:relative;width:400px;height:10px">For assistance, please contact dedicated Eli Lilly Oracle Support free phone numbers at <I>US-877 400 6897; UK-0800 731 9426; France-08554 0250; Germany-0800 6648874; Spain-900 814932; Italy-800924673 or International direct number +44 (0)207 131 2801 or by email at  <u>lillysupport_ww@oracle.com</u><I><br><br></td>',
+		                '</tr>',
+	                    '<tr>',
+		                    '<td colspan="2" class="label" style="position:relative;width:350px;height:10px">',pr,'</td>',
+		                '</tr>',
+		                '<tr>',
+		                    '<td class="label inpCapWidth" style="position:relative;width:150px;height:10px">User Name:</td>',
+		                    '<td class="editTxt"><input class="edt LgnPwdWidth" style="position:relative" title="Enter your user name here" type=text maxLength=32 name=pwdpfUser id=pwdpfUser value="%s"></td>'/*22*/,
+		                '</tr>',
+		                '<tr>',
+		                    '<td class="label inpCapWidth" style="position:relative;height:24px">',bPWDExpired?'Current Password:':'Password:','</td>',
+		                    '<td class="editTxt">',
+		                        '<input class="edt LgnPwdWidth" style="position:relative" type=password name=pwdpfPassword id=pwdpfPassword title="Enter your password here" autocomplete="off">',
+		                    '</td>',
+		                '</tr>');
+	if(bPWDExpired){
+		if(bPWDExpired){d.write('<input type=hidden name=pwdpfUpdatePWD>');}
+		else{d.write('<input type=hidden name=pwdpfUpdateIUsrPWD>');}
+		d.write('<tr>',
+		    '<td class="label inpCapWidth" style="position:relative;height:24px">New Password:</td>',
+			'<td class="editTxt"><input class="edt LgnPwdWidth" style="position:relative" type=password maxLength=32 name=pwdpfNewPassword id=pwdpfNewPassword title="Enter your new password here"></td>',
+			'</tr><tr>',
+			'<td class="label inpCapWidth" style="position:relative;height:24px">Confirm Password:</td>',
+			'<td class="editTxt"><input class="edt LgnPwdWidth" style="position:relative" type=password maxLength=32 name=pwdpfNewPasswordConf id=pwdpfNewPasswordConf title="Retype your new password here"></td>',
+			'</tr>');
+		if(bEnableFgtPwdFn){
+		    d.write('<tr>',
+    			'<td colspan="2" class=info style="width:450px;position:relative;">Please enter the additional information below. This information allows you to regain access to the system, in the event of a lost or forgotten password. You can also update this information in your user profile screen by clicking on your user name or picture. </td>',
+    			'</tr>',
+    			'<tr>',
+				    '<td class="label inpCapWidth" style="position:relative;height:24px">E-mail Address:</td>',
+				    '<td class="editTxt"><input class="edt inpCtrlWidth" style="position:relative" type=text maxLength=255 name=pwdpfEMail id=pwdpfEMail title="Enter your e-mail address here"></td>',
+				'</tr>',
+				'<tr>',
+				    '<td class="label inpCapWidth" style="position:relative;height:24px">Question 1:</td>',
+				    '<td class="editTxt">',
+				        '<select class="edt inpCtrlWidth" style="position:relative" maxLength=255 name=pwdpfUsrQuestion1 id=pwdpfUsrQuestion1 title="Choose your confirmation question 1">',
+					        '<option value="',Quest[0],'">',Quest[0],'</option>',
+					        '<option value="',Quest[1],'">',Quest[1],'</option>',
+					        '<option value="',Quest[2],'">',Quest[2],'</option>',
+					        '<option value="',Quest[3],'">',Quest[3],'</option>',
+				        '</select>',
+				    '</td>',
+				'</tr>',
+				'<tr>',
+				    '<td class="label inpCapWidth" style="position:relative;height:24px">Enter your confirmation response 1:</td>',
+				    '<td class="editTxt">',
+				        '<input class="edt inpCtrlWidth" style="position:relative" type=text maxLength=255 name=pwdpfUsrAnswer1 id=pwdpfUsrAnswer1 title="Enter your confirmation response 1">',
+				    '</td>',
+				'</tr>',
+				/*-----------------*/    
+				'<tr>',
+				    '<td class="label inpCapWidth" style="position:relative;height:24px">Question 2:</td>',
+				    '<td class="editTxt">',
+				        '<select class="edt inpCtrlWidth" style="position:relative" maxLength=255 name=pwdpfUsrQuestion2 id=pwdpfUsrQuestion2 title="Choose your confirmation question 2">',
+					        '<option value="',Quest[0],'">',Quest[0],'</option>',
+					        '<option value="',Quest[1],'">',Quest[1],'</option>',
+					        '<option value="',Quest[2],'">',Quest[2],'</option>',
+					        '<option value="',Quest[3],'">',Quest[3],'</option>',
+				        '</select>',
+				    '</td>',
+				'</tr>',
+				'<tr>',
+				    '<td class="label inpCapWidth" style="position:relative;height:24px">Enter your confirmation response 2:</td>',
+				    '<td class="editTxt">',
+				        '<input class="edt inpCtrlWidth" style="position:relative" type=text maxLength=255 name=pwdpfUsrAnswer2 id=pwdpfUsrAnswer2 title="Enter your confirmation response 2">',
+				    '</td>',
+				    '<tr>');
+		    //Initialize controls
+		    document.getElementById('pwdpfEMail').value = inpCtrlData[0];
+		    setQuestion('pwdpfUsrQuestion1', inpCtrlData[1]);
+		    document.getElementById('pwdpfUsrAnswer1').value = inpCtrlData[2];
+		    setQuestion('pwdpfUsrQuestion2', inpCtrlData[3]);
+		    document.getElementById('pwdpfUsrAnswer2').value = inpCtrlData[4];
+        }
+		aBT=['Submit','Click to submit new password'];
+	}
+	else
+	{//bPWDExpired == false
+		aBT=['Log In','Click to log-in to InForm'];
+	}
+
+    var forgetPwdLink = '';
+    if(bDisp && bForgotPwd){
+        forgetPwdLink = '<input type=hidden name=pwdpfForgotPWD value=0>'+
+                        '<a id="login_fgtpwd_id" tabindex=-1 href=javascript:fgtpwd()>Forgot Your Password?</a>';
+	}
+	
+	d.write('<tr><td>'+forgetPwdLink+'</td><td class="submitBtn"><input type=submit class=btn style="width:100px;position:relative;height:24px" id=btnLogin title="',aBT[1],'" value="',aBT[0],'" name=btnLogin>',
+			'</td></tr></table></td></tr>'+
+			'<tr><td class="label"> %s </td></tr>');/*23*/
+}
+else if(login<=0){
+    ErrMsg(login);
+}
+
+if(login>0){
+    if(!cacheOn||!bHTTP11)
+	    d.write('<tr><td colspan="2"><table class="warning" cellpadding=8 cellspacing=0>',
+		    '<tr><td rowspan="3"><img src="./pfts.dll?C=ResMgr_1&pfLang=en-US&pfR=F9" border=0></td>',
+		    '<td class="warning">Your browser or infrastructure does not support the following optimal settings for InForm:</td></tr>',
+		    '<tr><td class="warning"><ul>',
+		    bHTTP11?'':'<li>Configure your browser to support the HTTP 1.1 protocol.</li>',
+		    cacheOn?'':'<li>Configure your browser to save encrypted files locally.</li>',
+		    '</ul></td></tr></table></td></tr>');
+    if(sW!='')d.write('<tr><td colspan="2" id=msg1 class=err>',sW,'</td></tr>');
+    if(sM!='')d.write('<tr><td colspan="2" id=msg2 class=err>',sM,'</td></tr>');
+    d.write('<tr id=msg3 style=display:none><td colspan="2" class=err>',lmsg,'</td></tr>');
+    if(top==window||!(bExpired||bLogout))
+	    d.write('<tr><td colspan="2"><div class="disclaimer en-US">',
+	    '<div class="paragraph">By entering my user name and password above, I am using my electronic signature to log in to the InForm&#153; system and establish a continuous session, which will end when I am logged out. During this continuous session, by entering my password on an e-signature affidavit when prompted, I am affixing my electronic signature to the electronic record indicated.</div>',
+	    '<div class="paragraph">The InForm system is a data collection and trial management tool and is not to be used in the diagnosis or treatment of subjects.</div>',
+	    '<div class="paragraph">HEALTHCARE PROFESSIONALS HAVE THE SOLE RESPONSIBILITY TO BE FULLY AWARE OF CURRENT PRACTICES AND STANDARDS, TO AVOID USE OF OUTDATED REGIMENS, AND TO EMPLOY GOOD CLINICAL JUDGMENT IN SELECTING PATIENT TREATMENTS. Computer software in general and the InForm system in particular should NEVER substitute for up-to-date personal knowledge and good clinical judgment.</div>',
+	    '<div class="paragraph">USERS OF THIS SYSTEM HAVE THE RESPONSIBILITY TO ENSURE COMPLIANCE WITH ALL LAWS, RULES, AND REGULATIONS GOVERNING THE COLLECTION AND HANDLING OF PERSONAL DATA.</div>',
+	    '<div>Use of the InForm system signifies acceptance of the foregoing terms.</div></div></td></tr>');
+    d.write('<tr><td colspan="2"><div class="copyright">',
+        '<div>Copyright &copy; 1998, 2013 Oracle.  All rights reserved. Oracle is a registered trademark of Oracle Corporation and/or its affiliates.  Other names may be trademarks of their respective owners.</div></div></td></tr>');
+    SetFmFields();
+}
+
+</script>
+<noscript><center><b> InForm</b> requires a browser that supports JavaScript. Your browser either does not support JavaScript or support it is disabled.</center></noscript>
+</table></form></body></html>
