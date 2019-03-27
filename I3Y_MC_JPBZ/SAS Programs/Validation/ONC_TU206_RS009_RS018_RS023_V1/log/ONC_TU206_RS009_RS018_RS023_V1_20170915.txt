@@ -1,0 +1,423 @@
+1                                                          The SAS System                           08:03 Friday, September 15, 2017
+
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS2M3 MBCS3055) 
+      Licensed to ELI LILLY & CO - GRID NODE 1, Site 70152682.
+NOTE: This session is executing on the Linux 2.6.32-431.20.3.el6.x86_64 (LIN X64) platform.
+
+
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+NOTE: Libref stpsamp successfully assigned from logical server.
+NOTE: Libref SASDATA successfully assigned from logical server.
+
+NOTE: AUTOEXEC processing beginning; file is /sasfs/prod/sas/92/controlserver/sasconfig/Lev1/SASApp92/appserver_autoexec.sas.
+
+
+NOTE: AUTOEXEC processing completed.
+
+1          libname clntrial '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libref CLNTRIAL was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+2          libname slib  '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libname SLIB refers to the same physical library as CLNTRIAL.
+NOTE: Libref SLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+3          
+4          proc sql;
+5          connect to oracle as review (USER="C185469" PASSWORD=XXXXXXXXXX path="@PRD934" connection="global"
+6           DBCONINIT="set role PRV$RTSQL");
+7          
+8          create view slib.EXPRHEAD as
+9          select SUBJID format=10. label='SUBJID',SITE label='SITE',STUDY label='STUDY'
+10         
+11         from connection to review
+12         (SELECT T217.SUBJID  SUBJID,T217.SITE  SITE,T217.STUDY  STUDY FROM /* Name:EXPR_HEAD*SQL*
+13         */ (select DISTINCT SUBJID, st.SITEMNEMONIC as SITE, 'I3Y_MC_JPBZ' as STUDY
+14                             from I3Y_MC_JPBZ.inf_subject sb, I3Y_MC_JPBZ.inf_site_all st,
+2                                                          The SAS System                           08:03 Friday, September 15, 2017
+
+15          I3Y_MC_JPBZ.SV1001_all sv                         where sb.SITEGUID=st.CT_RECID
+16         and sv.subject_id=sb.subject_id) T217  order by SUBJID
+17         );
+NOTE: SQL view SLIB.EXPRHEAD has been defined.
+18         
+19         create view slib.ODM_LOC as
+20         select ID format=11. label='ID',STD_NBR format=10. label='STD_NBR',ROOT_NM
+21         label='ROOT_NM',CD_NBR_TXT label='CD_NBR_TXT',SHORT_NM label='SHORT_NM',
+22         LONG_DESC_TEXT label='LONG_DESC_TEXT',ODM_TRNSCTN_TMSTMP format=datetime20.
+23         label='ODM_TRNSCTN_TMSTMP',ODM_INSRT_TMSTMP format=datetime20.
+24         label='ODM_INSRT_TMSTMP',ODM_INSRT_CRETR_NM label='ODM_INSRT_CRETR_NM',
+25         RANK label='RANK'
+26         
+27         from connection to review
+28         (SELECT T461.ID  ID,T461.STD_NBR  STD_NBR,T461.ROOT_NM  ROOT_NM,T461.CD_NBR_TXT  CD_NBR_TXT,
+29         T461.SHORT_NM  SHORT_NM,T461.LONG_DESC_TEXT  LONG_DESC_TEXT,T461.ODM_TRNSCTN_TMSTMP
+30          ODM_TRNSCTN_TMSTMP,T461.ODM_INSRT_TMSTMP  ODM_INSRT_TMSTMP,T461.ODM_INSRT_CRETR_NM
+31          ODM_INSRT_CRETR_NM,T461.RANK  RANK FROM /* Name:ODM_LOC*SQL* */ (select * from
+32         MDF_SS_OWNER.ODM_CD_RPSTRY) T461
+33         );
+NOTE: SQL view SLIB.ODM_LOC has been defined.
+34         
+35         create view slib.RS1001_D as
+36         select SUBJID format=10. label='SUBJID',BLOCKID label='BLOCKID',BLOCKRPT
+37         label='BLOCKRPT',RSSPID format=4. label='RSSPID',RSDAT format=datetime20.
+38         label='RSDAT',OVRLRESP label='OVRLRESP',OVRLRESP_NRP label='OVRLRESP_NRP',
+39         TRGRESP label='TRGRESP',NTRGRESP label='NTRGRESP'
+40         
+41         from connection to review
+42         (SELECT T362.SUBJID  SUBJID,T362.BLOCKID  BLOCKID,T362.BLOCKRPT  BLOCKRPT,T362.RSSPID
+43          RSSPID,T362.RSDAT  RSDAT,T362.OVRLRESP  OVRLRESP,T362.OVRLRESP_NRP  OVRLRESP_NRP,
+44         T362.TRGRESP  TRGRESP,T362.NTRGRESP  NTRGRESP FROM /* Name:RS1001_D*SQL* */ (select
+45         a.subjid,a.blockid,a.blockrpt,a.RSSPID,               TO_DATE (LPAD (REPLACE (a.RSDATMO,
+46          '-99', '01'), 2, '0')|| LPAD (REPLACE (a.RSDATDD, '-99', '01'), 2, '0')|| a.RSDATYY,
+47         'MMDDYYYY') AS RSDAT,               a.OVRLRESP,a.OVRLRESP_NRP,b.TRGRESP,c.NTRGRESP
+48                    from (select * from I3Y_MC_JPBZ.RS1001_ALL where RSPERF='Y') a left join
+49                        (select * from I3Y_MC_JPBZ.RS1001_ALL where TRGRESP is not null)
+50         b                    on a.subjid=b.subjid and a.RSSPID=b.RSSPID and a.pagerpt=b.pagerpt
+51          left join                (select * from I3Y_MC_JPBZ.RS1001_ALL where NTRGRESP is
+52         not null) c on a.subjid=c.subjid and a.RSSPID=c.RSSPID  and a.pagerpt=c.pagerpt)
+53         T362
+54         );
+NOTE: SQL view SLIB.RS1001_D has been defined.
+55         
+56         create view slib.TU1001_D as
+57         select SUBJID format=10. label='SUBJID',BLOCKID label='BLOCKID',BLOCKRPT
+58         label='BLOCKRPT',TRSPID format=4. label='TRSPID',TULNKID label='TULNKID',
+59         TRPERF label='TRPERF',TRDAT format=datetime20. label='TRDAT',
+60         TULOC label='TULOC',TULOCOTH label='TULOCOTH',TRMETHOD label='TRMETHOD',
+61         TRMETHODOTH label='TRMETHODOTH',TUMSTATE label='TUMSTATE',TRSTRESC
+62         label='TRSTRESC',LDIAM label='LDIAM',SAXIS format=5. label='SAXIS',
+63         NEWTUMOR label='NEWTUMOR'
+64         
+65         from connection to review
+66         (SELECT T369.SUBJID  SUBJID,T369.BLOCKID  BLOCKID,T369.BLOCKRPT  BLOCKRPT,T369.TRSPID
+67          TRSPID,T369.TULNKID  TULNKID,T369.TRPERF  TRPERF,T369.TRDAT  TRDAT,T369.TULOC
+68         TULOC,T369.TULOCOTH  TULOCOTH,T369.TRMETHOD  TRMETHOD,T369.TRMETHODOTH  TRMETHODOTH,
+69         T369.TUMSTATE  TUMSTATE,T369.TRSTRESC  TRSTRESC,T369.LDIAM  LDIAM,T369.SAXIS  SAXIS,
+3                                                          The SAS System                           08:03 Friday, September 15, 2017
+
+70         T369.NEWTUMOR  NEWTUMOR FROM /* Name:TU1001_D*SQL* */ (SELECT a.SUBJID,a.BLOCKID,
+71         a.BLOCKRPT,TRSPID,TULNKID_NEW AS TULNKID,'' AS TRPERF, TO_DATE (LPAD (REPLACE (TRDATMO,
+72          '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'), 2, '0')|| TRDATYY,
+73         'MMDDYYYY') AS TRDAT,TULOC,TULOCOTH,TRMETHOD,   TRMETHODOTH,TUMSTATE_NEW AS TUMSTATE,
+74         TRSTRESC, LDIAM,SAXIS, 'Y' as NEWTUMOR        FROM    I3Y_MC_JPBZ.TU1001a_ALL a
+75         INNER JOIN I3Y_MC_JPBZ.TU1001b_ALL b ON A.SUBJID = b.SUBJID AND a.TULNKID_NEW =
+76         b.TRLNKID) T369
+77         );
+NOTE: SQL view SLIB.TU1001_D has been defined.
+78         
+79         create view slib.TU2001_D as
+80         select SUBJID format=10. label='SUBJID',BLOCKID label='BLOCKID',BLOCKRPT
+81         label='BLOCKRPT',TRSPID format=4. label='TRSPID',TULNKID label='TULNKID',
+82         TRPERF label='TRPERF',TRDAT format=datetime20. label='TRDAT',
+83         TULOC label='TULOC',TULOCOTH label='TULOCOTH',TRMETHOD label='TRMETHOD',
+84         TRMETHODOTH label='TRMETHODOTH',TUMSTATE label='TUMSTATE',TRSTRESC
+85         label='TRSTRESC',LDIAM label='LDIAM',SAXIS format=5. label='SAXIS',
+86         NEWTUMOR label='NEWTUMOR'
+87         
+88         from connection to review
+89         (SELECT T370.SUBJID  SUBJID,T370.BLOCKID  BLOCKID,T370.BLOCKRPT  BLOCKRPT,T370.TRSPID
+90          TRSPID,T370.TULNKID  TULNKID,T370.TRPERF  TRPERF,T370.TRDAT  TRDAT,T370.TULOC
+91         TULOC,T370.TULOCOTH  TULOCOTH,T370.TRMETHOD  TRMETHOD,T370.TRMETHODOTH  TRMETHODOTH,
+92         T370.TUMSTATE  TUMSTATE,T370.TRSTRESC  TRSTRESC,T370.LDIAM  LDIAM,T370.SAXIS  SAXIS,
+93         T370.NEWTUMOR  NEWTUMOR FROM /* Name:TU2001_D*SQL* */ (SELECT a.SUBJID,a.BLOCKID,
+94         a.BLOCKRPT,TRSPID,TULNKID_TARGET AS TULNKID,TRPERF,                      TO_DATE
+95         (LPAD (REPLACE (TRDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99',
+96         '01'), 2, '0') ||                       TRDATYY,'MMDDYYYY')AS TRDAT,TULOC,TULOCOTH,
+97         TRMETHOD, TRMETHODOTH, TUMSTATE_TARGET AS TUMSTATE, TRSTRESC,LDIAM,
+98              SAXIS, '' as NEWTUMOR                   FROM I3Y_MC_JPBZ.TU2001a_ALL a INNER
+99         JOIN I3Y_MC_JPBZ.TU2001b_ALL b ON A.SUBJID = b.SUBJID AND a.TULNKID_TARGET = b.TRLNKID)
+100        T370
+101        );
+NOTE: SQL view SLIB.TU2001_D has been defined.
+102        
+103        create view slib.TU3001_D as
+104        select SUBJID format=10. label='SUBJID',BLOCKID label='BLOCKID',BLOCKRPT
+105        label='BLOCKRPT',TRSPID format=4. label='TRSPID',TULNKID label='TULNKID',
+106        TRPERF label='TRPERF',TRDAT format=datetime20. label='TRDAT',
+107        TULOC label='TULOC',TULOCOTH label='TULOCOTH',TRMETHOD label='TRMETHOD',
+108        TRMETHODOTH label='TRMETHODOTH',TUMSTATE label='TUMSTATE',TRSTRESC
+109        label='TRSTRESC',LDIAM label='LDIAM',SAXIS format=5. label='SAXIS',
+110        NEWTUMOR label='NEWTUMOR'
+111        
+112        from connection to review
+113        (SELECT T371.SUBJID  SUBJID,T371.BLOCKID  BLOCKID,T371.BLOCKRPT  BLOCKRPT,T371.TRSPID
+114         TRSPID,T371.TULNKID  TULNKID,T371.TRPERF  TRPERF,T371.TRDAT  TRDAT,T371.TULOC
+115        TULOC,T371.TULOCOTH  TULOCOTH,T371.TRMETHOD  TRMETHOD,T371.TRMETHODOTH  TRMETHODOTH,
+116        T371.TUMSTATE  TUMSTATE,T371.TRSTRESC  TRSTRESC,T371.LDIAM  LDIAM,T371.SAXIS  SAXIS,
+117        T371.NEWTUMOR  NEWTUMOR FROM /* Name:TU3001_D*SQL* */ (select a.SUBJID, a.BLOCKID,
+118        a.BLOCKRPT, TRSPID,TULNKID_NONTARGET AS TULNKID, TRPERF,     TO_DATE (LPAD (REPLACE
+119        (TRDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'), 2, '0')||
+120        TRDATYY,'MMDDYYYY') AS TRDAT,TULOC,TULOCOTH, TRMETHOD,    TRMETHODOTH,TUMSTATE_NONTARGET
+121        AS TUMSTATE, '' AS TRSTRESC,TO_NUMBER ('') AS LDIAM, TO_NUMBER ('') AS SAXIS, ''
+122        as NEWTUMOR         FROM  I3Y_MC_JPBZ.TU3001a_ALL a INNER JOIN  I3Y_MC_JPBZ.TU3001b_ALL
+123        b ON A.SUBJID = b.SUBJID AND a.TULNKID_NONTARGET = b.TRLNKID) T371
+124        );
+NOTE: SQL view SLIB.TU3001_D has been defined.
+4                                                          The SAS System                           08:03 Friday, September 15, 2017
+
+125        
+126        disconnect from review;
+127        quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.30 seconds
+      cpu time            0.04 seconds
+      
+
+128        
+129        %let irsubset="All patients";
+130        %let irsubval=0;
+131        %let irsubdsc='All patients';
+132        
+133        %let irsubtxt="All patients";
+134        %let irfiltertxt='';
+135        %let iruser='C185469';
+136        %let iruseru=C185469;
+137        %let irlguser='C185469';
+138        %let irctdata=ALL;
+139        %let irconnct='@PRD934';
+140        %let irproj='I3Y';
+141        %let irproju=I3Y;
+142        %let irprojdesc='I3Y';
+143        %let irprojdescu=I3Y;
+144        %let irprot='I3Y_MC_JPBZ';
+145        %let irprotu=I3Y_MC_JPBZ;
+146        %let irstdy='I3Y_MC_JPBZ';
+147        %let irstdyu=I3Y_MC_JPBZ;
+148        
+149        %let irfilbas='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+150        %let irfilhtm='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.htm';
+151        %let irfilpdf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.pdf';
+152        %let irfilrtf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.rtf';
+153        %let irfilcsv='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv';
+154        %let irfilxls='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.xls';
+155        %let irfiljpg='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.jpg';
+156        
+157        /* SAS program */
+158        OPTIONS ORIENTATION=PORTRAIT LS=80 PS=60 NUMBER DATE;
+159        %let irprgdsc='ONC_TU206_RS009_RS018_RS023_V1';
+160        %let irprgseq=36357;
+161        
+162        %include
+162      ! '/sasfs/data/jreview/PRD/jrsas/PRD934/GLOBAL/ONC_TU206_RS009_RS018_RS
+162      ! 023_V1.sas';
+
+NOTE: There were 966 observations read from the data set CLNTRIAL.TU2001_D.
+NOTE: There were 1029 observations read from the data set CLNTRIAL.TU3001_D.
+NOTE: There were 27 observations read from the data set CLNTRIAL.TU1001_D.
+NOTE: The data set WORK.MASTER1 has 2022 observations and 16 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.76 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN 
+      clauses will result in a missing value for the CASE expression.
+NOTE: Table WORK.RS created, with 341 rows and 10 columns.
+5                                The SAS System 08:03 Friday, September 15, 2017
+
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.38 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: Table WORK.MASTER2 created, with 2023 rows and 22 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.05 seconds
+      
+
+NOTE: The query requires remerging summary statistics back with the original 
+      data.
+NOTE: Invalid (or missing) arguments to the SUM function have caused the 
+      function to return a missing value.
+NOTE: Table WORK.MEASURE created, with 438 rows and 8 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.16 seconds
+      cpu time            0.03 seconds
+      
+
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.MEASURE.
+NOTE: The data set WORK.BASELINE has 127 observations and 9 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.MEASURE.
+NOTE: The data set WORK.TLXX_2 has 438 observations and 9 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.TLXX_2.
+NOTE: The data set WORK.TLXX_2 has 438 observations and 9 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.TLXX_2.
+6                                The SAS System 08:03 Friday, September 15, 2017
+
+NOTE: The data set WORK.TEMP1 has 438 observations and 14 variables.
+NOTE: PROCEDURE TRANSPOSE used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.TEMP1.
+NOTE: The data set WORK.TEMP1 has 438 observations and 14 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.TEMP1.
+NOTE: The data set WORK.TEMP2 has 438 observations and 103 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 438 observations read from the data set WORK.TEMP2.
+NOTE: The data set WORK.SMALL has 438 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 966 observations read from the data set CLNTRIAL.TU2001_D.
+NOTE: The data set WORK.TU2001B_METH has 966 observations and 16 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 966 observations read from the data set WORK.TU2001B_METH.
+NOTE: The data set WORK.TU2001B_METH has 966 observations and 18 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 1029 observations read from the data set CLNTRIAL.TU3001_D.
+NOTE: The data set WORK.TU3001B_METH has 1029 observations and 16 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: There were 1029 observations read from the data set WORK.TU3001B_METH.
+NOTE: The data set WORK.TU3001B_METH has 1029 observations and 18 variables.
+7                                The SAS System 08:03 Friday, September 15, 2017
+
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN 
+      clauses will result in a missing value for the CASE expression.
+NOTE: A CASE expression has no ELSE clause. Cases not accounted for by the WHEN 
+      clauses will result in a missing value for the CASE expression.
+NOTE: Invalid (or missing) arguments to the ROUND function have caused the 
+      function to return a missing value.
+NOTE: Invalid (or missing) arguments to the ROUND function have caused the 
+      function to return a missing value.
+NOTE: Table WORK.MASTER3 created, with 2023 rows and 28 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           1.31 seconds
+      cpu time            0.61 seconds
+      
+
+NOTE: The query as specified involves ordering by an item that doesn't appear 
+      in its SELECT clause.
+NOTE: Invalid (or missing) arguments to the DATEPART function have caused the 
+      function to return a missing value.
+NOTE: Table WORK.ONC_TU206_RS009_RS018_RS023_V1 created, with 1009 rows and 27 
+      columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Writing CSV Body file: 
+      /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+
+WARNING: Data too long for column "Error_Message"; 
+         truncated to 80 characters to fit.
+NOTE: There were 1009 observations read from the data set 
+      WORK.ONC_TU206_RS009_RS018_RS023_V1.
+NOTE: The PROCEDURE PRINT printed pages 1-163.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           1.01 seconds
+      cpu time            1.01 seconds
+      
+
+
+NOTE: 0 lines were written to file PRINT.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+585        run;
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+8                                The SAS System 08:03 Friday, September 15, 2017
+
+NOTE: The SAS System used:
+      real time           4.50 seconds
+      cpu time            1.92 seconds
+      

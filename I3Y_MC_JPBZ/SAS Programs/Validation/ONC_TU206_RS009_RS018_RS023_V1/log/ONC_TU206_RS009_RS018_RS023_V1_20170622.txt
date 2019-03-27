@@ -1,0 +1,446 @@
+1                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS2M3 MBCS3055) 
+      Licensed to ELI LILLY & CO - GRID NODE 1, Site 70152682.
+NOTE: This session is executing on the Linux 2.6.32-431.20.3.el6.x86_64 (LIN X64) platform.
+
+
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.04 seconds
+      cpu time            0.00 seconds
+      
+NOTE: Libref stpsamp successfully assigned from logical server.
+NOTE: Libref SASDATA successfully assigned from logical server.
+
+NOTE: AUTOEXEC processing beginning; file is /sasfs/prod/sas/92/controlserver/sasconfig/Lev1/SASApp92/appserver_autoexec.sas.
+
+
+NOTE: AUTOEXEC processing completed.
+
+1          libname clntrial '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libref CLNTRIAL was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+2          libname slib  '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libname SLIB refers to the same physical library as CLNTRIAL.
+NOTE: Libref SLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+3          
+4          proc sql;
+5          connect to oracle as review (USER="C185469" PASSWORD=XXXXXXXXXX path="@PRD934" connection="global"
+6           DBCONINIT="set role PRV$RTSQL");
+7          
+8          create view slib.ONC_V1 as
+9          select STUDY label='STUDY',SITEMNEMONIC format=5. label='SITEMNEMONIC',
+10         SUBJID format=10. label='SUBJID',TRSPID format=4. label='TRSPID',
+11         RSSPID format=4. label='RSSPID',TULNKID label='TULNKID',TRPERF
+12         label='TRPERF',TRDAT format=datetime20. label='TRDAT',RSDAT
+13         format=datetime20. label='RSDAT',TULOC label='TULOC',TULOCOTH
+14         label='TULOCOTH',TRMETHOD label='TRMETHOD',TRMETHODOTH label='TRMETHODOTH',
+2                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+15         TUMSTATE label='TUMSTATE',TRSTRESC label='TRSTRESC',LDIAM label='LDIAM',
+16         SAXIS label='SAXIS',SUMDIAM label='SUMDIAM',PCBSD label='PCBSD',
+17         PCNSD label='PCNSD',CRF_TRGRESP label='CRF_TRGRESP',CALC_TRGRESP
+18         label='CALC_TRGRESP',CRF_NTRGRESP label='CRF_NTRGRESP',OVRLRESP_NRP
+19         label='OVRLRESP_NRP',CRF_OVRRESP label='CRF_OVRRESP',NEWTUMOR
+20         label='NEWTUMOR',ERROR_MESSAGE label='ERROR_MESSAGE',SOR label='SOR'
+21         
+22         from connection to review
+23         (SELECT T236.STUDY  STUDY,T236.SITEMNEMONIC  SITEMNEMONIC,T236.SUBJID  SUBJID,T236.TRSPID
+24          TRSPID,T236.RSSPID  RSSPID,T236.TULNKID  TULNKID,T236.TRPERF  TRPERF,T236.TRDAT
+25          TRDAT,T236.RSDAT  RSDAT,T236.TULOC  TULOC,T236.TULOCOTH  TULOCOTH,T236.TRMETHOD
+26          TRMETHOD,T236.TRMETHODOTH  TRMETHODOTH,T236.TUMSTATE  TUMSTATE,T236.TRSTRESC  TRSTRESC,
+27         T236.LDIAM  LDIAM,T236.SAXIS  SAXIS,T236.SUMDIAM  SUMDIAM,T236.PCBSD  PCBSD,T236.PCNSD
+28          PCNSD,T236.CRF_TRGRESP  CRF_TRGRESP,T236.CALC_TRGRESP  CALC_TRGRESP,T236.CRF_NTRGRESP
+29          CRF_NTRGRESP,T236.OVRLRESP_NRP  OVRLRESP_NRP,T236.CRF_OVRRESP  CRF_OVRRESP,T236.NEWTUMOR
+30          NEWTUMOR,T236.ERROR_MESSAGE  ERROR_MESSAGE,T236.SOR  SOR FROM /* Name:ONC_V1*SQL*
+31         */ (select distinct usdyid as STUDY,invid as SITEMNEMONIC, r.SUBJID,TRSPID,RSSPID,
+32         TULNKID,TRPERF,TRDAT,RSDAT,TULOC1 as TULOC,TULOCOTH,TRMETHOD,TRMETHODOTH,TUMSTATE,
+33         TRSTRESC,LDIAM,SAXIS,SUMDIAM,PCBSD,PCNSD,CRF_TRGRESP,CALC_TRGRESP,CRF_NTRGRESP,OVRLRESP_NRP,
+34         OVRLRESP as CRF_OVRRESP,NEWTUMOR,
+34       ! (er1_1||''||er1||''||er2||''||er3||''||er4||''||er5||''||er6||''||er7||''||er8||''||er9||''||er10||''||er11||''||er12||''
+34       ! ||er13||''||er14||''||er15)
+35         as Error_Message,replace (TULNKID, 'T', '1') as sor  from (select c.*,case when
+36         LONG_DESC_TEXT is not null then LONG_DESC_TEXT else c.TULOC end as TULOC1,case when
+37         q.subjid is not null then '|DATE OF RESPONSE ASSESSMENT DOES NOT EQUAL DATE OF TUMOR MEASUREMENT| '
+38         end as er1_1,case   when c.OVRLRESP='CR' and d.subjid is not null then '|OVERALL RESPONSE = CR, HOWEVER CR CONDITIONS NOT
+38       !  MET| '
+39         end as er1, case when c.OVRLRESP='PR' and e.subjid is not null then '|OVERALL RESPONSE = PR, HOWEVER PR CONDITIONS NOT
+39       ! MET| '
+40         end as er2,   case when c.OVRLRESP='SD' and f.subjid is not null then '|OVERALL RESPONSE = SD, HOWEVER SD CONDITIONS NOT
+40       ! MET| '
+41         end as er3, case   when c.OVRLRESP='PD' and g.subjid is not null then '|OVERALL RESPONSE = PD, HOWEVER PD CONDITIONS NOT
+41       ! MET| '
+42          end as er4, case when c.OVRLRESP='NE' and h.subjid is not null then '|OVERALL RESPONSE = NE, HOWEVER NE CONDITIONS NOT
+42       ! MET| '
+43          end as er5, case when c.OVRLRESP='CR' and i.subjid is not null then '|OVERALL RESPONSE = CR, HOWEVER SUBSEQUENT OVERALL
+43       ! RESPONSES = SD OR PR| '
+44         else '' end as er6,  case when c.OVRLRESP in ('PR','CR') and j.subjid is not null
+45         then '|OVERALL RESPONSE = PR OR CR, HOWEVER CONFIRMATION ASSESSMENT WITH OVERALL RESPONSE = PR OR CR IS MISSING| '
+46         else '' end as er7,  case when crf_TRGRESP='PR' and CALC_TRGRESP != 'PR' then '|CRF TARGET RESPONSE DOES NOT EQUAL THE
+46       ! CALCULATED TARGET RESPONSE| '
+47         when crf_TRGRESP='PD' and CALC_TRGRESP != 'PD' then '|CRF TARGET RESPONSE DOES NOT EQUAL THE CALCULATED TARGET RESPONSE|
+47       ! '
+48          when crf_TRGRESP='SD' and CALC_TRGRESP != 'SD' then '|CRF TARGET RESPONSE DOES NOT EQUAL THE CALCULATED TARGET RESPONSE|
+48       !  '
+49         when crf_TRGRESP='NE' and CALC_TRGRESP != 'NE' then '|CRF TARGET RESPONSE DOES NOT EQUAL THE CALCULATED TARGET RESPONSE|
+49       ! '
+50          else '' end as er8, case when CRF_NTRGRESP='PD' and k.subjid is null then '|NON-TARGET RESPONSE = PD, HOWEVER NON-TARGET
+50       !  PD CONDITIONS NOT MET| '
+51         else '' end as er9,  case when CRF_NTRGRESP = 'Non CR or Non PD' and l.subjid is
+52         not null then '|NON-TARGET RESPONSE = Non CR or Non PD, HOWEVER NON-TARGET Non CR or Non PD CONDITIONS NOT MET| '
+53         else '' end as er10,   case when UPPER (CRF_NTRGRESP) in ('NOT ASSESSED', 'NOT ALL EVALUATED')
+54         and m.subjid is null then '|NON-TARGET RESPONSE = NOT ASSESSED OR NOT ALL EVALUATED, HOWEVER NON-TARGET NOT ASSESSED OR
+54       ! NOT ALL EVALUATED CONDITIONS NOT MET| '
+55          end as er11, case when n.subjid is not null then '|METHOD OF MEASUREMENT HAS CHANGED FROM PREVIOUS ASSESSMENT FOR THIS
+55       ! TUMOR| '
+56         end as er12, case when o.subjid is not null then '|MORE THAN 2 TARGET TUMORS HAVE BEEN REPORTED IN THE SAME ORGAN| '
+57          end as er13, case when p.subjid is not null then '|MORE THAN 2 TARGET TUMORS HAVE BEEN REPORTED IN THE SAME ORGAN| '
+3                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+58         else '' end as er14, case  when c.tuloc is not null and t.rank is null then '|LOCATION CODE ENTERED DOES NOT MATCH A
+58       ! LOCATION FROM THE CODELIST| '
+59         end as er15 from (select x.*,SUMDIAM, case when base_SUMDIAM != 0 then round (((SUMDIAM-base_SUMDIAM)/base_SUMDIAM)*100)
+60         end as PCBSD,  case when small != 0 then round (((SUMDIAM-small)/small)*100) else
+61         to_number ('') end  as PCNSD, replace (y.blockid, 'XX', y.BLOCKRPT) as VISITNUM,
+62          y.RSSPID , y.RSDAT, y.TRGRESP  as CRF_TRGRESP,  case when x.TRSPID != 1 and i.subjid
+63         is not null and x.TULNKID='T01' then 'NE' when x.TRSPID != 1 and y.TRGRESP is not
+64         null and SUMDIAM is null and x.TULNKID='T01' then 'NE'  when x.TRSPID != 1 and base_SUMDIAM
+65         != 0 and round (((SUMDIAM-base_SUMDIAM)/base_SUMDIAM)*100) <= -30 then 'PR' when
+66         x.TRSPID != 1  and small != 0 and round (((SUMDIAM-small)/small)*100) >= 20 or small-SUMDIAM
+67         >= 5 then 'PD'  when x.TRSPID != 1 and ((base_SUMDIAM != 0 and round (((SUMDIAM-base_SUMDIAM)/base_SUMDIAM)*100)
+68         > -30) and (small != 0 and (((SUMDIAM-small)/small)*100) < 20) or small-SUMDIAM
+69         < 5) then 'SD'  else '' end as CALC_TRGRESP, y.NTRGRESP as CRF_NTRGRESP, y.OVRLRESP,
+70          y.OVRLRESP_NRP  from (SELECT a.SUBJID,a.BLOCKID,a.BLOCKRPT,TRSPID,TULNKID_TARGET
+71         AS TULNKID,TRPERF,TO_DATE (LPAD (REPLACE (TRDATMO, '-99', '01'), 2, '0')|| LPAD
+72         (REPLACE (TRDATDD, '-99', '01'), 2, '0') || TRDATYY,'MMDDYYYY')AS TRDAT,  TULOC,
+73         TULOCOTH,TRMETHOD, TRMETHODOTH, TUMSTATE_TARGET AS TUMSTATE, TRSTRESC,LDIAM,SAXIS,
+74          '' as NEWTUMOR FROM    I3Y_MC_JPBZ.TU2001a_ALL a INNER JOIN I3Y_MC_JPBZ.TU2001b_ALL
+75         b ON A.SUBJID = b.SUBJID AND a.TULNKID_TARGET = b.TRLNKID  UNION SELECT a.SUBJID,
+76          a.BLOCKID,a.BLOCKRPT, TRSPID,TULNKID_NONTARGET AS TULNKID, TRPERF, TO_DATE (LPAD
+77         (REPLACE (TRDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'),
+78          2, '0')|| TRDATYY,'MMDDYYYY') AS TRDAT,TULOC,TULOCOTH, TRMETHOD,  TRMETHODOTH,TUMSTATE_NONTARGET
+79         AS TUMSTATE, '' AS TRSTRESC,TO_NUMBER ('') AS LDIAM, TO_NUMBER ('') AS SAXIS, ''
+80         as NEWTUMOR FROM  I3Y_MC_JPBZ.TU3001a_ALL a INNER JOIN  I3Y_MC_JPBZ.TU3001b_ALL
+81         b ON A.SUBJID = b.SUBJID AND a.TULNKID_NONTARGET = b.TRLNKID  UNION SELECT a.SUBJID,
+82         a.BLOCKID,a.BLOCKRPT,TRSPID,TULNKID_NEW AS TULNKID,'' AS TRPERF, TO_DATE (LPAD (REPLACE
+83         (TRDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'), 2, '0')||
+84         TRDATYY,'MMDDYYYY') AS TRDAT,TULOC,TULOCOTH,TRMETHOD,  TRMETHODOTH,TUMSTATE_NEW
+85         AS TUMSTATE,TRSTRESC, LDIAM,SAXIS, 'Y' as NEWTUMOR FROM    I3Y_MC_JPBZ.TU1001a_ALL
+86         a INNER JOIN I3Y_MC_JPBZ.TU1001b_ALL b ON A.SUBJID = b.SUBJID AND a.TULNKID_NEW
+87         = b.TRLNKID) x left join   (select g.subjid, rsspid,blockid, blockrpt,TO_DATE (LPAD
+88         (REPLACE (RSDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (RSDATDD, '-99', '01'),
+89          2, '0')|| RSDATYY,'MMDDYYYY') AS RSDAT,   case when h.subjid is not null then 'T01'
+90         when h.subjid is null and u.subjid is not null then 'NT01' when h.subjid is null
+91         and u.subjid is null and t.subjid is not null then 'NEW01'  end as TULNKID, OVRLRESP,
+92          TRGRESP,NTRGRESP,OVRLRESP_NRP from I3Y_MC_JPBZ.RS1001_ALL g left join (select distinct
+93         subjid,trspid from I3Y_MC_JPBZ.TU2001b_ALL) h on g.subjid=h.subjid and g.RSSPID=h.trspid
+94         left join   (select distinct subjid,trspid from I3Y_MC_JPBZ.TU1001b_ALL) t on g.subjid=t.subjid
+95         and g.RSSPID=t.trspid left join (select distinct subjid,trspid from I3Y_MC_JPBZ.TU3001b_ALL)
+96         u on g.subjid=u.subjid and g.RSSPID=u.trspid) y  on X.SUBJID=y.SUBJID and x.trspid=Y.RSSPID
+97         and x.tulnkid=y.tulnkid left join (select subjid, TRSPID,'T01' as TULNKID, sum (LDIAM_3
+98         ) as SUMDIAM from (select distinct d.*,case when f.subjid is not null then to_number
+99         ('') else LDIAM_2   end as LDIAM_3 from (select distinct c.*,  nvl(SAXIS,0) + nvl(LDIAM_1,
+100        0) as LDIAM_2  from (select x.* , case when TRSTRESC = 'TOO SMALL TO MEASURE' then
+101        5 else LDIAM  end as LDIAM_1 from I3Y_MC_JPBZ.TU2001b_ALL x) c) d left join (select
+102        distinct subjid, trspid from I3Y_MC_JPBZ.TU2001b_ALL where TRPERF='N' or TUMSTATE_TARGET='NOT ASSESSABLE'
+103        or TRSTRESC='NOT MEASURED') f on d.subjid=f.subjid and d.trspid=f.trspid order by
+104        d.subjid, d.trspid, trlnkid ) GROUP BY subjid, TRSPID) g  on X.SUBJID=g.SUBJID and
+105        x.TRSPID=g.TRSPID and x.TULNKID=g.TULNKID left join (select * from (select subjid,
+106        TRSPID, 'T01' as TULNKID,sum (LDIAM_3 ) as base_SUMDIAM from (select d.*, case when
+107        f.subjid is not null then to_number ('') else LDIAM_2   end as LDIAM_3 from (select
+108        c.*,  nvl(SAXIS,0) + nvl(LDIAM_1,0) as LDIAM_2  from (select x.* , case when TRSTRESC
+109        = 'TOO SMALL TO MEASURE' then 5 else LDIAM  end as LDIAM_1 from I3Y_MC_JPBZ.TU2001b_ALL
+110        x) c) d left join (select distinct subjid, trspid from I3Y_MC_JPBZ.TU2001b_ALL where
+111        TRPERF='N' or TUMSTATE_TARGET='NOT ASSESSABLE' or TRSTRESC='NOT MEASURED') f on
+112        d.subjid=f.subjid and d.trspid=f.trspid order by d.subjid, d.trspid, trlnkid ) GROUP
+113        BY subjid, TRSPID)  where TRSPID=1) f on X.SUBJID=f.SUBJID and x.TULNKID=f.TULNKID
+114        left join (select subjid,TRSPID,TULNKID,small_sum as small  from (select subjid,
+4                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+115         TRSPID, TULNKID, SUMDIAM,  LEAST (nvl(SUMDIAM,10000),nvl(prev_sum,10000),nvl(prev_sum1,
+116        10000),nvl(prev_sum2,10000),nvl(prev_sum15,10000),nvl(prev_sum3,10000),nvl(prev_sum4,
+117        10000),nvl(prev_sum5,10000),nvl(prev_sum6,10000),  nvl(prev_sum7,10000),nvl(prev_sum8,
+118        10000),nvl(prev_sum9,10000),nvl(prev_sum10,10000),nvl(prev_sum11,10000),nvl(prev_sum12,
+119        10000),nvl(prev_sum13,10000), nvl(prev_sum14,10000),  nvl(prev_sum15,10000),nvl(prev_sum16,
+120        10000),nvl(prev_sum17,10000),nvl(prev_sum18,10000),nvl(prev_sum19,10000),nvl(prev_sum20,
+121        10000),nvl(prev_sum21,10000),nvl(prev_sum22,10000),  nvl(prev_sum23,10000),nvl(prev_sum24,
+122        10000),nvl(prev_sum25,10000),nvl(prev_sum26,10000),nvl(prev_sum27,10000),nvl(prev_sum28,
+123        10000),nvl(prev_sum29,10000),nvl(prev_sum30,10000),  nvl(prev_sum31,10000),nvl(prev_sum32,
+124        10000),nvl(prev_sum33,10000),nvl(prev_sum34,10000),nvl(prev_sum35,10000),nvl(prev_sum36,
+125        10000),nvl(prev_sum37,10000),nvl(prev_sum38,10000),  nvl(prev_sum39,10000)) as small_sum
+126        from (select o.*, LAG (SUMDIAM, 1) OVER (PARTITION BY subjid  ORDER BY TRSPID) as
+127        prev_sum, LAG (SUMDIAM, 2) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum1,
+128           LAG (SUMDIAM, 3) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum2, LAG
+129        (SUMDIAM, 4) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum3, LAG (SUMDIAM,
+130         5) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum4,  LAG (SUMDIAM, 6)
+131        OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum5, LAG (SUMDIAM, 7) OVER
+132        (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum6, LAG (SUMDIAM, 8) OVER (PARTITION
+133        BY subjid  ORDER BY TRSPID) as prev_sum7,  LAG (SUMDIAM, 9) OVER (PARTITION BY subjid
+134         ORDER BY TRSPID) as prev_sum8, LAG (SUMDIAM, 10) OVER (PARTITION BY subjid  ORDER
+135        BY TRSPID) as prev_sum9, LAG (SUMDIAM, 11) OVER (PARTITION BY subjid  ORDER BY TRSPID)
+136        as prev_sum10,  LAG (SUMDIAM, 12) OVER (PARTITION BY subjid  ORDER BY TRSPID) as
+137        prev_sum11, LAG (SUMDIAM, 13) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum12,
+138         LAG (SUMDIAM, 14) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum13,  LAG
+139        (SUMDIAM, 15) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum14, LAG (SUMDIAM,
+140         16) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum15,LAG (SUMDIAM, 17)
+141        OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum16,  LAG (SUMDIAM, 18) OVER
+142        (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum17,LAG (SUMDIAM, 19) OVER (PARTITION
+143        BY subjid  ORDER BY TRSPID) as prev_sum18,LAG (SUMDIAM, 20) OVER (PARTITION BY subjid
+144         ORDER BY TRSPID) as prev_sum19,  LAG (SUMDIAM, 21) OVER (PARTITION BY subjid  ORDER
+145        BY TRSPID) as prev_sum20, LAG (SUMDIAM, 22) OVER (PARTITION BY subjid  ORDER BY
+146        TRSPID) as prev_sum21, LAG (SUMDIAM, 23) OVER (PARTITION BY subjid  ORDER BY TRSPID)
+147        as prev_sum22,  LAG (SUMDIAM, 24) OVER (PARTITION BY subjid  ORDER BY TRSPID) as
+148        prev_sum23, LAG (SUMDIAM, 25) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum24,
+149         LAG (SUMDIAM, 26) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum25,  LAG
+150        (SUMDIAM, 27) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum26, LAG (SUMDIAM,
+151         28) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum27, LAG (SUMDIAM, 29)
+152        OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum28,  LAG (SUMDIAM, 30) OVER
+153        (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum29, LAG (SUMDIAM, 31) OVER (PARTITION
+154        BY subjid  ORDER BY TRSPID) as prev_sum30, LAG (SUMDIAM, 32) OVER (PARTITION BY
+155        subjid  ORDER BY TRSPID) as prev_sum31,  LAG (SUMDIAM, 33) OVER (PARTITION BY subjid
+156         ORDER BY TRSPID) as prev_sum32, LAG (SUMDIAM, 34) OVER (PARTITION BY subjid  ORDER
+157        BY TRSPID) as prev_sum33, LAG (SUMDIAM, 35) OVER (PARTITION BY subjid  ORDER BY
+158        TRSPID) as prev_sum34,  LAG (SUMDIAM, 36) OVER (PARTITION BY subjid  ORDER BY TRSPID)
+159        as prev_sum35, LAG (SUMDIAM, 37) OVER (PARTITION BY subjid  ORDER BY TRSPID) as
+160        prev_sum36, LAG (SUMDIAM, 38) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum37,
+161          LAG (SUMDIAM, 39) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum38, LAG
+162        (SUMDIAM, 40) OVER (PARTITION BY subjid  ORDER BY TRSPID) as prev_sum39   from (select
+163        subjid,TRSPID, 'T01' as TULNKID, sum (LDIAM_3 ) as SUMDIAM from (select d.*, case
+164        when f.subjid is not null then to_number ('') else LDIAM_2   end as LDIAM_3 from
+165        (select c.*,  nvl(SAXIS,0) + nvl(LDIAM_1,0) as LDIAM_2  from (select x.* , case
+166        when TRSTRESC = 'TOO SMALL TO MEASURE' then 5 else LDIAM  end as LDIAM_1 from I3Y_MC_JPBZ.TU2001b_ALL
+167        x) c) d left join (select distinct subjid, trspid from I3Y_MC_JPBZ.TU2001b_ALL where
+168        TRPERF='N' or TUMSTATE_TARGET='NOT ASSESSABLE' or TRSTRESC='NOT MEASURED') f on
+169        d.subjid=f.subjid and d.trspid=f.trspid order by d.subjid, d.trspid, trlnkid ) GROUP
+170        BY subjid, TRSPID) o))  ) h on X.SUBJID=h.SUBJID and x.TRSPID=h.TRSPID and x.TULNKID=h.TULNKID
+171        left join (select subjid, trspid from I3Y_MC_JPBZ.TU2001b_ALL  where TUMSTATE_TARGET='NOT ASSESSABLE'
+172        or trstresc='NOT MEASURED') i on X.SUBJID=i.SUBJID and x.TRSPID=i.TRSPID) c left
+5                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+173        join (select subjid, rsspid from (select s.subjid, RSSPID,OVRLRESP,TRGRESP,NTRGRESP,
+174         v.TRLNKID,  case when w.subjid is not null and z.subjid is not null and OVRLRESP='CR'
+175        and TRGRESP='CR' and NTRGRESP='CR' and  v.TRLNKID is null then 'x' when w.subjid
+176        is not null and z.subjid is null and OVRLRESP='CR' and TRGRESP='CR' and NTRGRESP
+177        ='NOT ASSESSED' and v.TRLNKID is null then 'x'  when w.subjid is null and z.subjid
+178        is not null and OVRLRESP='CR' and TRGRESP='NOT ASSESSED' and NTRGRESP ='CR' and
+179        v.TRLNKID is null then 'x' else '' end as flag  from I3Y_MC_JPBZ.RS1001_ALL s left
+180        join I3Y_MC_JPBZ.TU1001b_ALL v on s.SUBJID=v.subjid and s.RSSPID=v.TRSPID left join
+181        (select distinct subjid from I3Y_MC_JPBZ.TU2001b_ALL) w  on s.SUBJID=w.subjid left
+182        join (select distinct subjid from I3Y_MC_JPBZ.TU3001b_ALL) z on s.SUBJID=z.subjid)
+183        where OVRLRESP='CR' and flag is null) d on c.SUBJID=d.SUBJID and c.RSSPID=d.RSSPID
+184        left join (select subjid, rsspid from (select s.*, case when w.subjid is not null
+185        and z.subjid is not null and OVRLRESP='PR' and TRGRESP='CR' and NTRGRESP in ('Non CR or Non PD',
+186         'NOT ASSESSED')  and  v.TRLNKID is null then 'x' when w.subjid is not null and
+187        z.subjid is not null and OVRLRESP='PR' and TRGRESP='PR' and NTRGRESP in ('Non CR or Non PD',
+188         'NOT ALL EVALUATED')  and  v.TRLNKID is null then 'x' when w.subjid is not null
+189        and z.subjid is null and OVRLRESP='PR' and TRGRESP='PR' and NTRGRESP ='NOT ASSESSED'
+190        and v.TRLNKID is null then 'x'  when w.subjid is null and z.subjid is not null and
+191        OVRLRESP != 'PR' then 'x' else '' end as flag  from I3Y_MC_JPBZ.RS1001_ALL s left
+192        join I3Y_MC_JPBZ.TU1001b_ALL v on s.SUBJID=v.subjid and s.RSSPID=v.TRSPID left join
+193        (select distinct subjid from I3Y_MC_JPBZ.TU2001b_ALL) w  on s.SUBJID=w.subjid left
+194        join (select distinct subjid from I3Y_MC_JPBZ.TU3001b_ALL) z on s.SUBJID=z.subjid
+195        )  where OVRLRESP='PR' and flag is null) e on c.SUBJID=e.SUBJID and c.RSSPID=e.RSSPID
+196        left join (select distinct subjid, rsspid from (select s.subjid, RSSPID,OVRLRESP,
+197        TRGRESP,NTRGRESP, v.TRLNKID,  case when w.subjid is not null and z.subjid is not
+198        null and OVRLRESP='SD' and (TRGRESP='SD') and (NTRGRESP in ('Non CR or Non PD','NOT ASSESSED',
+199        'CR', 'NOT ALL EVALUATED')) and v.TRLNKID is null then 'x'  when w.subjid is not
+200        null and z.subjid is null and OVRLRESP='SD' and TRGRESP='SD' and NTRGRESP ='NOT ASSESSED'
+201        and v.TRLNKID is null then 'x' when w.subjid is null and z.subjid is not null and
+202        OVRLRESP='SD' and TRGRESP='NOT ASSESSED' and NTRGRESP ='Non CR or Non PD' and v.TRLNKID
+203        is null then 'x'  else '' end as flag from I3Y_MC_JPBZ.RS1001_ALL s left join I3Y_MC_JPBZ.TU1001b_ALL
+204        v on s.SUBJID=v.subjid and s.RSSPID=v.TRSPID left join (select distinct subjid from
+205        I3Y_MC_JPBZ.TU2001b_ALL) w  on s.SUBJID=w.subjid left join (select distinct subjid
+206        from I3Y_MC_JPBZ.TU3001b_ALL) z on s.SUBJID=z.subjid)  where OVRLRESP='SD' and flag
+207        is null) f on c.SUBJID=f.SUBJID and c.RSSPID=f.RSSPID left join (select subjid,
+208        rsspid from (select s.subjid, RSSPID,OVRLRESP,TRGRESP,NTRGRESP, v.TRLNKID,  case
+209        when OVRLRESP='PD' and (TRGRESP='PD' or NTRGRESP = 'PD' or v.TRLNKID is not null
+210        or (upper(ovrlresp_nrp)='NON-RADIOLOGICAL PROGRESSION' and (TRGRESP !='SD' or NTRGRESP
+211        != 'SD'))) then 'x'  else '' end as flag from I3Y_MC_JPBZ.RS1001_ALL s left join
+212        I3Y_MC_JPBZ.TU1001b_ALL v on s.SUBJID=v.subjid and s.RSSPID=v.TRSPID) where OVRLRESP='PD'
+213        and flag is null) g on c.SUBJID=g.SUBJID and c.RSSPID=g.RSSPID left join (select
+214        subjid, rsspid from (select s.subjid, RSSPID,OVRLRESP,TRGRESP,NTRGRESP, v.TRLNKID,
+215          case when OVRLRESP='NE' and (upper (TRGRESP) in ('NOT ALL EVALUATED', 'NE', 'NOT ASSESSED')
+216        or NTRGRESP in  ('Non CR or Non PD', 'NOT ALL EVALUATED', 'NOT ASSESSED') or v.TRLNKID
+217         is null) or   w.subjid is not null then 'x' else '' end as flag from I3Y_MC_JPBZ.RS1001_ALL
+218        s left join I3Y_MC_JPBZ.TU1001b_ALL v on s.SUBJID=v.subjid and s.RSSPID=v.TRSPID
+219        left join (select subjid, trspid from (select a.subjid, a.trspid, a.trlnkid, a.TRMETHOD,
+220         b.TRMETHOD, a.TRMETHODOTH, b.TRMETHODOTH from I3Y_MC_JPBZ.TU2001B_ALL a left join
+221          (select * from I3Y_MC_JPBZ.TU2001B_ALL where trspid=1) b  on a.subjid=b.subjid
+222        and a.trlnkid=b.trlnkid where a.TRMETHOD != b.TRMETHOD or a.TRMETHODOTH != b.TRMETHODOTH
+223         union  select a.subjid, a.trspid, a.trlnkid, a.TRMETHOD, b.TRMETHOD, a.TRMETHODOTH,
+224         b.TRMETHODOTH from I3Y_MC_JPBZ.TU3001B_ALL a left join (select * from I3Y_MC_JPBZ.TU3001B_ALL
+225        where trspid=1) b   on a.subjid=b.subjid and a.trlnkid=b.trlnkid where a.TRMETHOD
+226        != b.TRMETHOD or a.TRMETHODOTH != b.TRMETHODOTH)) w on s.SUBJID=w.subjid and s.RSSPID=w.TRSPID)
+227         where OVRLRESP='NE' and flag is null) h on c.SUBJID=h.SUBJID and c.RSSPID=h.RSSPID
+228        left join (select a.subjid, a.rsspid from (select * from I3Y_MC_JPBZ.RS1001_ALL
+229        where OVRLRESP='CR') a left join   (select * from I3Y_MC_JPBZ.RS1001_ALL where OVRLRESP
+230        in ('PR', 'SD')) b on a.subjid=b.subjid where a.rsspid < b.rsspid) i on c.SUBJID=i.SUBJID
+6                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+231        and c.RSSPID=i.RSSPID left join (select a.subjid,rs as RSSPID from (select subjid,
+232        OVRLRESP, count (*) as cn from I3Y_MC_JPBZ.RS1001_ALL where OVRLRESP in ('CR', 'PR')
+233        group by subjid,OVRLRESP  having count (*) = 1) a left join (select  subjid, min(RSSPID)
+234        as rs from I3Y_MC_JPBZ.RS1001_ALL where OVRLRESP in ('CR', 'PR') group by subjid
+235        order by subjid) b  on a.subjid=b.subjid) j on c.SUBJID=j.SUBJID and c.RSSPID=j.RSSPID
+236        left join (select a.subjid, rsspid from I3Y_MC_JPBZ.RS1001_ALL a left join I3Y_MC_JPBZ.TU3001B_ALL
+237        b  on a.subjid=b.subjid and a.rsspid=b.trspid where NTRGRESP='PD' and TUMSTATE_NONTARGET='UNEQUIVOCAL PROGRESSION')
+238        k on c.SUBJID=k.SUBJID and c.RSSPID=k.RSSPID left join (select a.subjid, rsspid
+239        from I3Y_MC_JPBZ.RS1001_ALL a left join I3Y_MC_JPBZ.TU3001B_ALL b  on a.subjid=b.subjid
+240        and a.rsspid=b.trspid where NTRGRESP = 'Non CR or Non PD' and TUMSTATE_NONTARGET
+241        = 'UNEQUIVOCAL PROGRESSION') l on c.SUBJID=k.SUBJID and c.RSSPID=l.RSSPID left join
+242        (select a.subjid, rsspid from I3Y_MC_JPBZ.RS1001_ALL a left join I3Y_MC_JPBZ.TU3001B_ALL
+243        b  on a.subjid=b.subjid and a.rsspid=b.trspid where NTRGRESP in ('NOT ASSESSED',
+244         'NOT ALL EVALUATED') and (upper (TUMSTATE_NONTARGET) = 'NOT ASSESSABLE' or TRPERF='N'
+245        or TUMSTATE_NONTARGET is null)) m on c.SUBJID=m.SUBJID and c.RSSPID=m.RSSPID left
+246        join (select subjid, trspid, trlnkid from (select subjid, trspid, trlnkid, TRMETHOD,
+247         TRMETHODOTH,  case when TRMETHOD in ('CT SCAN','SPIRAL CT') and LAG (TRMETHOD,
+248        1) OVER (PARTITION BY subjid,trlnkid  ORDER BY trlnkid,trspid) not in ('SPIRAL CT',
+249        'CT SCAN' ) then 'X' when TRMETHOD  not in ('CT SCAN','SPIRAL CT') and TRMETHOD
+250        != LAG (TRMETHOD, 1) OVER (PARTITION BY subjid,trlnkid  ORDER BY trlnkid,trspid)
+251        then 'X'  when TRMETHODOTH != LAG (TRMETHODOTH, 1) OVER (PARTITION BY subjid,trlnkid
+252         ORDER BY trlnkid,trspid) then 'X' end as flag from I3Y_MC_JPBZ.TU2001B_ALL UNION
+253        ALL select subjid, trspid, trlnkid, TRMETHOD, TRMETHODOTH,  case when TRMETHOD in
+254        ('CT SCAN','SPIRAL CT') and LAG (TRMETHOD, 1) OVER (PARTITION BY subjid,trlnkid
+255         ORDER BY trlnkid,trspid) not in ('SPIRAL CT','CT SCAN' ) then 'X' when TRMETHOD
+256         not in ('CT SCAN','SPIRAL CT') and TRMETHOD != LAG (TRMETHOD, 1) OVER (PARTITION
+257        BY subjid,trlnkid  ORDER BY trlnkid,trspid) then 'X'  when TRMETHODOTH != LAG (TRMETHODOTH,
+258         1) OVER (PARTITION BY subjid,trlnkid  ORDER BY trlnkid,trspid) then 'X' end as
+259        flag from I3Y_MC_JPBZ.TU3001B_ALL) where flag is not null) n on c.SUBJID=n.SUBJID
+260        and c.TRSPID=n.TRSPID and c.TULNKID=n.trlnkid left join (select j.*, 'T01' as TULNKID
+261        from (select a.subjid,trspid, tuloc  from I3Y_MC_JPBZ.TU2001A_ALL a left join  I3Y_MC_JPBZ.TU2001b_ALL
+262        b ON A.SUBJID = b.SUBJID AND a.TULNKID_TARGET = b.TRLNKID group by a.SUBJID, trspid
+263        ,tuloc having count (tuloc) > 2 and trspid=1) j ) o  on c.SUBJID=o.SUBJID and c.trspid=o.TRSPID
+264        and c.tuloc=o.tuloc and c.TULNKID=o.TULNKID left join (select j.*, 'T01' as TULNKID
+265        from (select a.subjid,trspid, tulocoth from I3Y_MC_JPBZ.TU2001A_ALL a left join
+266         I3Y_MC_JPBZ.TU2001b_ALL b  ON A.SUBJID = b.SUBJID AND a.TULNKID_TARGET = b.TRLNKID
+267        group by a.SUBJID, trspid ,tulocoth having count (tulocoth) > 2 and trspid=1 )j
+268        )  p on c.SUBJID=p.SUBJID and c.trspid=p.TRSPID and c.tulocoth=p.tulocoth and c.TULNKID=p.TULNKID
+269        left join (select a.subjid, trspid,'T01' as TULNKID from (select subjid, trspid,
+270         min (TRDAT) as min_trdat from (select subjid, trspid,TO_DATE (LPAD (REPLACE (TRDATMO,
+271         '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'), 2, '0') || TRDATYY,
+272        'MMDDYYYY')AS TRDAT  from I3Y_MC_JPBZ.TU2001b_ALL union all select subjid, trspid,
+273        TO_DATE (LPAD (REPLACE (TRDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE (TRDATDD,
+274         '-99', '01'), 2, '0') || TRDATYY,'MMDDYYYY')AS TRDAT  from I3Y_MC_JPBZ.TU3001b_ALL
+275        union all select subjid, trspid,TO_DATE (LPAD (REPLACE (TRDATMO, '-99', '01'), 2,
+276         '0')|| LPAD (REPLACE (TRDATDD, '-99', '01'), 2, '0') || TRDATYY,'MMDDYYYY')AS TRDAT
+277         from I3Y_MC_JPBZ.TU1001b_ALL) group by subjid, trspid) a left join  (select subjid,
+278         rsspid, TO_DATE (LPAD (REPLACE (RSDATMO, '-99', '01'), 2, '0')|| LPAD (REPLACE
+279        (RSDATDD, '-99', '01'), 2, '0')|| RSDATYY,'MMDDYYYY') AS RSDAT  from I3Y_MC_JPBZ.RS1001_ALL)
+280        b on a.subjid=b.subjid and a.trspid=b.rsspid where min_trdat != RSDAT) q on c.SUBJID=q.subjid
+281        and c.TRSPID=q.TRSPID and c.TULNKID=q.TULNKID left join (select LONG_DESC_TEXT,
+282        RANK from MDF_SS_OWNER.ODM_CD_RPSTRY where ROOT_NM='LOC') t  on c.TULOC = t.rank)
+283        r left join (select distinct usdyid , invid,subjid from MDF_SS_OWNER.ivrs_sbjct_sts_vw
+284        where usdyid= REPLACE('I3Y_MC_JPBZ','_','-')) q on r.subjid=q.subjid  ) T236
+285        );
+NOTE: SQL view SLIB.ONC_V1 has been defined.
+286        
+287        disconnect from review;
+7                                                          The SAS System                              12:31 Thursday, June 22, 2017
+
+288        quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.16 seconds
+      cpu time            0.03 seconds
+      
+
+289        
+290        %let irsubset="All patients";
+291        %let irsubval=0;
+292        %let irsubdsc='All patients';
+293        
+294        %let irsubtxt="All patients";
+295        %let irfiltertxt='';
+296        %let iruser='C185469';
+297        %let iruseru=C185469;
+298        %let irlguser='C185469';
+299        %let irctdata=ALL;
+300        %let irconnct='@PRD934';
+301        %let irproj='I3Y';
+302        %let irproju=I3Y;
+303        %let irprojdesc='I3Y';
+304        %let irprojdescu=I3Y;
+305        %let irprot='I3Y_MC_JPBZ';
+306        %let irprotu=I3Y_MC_JPBZ;
+307        %let irstdy='I3Y_MC_JPBZ';
+308        %let irstdyu=I3Y_MC_JPBZ;
+309        
+310        %let irfilbas='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+311        %let irfilhtm='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.htm';
+312        %let irfilpdf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.pdf';
+313        %let irfilrtf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.rtf';
+314        %let irfilcsv='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv';
+315        %let irfilxls='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.xls';
+316        %let irfiljpg='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.jpg';
+317        
+318        /* SAS program */
+319        OPTIONS ORIENTATION=PORTRAIT LS=80 PS=60 NUMBER DATE;
+320        %let irprgdsc='ONC_TU206_RS009_RS018_RS023_V1';
+321        %let irprgseq=30753;
+322        
+323        %include
+323      ! '/sasfs/data/jreview/PRD/jrsas/PRD934/GLOBAL/ONC_TU206_RS009_RS018_RS
+323      ! 023_V1.sas';
+NOTE: The query as specified involves ordering by an item that doesn't appear 
+      in its SELECT clause.
+NOTE: Table WORK.ONC_TU206_RS009_RS018_RS023_V1 created, with 761 rows and 27 
+      columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           2.84 seconds
+      cpu time            0.04 seconds
+      
+
+NOTE: Writing CSV Body file: 
+      /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+
+8                                The SAS System    12:31 Thursday, June 22, 2017
+
+WARNING: Data too long for column "ERROR_MESSAGE"; 
+         truncated to 80 characters to fit.
+NOTE: There were 761 observations read from the data set 
+      WORK.ONC_TU206_RS009_RS018_RS023_V1.
+NOTE: The PROCEDURE PRINT printed pages 1-121.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.70 seconds
+      cpu time            0.69 seconds
+      
+
+
+NOTE: 0 lines were written to file PRINT.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+389        run;
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           3.91 seconds
+      cpu time            0.82 seconds
+      

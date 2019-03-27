@@ -1,0 +1,904 @@
+1                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS2M3 MBCS3055) 
+      Licensed to ELI LILLY & CO - GRID NODE 1, Site 70152682.
+NOTE: This session is executing on the Linux 2.6.32-431.20.3.el6.x86_64 (LIN X64) platform.
+
+
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.08 seconds
+      cpu time            0.01 seconds
+      
+NOTE: Libref stpsamp successfully assigned from logical server.
+NOTE: Libref SASDATA successfully assigned from logical server.
+
+NOTE: AUTOEXEC processing beginning; file is /sasfs/prod/sas/92/controlserver/sasconfig/Lev1/SASApp92/appserver_autoexec.sas.
+
+
+NOTE: AUTOEXEC processing completed.
+
+1          libname clntrial '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libref CLNTRIAL was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+2          libname slib  '/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+NOTE: Libname SLIB refers to the same physical library as CLNTRIAL.
+NOTE: Libref SLIB was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11
+3          
+4          proc sql;
+5          connect to oracle as review (USER="C185469" PASSWORD=XXXXXXXXXX path="@PRD934" connection="global"
+6           DBCONINIT="set role PRV$RTSQL");
+7          
+8          create view slib.DM1001 as
+9          select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+10         label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+11         CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+12         DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+13         label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+14         label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+2                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+15         PAGERPT label='PAGERPT',BRTHYR label='BRTHYR',SEX label='SEX',
+16         ETHNIC label='ETHNIC',RAC84 label='RACE_84',RAC58 label='RACE_58',
+17         RAC2 label='RACE_2',RAC79 label='RACE_79',RAC1 label='RACE_1'
+18         
+19         from connection to review
+20         (SELECT T14.CT_RECID  CT_RECID,T14.ENTRY_ID  ENTRY_ID,T14.STATUS  STATUS,T14.ENTRY_DATETIME
+21          ENTRY_DATETIME,T14.CTS$REASON  CTS_REASON,T14.SUBJECT_ID  SUBJECT_ID,T14.DB_ID
+22          DB_ID,T14.MERGE_DATETIME  MERGE_DATETIME,T14.SUBJID  SUBJID,T14.BLOCKID  BLOCKID,
+23         T14.BLOCKRPT  BLOCKRPT,T14.PAGE  PAGE,T14.PAGERPT  PAGERPT,T14.BRTHYR  BRTHYR,T14.SEX
+24          SEX,T14.ETHNIC  ETHNIC,T14.RACE_84  RAC84,T14.RACE_58  RAC58,T14.RACE_2  RAC2,T14.RACE_79
+25          RAC79,T14.RACE_1  RAC1 FROM I3Y_MC_JPBZ.DM1001_ALL T14  order by SUBJID,BLOCKID
+26         );
+NOTE: SQL view SLIB.DM1001 has been defined.
+27         
+28         create view slib.DS1001 as
+29         select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+30         label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+31         CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+32         DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+33         label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+34         label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+35         PAGERPT label='PAGERPT',DSDECOD label='DSDECOD',DTHDATDD label='DTHDATDD',
+36         DTHDATMO label='DTHDATMO',DTHDATYY label='DTHDATYY',PRICOD label='DSTERM_PRICOD',
+37         AEGRPREL format=4. label='AEGRPID_RELREC',DSCAT1 label='DSCAT_1',
+38         DSSCAT label='DSSCAT',DSSTDATD label='DSSTDATDD',DSSTDATM label='DSSTDATMO',
+39         DSSTDATY label='DSSTDATYY',DSTERM label='DSTERM',Protocol label='Protocol',
+40         DSSTDAT format=datetime20. label='DSSTDAT',DTHDAT format=datetime20.
+41         label='DTHDAT'
+42         
+43         from connection to review
+44         (SELECT T12.CT_RECID  CT_RECID,T12.ENTRY_ID  ENTRY_ID,T12.STATUS  STATUS,T12.ENTRY_DATETIME
+45          ENTRY_DATETIME,T12.CTS$REASON  CTS_REASON,T12.SUBJECT_ID  SUBJECT_ID,T12.DB_ID
+46          DB_ID,T12.MERGE_DATETIME  MERGE_DATETIME,T12.SUBJID  SUBJID,T12.BLOCKID  BLOCKID,
+47         T12.BLOCKRPT  BLOCKRPT,T12.PAGE  PAGE,T12.PAGERPT  PAGERPT,T12.DSDECOD  DSDECOD,
+48         T12.DTHDATDD  DTHDATDD,T12.DTHDATMO  DTHDATMO,T12.DTHDATYY  DTHDATYY,T12.DSTERM_PRICOD
+49          PRICOD,T12.AEGRPID_RELREC  AEGRPREL,T12.DSCAT_1  DSCAT1,T12.DSSCAT  DSSCAT,T12.DSSTDATDD
+50          DSSTDATD,T12.DSSTDATMO  DSSTDATM,T12.DSSTDATYY  DSSTDATY,T12.DSTERM  DSTERM,'I3Y_MC_JPBZ'
+51          Protocol,to_date(lpad(replace(DSSTDATMO,'-99', '07'),2,'0') ||lpad(replace(DSSTDATDD,
+52         '-99', '15'),2,'0') || DSSTDATYY,'MMDDYYYY')  DSSTDAT,to_date(lpad(replace(DTHDATMO,
+53         '-99', '07'),2,'0') ||lpad(replace(DTHDATDD,'-99', '15'),2,'0') || DTHDATYY,'MMDDYYYY')
+54          DTHDAT FROM I3Y_MC_JPBZ.DS1001_ALL T12  order by SUBJID,BLOCKID
+55         );
+NOTE: SQL view SLIB.DS1001 has been defined.
+56         
+57         create view slib.EX1001 as
+58         select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+59         label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+60         CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+61         DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+62         label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+63         label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+64         PAGERPT label='PAGERPT',EXSPID format=4. label='EXSPID',EXTRT
+65         label='EXTRT',EXTPT label='EXTPT',EXOCCUR label='EXOCCUR',EXSTDATD
+66         label='EXSTDATDD',EXSTDATM label='EXSTDATMO',EXSTDATY label='EXSTDATYY',
+67         EXSTTIMH label='EXSTTIMHR',EXSTTIMI label='EXSTTIMMI',EXDOSEU
+68         label='EXDOSEU',EXDOSE format=16.5 label='EXDOSE',EXDOSFRQ label='EXDOSFRQ',
+69         EXDOSFRM label='EXDOSFRM',EXROUTE label='EXROUTE',EXCAT label='EXCAT',
+70         EXENDATD label='EXENDATDD',EXENDATM label='EXENDATMO',EXENDATY
+3                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+71         label='EXENDATYY',EXDSAJTP label='EXDOSADJTP',EXADJ label='EXADJ',
+72         AEGRPRL4 format=4. label='AEGRPID_RELREC4',EXRSND label='EXREASND',
+73         AEGRPRL3 format=4. label='AEGRPID_RELREC3',AEGRPREL format=4.
+74         label='AEGRPID_RELREC',EXPTRDTD label='EXPTRTDATDD',EXPTRDTM
+75         label='EXPTRTDATMO',EXPTRDTY label='EXPTRTDATYY',EXDOSDLY label='EXDOSDLY',
+76         EXRSDLY label='EXREASDLY',EXTRTINT label='EXTRTINT',EXREASIT
+77         label='EXREASINT',AEGRPRL2 format=4. label='AEGRPID_RELREC2',
+78         EXRESITO label='EXREASINTOTH',EXPDOSEU label='EXPDOSEU',EXENTIMH
+79         label='EXENTIMHR',EXENTIMI label='EXENTIMMI',DICTDVER label='DICT_DICTVER',
+80         EXDECOD label='EXDECOD',EXTRADNM label='EXTRADNM',TRTTRMCD label='TRTTERMCD',
+81         EXCLASCD label='EXCLASCD',EXCLAS label='EXCLAS',EXGRPID format=4.
+82         label='EXGRPID',EXPDOSE format=16.5 label='EXPDOSE',EXSTDAT
+83         format=datetime20. label='EXSTDAT',EXENDAT format=datetime20.
+84         label='EXENDAT',EXSTTIM label='EXSTTIM'
+85         
+86         from connection to review
+87         (SELECT T45.CT_RECID  CT_RECID,T45.ENTRY_ID  ENTRY_ID,T45.STATUS  STATUS,T45.ENTRY_DATETIME
+88          ENTRY_DATETIME,T45.CTS$REASON  CTS_REASON,T45.SUBJECT_ID  SUBJECT_ID,T45.DB_ID
+89          DB_ID,T45.MERGE_DATETIME  MERGE_DATETIME,T45.SUBJID  SUBJID,T45.BLOCKID  BLOCKID,
+90         T45.BLOCKRPT  BLOCKRPT,T45.PAGE  PAGE,T45.PAGERPT  PAGERPT,T45.EXSPID  EXSPID,T45.EXTRT
+91          EXTRT,T45.EXTPT  EXTPT,T45.EXOCCUR  EXOCCUR,T45.EXSTDATDD  EXSTDATD,T45.EXSTDATMO
+92          EXSTDATM,T45.EXSTDATYY  EXSTDATY,T45.EXSTTIMHR  EXSTTIMH,T45.EXSTTIMMI  EXSTTIMI,
+93         T45.EXDOSEU  EXDOSEU,T45.EXDOSE  EXDOSE,T45.EXDOSFRQ  EXDOSFRQ,T45.EXDOSFRM  EXDOSFRM,
+94         T45.EXROUTE  EXROUTE,T45.EXCAT  EXCAT,T45.EXENDATDD  EXENDATD,T45.EXENDATMO  EXENDATM,
+95         T45.EXENDATYY  EXENDATY,T45.EXDOSADJTP  EXDSAJTP,T45.EXADJ  EXADJ,T45.AEGRPID_RELREC4
+96          AEGRPRL4,T45.EXREASND  EXRSND,T45.AEGRPID_RELREC3  AEGRPRL3,T45.AEGRPID_RELREC
+97          AEGRPREL,T45.EXPTRTDATDD  EXPTRDTD,T45.EXPTRTDATMO  EXPTRDTM,T45.EXPTRTDATYY  EXPTRDTY,
+98         T45.EXDOSDLY  EXDOSDLY,T45.EXREASDLY  EXRSDLY,T45.EXTRTINT  EXTRTINT,T45.EXREASINT
+99          EXREASIT,T45.AEGRPID_RELREC2  AEGRPRL2,T45.EXREASINTOTH  EXRESITO,T45.EXPDOSEU
+100         EXPDOSEU,T45.EXENTIMHR  EXENTIMH,T45.EXENTIMMI  EXENTIMI,T45.DICT_DICTVER  DICTDVER,
+101        T45.EXDECOD  EXDECOD,T45.EXTRADNM  EXTRADNM,T45.TRTTERMCD  TRTTRMCD,T45.EXCLASCD
+102         EXCLASCD,T45.EXCLAS  EXCLAS,T45.EXGRPID  EXGRPID,T45.EXPDOSE  EXPDOSE,to_date(lpad(replace(EXSTDATMO,
+103        '-99', '01'),2,'0')||lpad(replace(EXSTDATDD,'-99', '01'),2,'0')|| EXSTDATYY,'MMDDYYYY')
+104         EXSTDAT,to_date(lpad(replace(EXENDATMO,'-99', '01'),2,'0')||lpad(replace(EXENDATDD,
+105        '-99', '01'),2,'0')|| EXENDATYY,'MMDDYYYY')  EXENDAT,decode(EXSTTIMHR,null,null,
+106        decode(EXSTTIMMI,null,null,lpad(replace(EXSTTIMHR,'-99', '00'),2,'0')||':'||lpad(replace(EXSTTIMMI,
+107        '-99', '00'),2,'0')))  EXSTTIM FROM I3Y_MC_JPBZ.EX1001_ALL T45  order by SUBJID,
+108        BLOCKID
+109        );
+NOTE: SQL view SLIB.EX1001 has been defined.
+110        
+111        create view slib.INF_SITE as
+112        select STATUS format=2. label='STATUS',ENTRY_ID label='ENTRY_ID',ENTRY_DATETIME
+113        format=datetime20. label='ENTRY_DATETIME',CT_RECID label='CT_RECID',
+114        DB_ID format=5. label='DB_ID',SUBJECT_ID format=15. label='SUBJECT_ID',
+115        SITEFAXNUMBER label='SITEFAXNUMBER',SITEDAYPHONENUMBER label='SITEDAYPHONENUMBER',
+116        SITECOUNTRY label='SITECOUNTRY',SITEPOSTALCODE label='SITEPOSTALCODE',
+117        SITECITY label='SITECITY',DISABLED format=1. label='DISABLED',
+118        SITETIMEZONE label='SITETIMEZONE',SITESERVER label='SITESERVER',
+119        SITEALTPHONENUMBER label='SITEALTPHONENUMBER',GROUPDESCRIPTION
+120        label='GROUPDESCRIPTION',SITESTUDYTERMINATION format=datetime20.
+121        label='SITESTUDYTERMINATION',SITESTATEPROVINCE label='SITESTATEPROVINCE',
+122        SITEBEEPER label='SITEBEEPER',SITEDATEFORMAT label='SITEDATEFORMAT',
+123        SITESTUDYINITIATIOND format=datetime20. label='SITESTUDYINITIATIOND',
+124        GROUPNAME label='GROUPNAME',GROUPCONFLICT format=5. label='GROUPCONFLICT',
+125        SITEMNEMONIC label='SITEMNEMONIC',SITEEMAILADDRESS label='SITEEMAILADDRESS',
+126        SITECONTACTUSER label='SITECONTACTUSER',SITEADDRESS1 label='SITEADDRESS1',
+127        SITEADDRESS2 label='SITEADDRESS2'
+4                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+128        
+129        from connection to review
+130        (SELECT T181.STATUS  STATUS,T181.ENTRY_ID  ENTRY_ID,T181.ENTRY_DATETIME  ENTRY_DATETIME,
+131        T181.CT_RECID  CT_RECID,T181.DB_ID  DB_ID,T181.SUBJECT_ID  SUBJECT_ID,T181.SITEFAXNUMBER
+132         SITEFAXNUMBER,T181.SITEDAYPHONENUMBER  SITEDAYPHONENUMBER,T181.SITECOUNTRY  SITECOUNTRY,
+133        T181.SITEPOSTALCODE  SITEPOSTALCODE,T181.SITECITY  SITECITY,T181.DISABLED  DISABLED,
+134        T181.SITETIMEZONE  SITETIMEZONE,T181.SITESERVER  SITESERVER,T181.SITEALTPHONENUMBER
+135         SITEALTPHONENUMBER,T181.GROUPDESCRIPTION  GROUPDESCRIPTION,T181.SITESTUDYTERMINATION
+136         SITESTUDYTERMINATION,T181.SITESTATEPROVINCE  SITESTATEPROVINCE,T181.SITEBEEPER
+137         SITEBEEPER,T181.SITEDATEFORMAT  SITEDATEFORMAT,T181.SITESTUDYINITIATIOND  SITESTUDYINITIATIOND,
+138        T181.GROUPNAME  GROUPNAME,T181.GROUPCONFLICT  GROUPCONFLICT,T181.SITEMNEMONIC  SITEMNEMONIC,
+139        T181.SITEEMAILADDRESS  SITEEMAILADDRESS,T181.SITECONTACTUSER  SITECONTACTUSER,T181.SITEADDRESS1
+140         SITEADDRESS1,T181.SITEADDRESS2  SITEADDRESS2 FROM /* Name:INF_SITE*SQL* */ (SELECT
+141        STATUS, ENTRY_ID, ENTRY_DATETIME, CT_RECID, DB_ID, SUBJECT_ID,
+142         SITEFAXNUMBER,
+143        SITEDAYPHONENUMBER, SITECOUNTRY, SITEPOSTALCODE,
+144         SITECITY, DISABLED, SITETIMEZONE,
+145         SITESERVER, SITEALTPHONENUMBER,
+146         GROUPDESCRIPTION, SITESTUDYTERMINATION, SITESTATEPROVINCE,
+147        
+148         SITEBEEPER, SITEDATEFORMAT, SITESTUDYINITIATIOND, GROUPNAME,
+149         GROUPCONFLICT,
+150         SITEMNEMONIC, SITEEMAILADDRESS, SITECONTACTUSER,
+151         SITEADDRESS1, SITEADDRESS2
+152        FROM
+153        I3Y_MC_JPBZ.INF_SITE_all) T181
+154        );
+NOTE: SQL view SLIB.INF_SITE has been defined.
+155        
+156        create view slib.INF_SUB as
+157        select PATIENTGUID label='PATIENTGUID',SITEGUID label='SITEGUID',SUBJECT_ID
+158        format=18. label='SUBJECT_ID',ENTRY_DATETIME format=datetime20.
+159        label='ENTRY_DATETIME'
+160        
+161        from connection to review
+162        (SELECT T182.PATIENTGUID  PATIENTGUID,T182.SITEGUID  SITEGUID,T182.SUBJECT_ID  SUBJECT_ID,
+163        T182.ENTRY_DATETIME  ENTRY_DATETIME FROM /* Name:INF_SUBJECT*SQL* */ (Select * from
+164        I3Y_MC_JPBZ.INF_SUBJECT) T182
+165        );
+NOTE: SQL view SLIB.INF_SUB has been defined.
+166        
+167        create view slib.IVRSTSA as
+168        select SDYID label='SDYID',INVID format=5. label='INVID',SUBJID format=10.
+169        label='SUBJID',BLOCKID format=6. label='BLOCKID',SUBJSTAT label='SUBJSTAT',
+170        PKGNBR format=9. label='PKGNBR',IVRSVSDT format=datetime20.
+171        label='IVRSVSDT'
+172        
+173        from connection to review
+174        (SELECT T184.SDYID  SDYID,T184.INVID  INVID,T184.SUBJID  SUBJID,T184.BLOCKID  BLOCKID,
+175        T184.SUBJSTAT  SUBJSTAT,T184.PKGNBR  PKGNBR,T184.IVRSVSDT  IVRSVSDT FROM /* Name:IVRS_SBJCT_STS_A*SQL*
+176        */ (select usdyid as sdyid,         invid,         subjid,         ivrsvis as blockid,
+177                 subjstat,        pkgnbr,        ivrsvsdt        from MDF_SS_OWNER.ivrs_sbjct_sts_vw
+178        where usdyid= REPLACE('I3Y_MC_JPBZ','_','-')) T184  order by SUBJID,BLOCKID
+179        );
+NOTE: SQL view SLIB.IVRSTSA has been defined.
+180        
+181        create view slib.RS1001 as
+182        select MERGE_DATETIME format=datetime20. label='MERGE_DATETIME',STATUS
+5                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+183        format=2. label='STATUS',ENTRY_ID label='ENTRY_ID',ENTRY_DATETIME
+184        format=datetime20. label='ENTRY_DATETIME',CT_RECID label='CT_RECID',
+185        DB_ID format=5. label='DB_ID',SUBJECT_ID format=15. label='SUBJECT_ID',
+186        CTSREASON label='CTS$REASON',SUBJID format=10. label='SUBJID',
+187        BLOCKID label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+188        PAGERPT label='PAGERPT',RSPERF label='RSPERF',RSSPID format=4.
+189        label='RSSPID',OVRLRESP_NRP label='OVRLRESP_NRP',RSDATDD label='RSDATDD',
+190        RSDATMO label='RSDATMO',RSDATYY label='RSDATYY',TRGRESP label='TRGRESP',
+191        NTRGRESP label='NTRGRESP',RSCAT_OVRLRESP label='RSCAT_OVRLRESP',
+192        RSCAT label='RSCAT',OVRLRESP label='OVRLRESP',RSDAT format=datetime20.
+193        label='RSDAT'
+194        
+195        from connection to review
+196        (SELECT T244.MERGE_DATETIME  MERGE_DATETIME,T244.STATUS  STATUS,T244.ENTRY_ID  ENTRY_ID,
+197        T244.ENTRY_DATETIME  ENTRY_DATETIME,T244.CT_RECID  CT_RECID,T244.DB_ID  DB_ID,T244.SUBJECT_ID
+198         SUBJECT_ID,T244.CTS$REASON  CTSREASON,T244.SUBJID  SUBJID,T244.BLOCKID  BLOCKID,
+199        T244.BLOCKRPT  BLOCKRPT,T244.PAGE  PAGE,T244.PAGERPT  PAGERPT,T244.RSPERF  RSPERF,
+200        T244.RSSPID  RSSPID,T244.OVRLRESP_NRP  OVRLRESP_NRP,T244.RSDATDD  RSDATDD,T244.RSDATMO
+201         RSDATMO,T244.RSDATYY  RSDATYY,T244.TRGRESP  TRGRESP,T244.NTRGRESP  NTRGRESP,T244.RSCAT_OVRLRESP
+202         RSCAT_OVRLRESP,T244.RSCAT  RSCAT,T244.OVRLRESP  OVRLRESP,T244.RSDAT  RSDAT FROM
+203        /* Name:RS1001_OVRLRESP*SQL* */ (select a.*, to_date(lpad(replace(a.RSDATMO,'-99',
+204         '06'),2,'0')||lpad(replace(a.RSDATDD,'-99', '15'),2,'0')|| a.RSDATYY,'MMDDYYYY')
+205        as RSDAT from I3Y_MC_JPBZ.rs1001_all a) T244  order by SUBJID,BLOCKID
+206        );
+NOTE: SQL view SLIB.RS1001 has been defined.
+207        
+208        create view slib.SS1001 as
+209        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+210        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+211        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+212        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+213        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+214        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+215        PAGERPT label='PAGERPT',SSPERF label='SSPERF',SSDATDD label='SSDATDD',
+216        SSDATMO label='SSDATMO',SSDATYY label='SSDATYY',SURVSTAT label='SURVSTAT',
+217        PDFUSTAT label='PDFUSTAT',SSLSTKDD label='SSLSTKADDD',SSLSTKDM
+218        label='SSLSTKADMO',SSLSTKDY label='SSLSTKADYY',SSCAT label='SSCAT',
+219        SSLSTKD label='SSLSTKAD',SSDAT label='SSDAT',BLKRPT label='BLKRPT'
+220        
+221        from connection to review
+222        (SELECT T10.CT_RECID  CT_RECID,T10.ENTRY_ID  ENTRY_ID,T10.STATUS  STATUS,T10.ENTRY_DATETIME
+223         ENTRY_DATETIME,T10.CTS$REASON  CTS_REASON,T10.SUBJECT_ID  SUBJECT_ID,T10.DB_ID
+224         DB_ID,T10.MERGE_DATETIME  MERGE_DATETIME,T10.SUBJID  SUBJID,T10.BLOCKID  BLOCKID,
+225        T10.BLOCKRPT  BLOCKRPT,T10.PAGE  PAGE,T10.PAGERPT  PAGERPT,T10.SSPERF  SSPERF,T10.SSDATDD
+226         SSDATDD,T10.SSDATMO  SSDATMO,T10.SSDATYY  SSDATYY,T10.SURVSTAT  SURVSTAT,T10.PDFUSTAT
+227         PDFUSTAT,T10.SSLSTKADDD  SSLSTKDD,T10.SSLSTKADMO  SSLSTKDM,T10.SSLSTKADYY  SSLSTKDY,
+228        T10.SSCAT  SSCAT,to_date(lpad(replace(SSLSTKADMO,'-99', '01'),2,'0')||lpad(replace(SSLSTKADDD,
+229        '-99', '01'),2,'0')|| SSLSTKADYY,'MMDDYYYY')  SSLSTKD,to_date(lpad(replace(SSDATMO,
+230        '-99', '01'),2,'0')||lpad(replace(SSDATDD,'-99', '01'),2,'0')|| SSDATYY,'MMDDYYYY')
+231         SSDAT,DECODE(BLOCKRPT,null, '0')  BLKRPT FROM I3Y_MC_JPBZ.SS1001_ALL T10  order
+232        by SUBJID,BLOCKID
+233        );
+NOTE: SQL view SLIB.SS1001 has been defined.
+234        
+235        create view slib.SV1001 as
+236        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+237        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+238        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+6                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+239        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+240        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+241        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+242        PAGERPT label='PAGERPT',VISDATDD label='VISDATDD',VISDATMO label='VISDATMO',
+243        VISDATYY label='VISDATYY',VISDATMD label='VISDATMD',VISITNUM
+244        format=4. label='VISITNUM',VISDAT format=datetime20. label='VISDAT',
+245        VISDAT19 label='VISDAT'
+246        
+247        from connection to review
+248        (SELECT T13.CT_RECID  CT_RECID,T13.ENTRY_ID  ENTRY_ID,T13.STATUS  STATUS,T13.ENTRY_DATETIME
+249         ENTRY_DATETIME,T13.CTS$REASON  CTS_REASON,T13.SUBJECT_ID  SUBJECT_ID,T13.DB_ID
+250         DB_ID,T13.MERGE_DATETIME  MERGE_DATETIME,T13.SUBJID  SUBJID,T13.BLOCKID  BLOCKID,
+251        T13.BLOCKRPT  BLOCKRPT,T13.PAGE  PAGE,T13.PAGERPT  PAGERPT,T13.VISDATDD  VISDATDD,
+252        T13.VISDATMO  VISDATMO,T13.VISDATYY  VISDATYY,T13.VISDATMD  VISDATMD,T13.VISITNUM
+253         VISITNUM,to_date(lpad(replace(VISDATMO,'-99','06'),2,'0') ||lpad(replace(VISDATDD,
+254        '-99', '15'),2,'0') ||VISDATYY,'MMDDYYYY')  VISDAT,to_date(lpad(replace(VISDATMO,
+255        '-99', '01'),2,'0')||lpad(replace(VISDATDD,'-99', '01'),2,'0')|| VISDATYY,'MMDDYYYY')
+256         VISDAT19 FROM I3Y_MC_JPBZ.SV1001_ALL T13  order by SUBJID,BLOCKID
+257        );
+NOTE: SQL view SLIB.SV1001 has been defined.
+258        
+259        create view slib.TU2001A as
+260        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+261        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+262        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+263        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+264        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+265        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+266        PAGERPT label='PAGERPT',TULNKITG label='TULNKID_TARGET',TUDATDD
+267        label='TUDATDD',TUDATMO label='TUDATMO',TUDATYY label='TUDATYY',
+268        TULOC label='TULOC',TULOCOTH label='TULOCOTH',TUMIDENT label='TUMIDENT_TARGET',
+269        TUCATREC label='TUCAT',TUDATE format=datetime20. label='TUDATE',
+270        TUDAT label='TUDAT'
+271        
+272        from connection to review
+273        (SELECT T22.CT_RECID  CT_RECID,T22.ENTRY_ID  ENTRY_ID,T22.STATUS  STATUS,T22.ENTRY_DATETIME
+274         ENTRY_DATETIME,T22.CTS$REASON  CTS_REASON,T22.SUBJECT_ID  SUBJECT_ID,T22.DB_ID
+275         DB_ID,T22.MERGE_DATETIME  MERGE_DATETIME,T22.SUBJID  SUBJID,T22.BLOCKID  BLOCKID,
+276        T22.BLOCKRPT  BLOCKRPT,T22.PAGE  PAGE,T22.PAGERPT  PAGERPT,T22.TULNKID_TARGET  TULNKITG,
+277        T22.TUDATDD  TUDATDD,T22.TUDATMO  TUDATMO,T22.TUDATYY  TUDATYY,T22.TULOC  TULOC,
+278        T22.TULOCOTH  TULOCOTH,T22.TUMIDENT_TARGET  TUMIDENT,T22.TUCAT  TUCATREC,to_date(lpad(replace(TUDATMO,
+279        '-99', '07'),2,'0') ||lpad(replace(TUDATDD,'-99', '15'),2,'0') || TUDATYY,'MMDDYYYY')
+280         TUDATE,to_date(lpad(replace(TUDATMO,'-99', '01'),2,'0')||lpad(replace(TUDATDD,'-99',
+281         '01'),2,'0')|| TUDATYY,'MMDDYYYY')  TUDAT FROM I3Y_MC_JPBZ.TU2001A_ALL T22  order
+282        by SUBJID,BLOCKID
+283        );
+NOTE: SQL view SLIB.TU2001A has been defined.
+284        
+285        create view slib.TU2001B as
+286        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+287        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+288        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+289        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+290        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+291        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+292        PAGERPT label='PAGERPT',TRLNKID label='TRLNKID',TRSPID format=4.
+293        label='TRSPID',TRDATDD label='TRDATDD',TRDATMO label='TRDATMO',
+294        TRDATYY label='TRDATYY',TRPERF label='TRPERF',TRMETHOD label='TRMETHOD',
+7                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+295        TRMTHODO label='TRMETHODOTH',TUMSTATE label='TUMSTATE_TARGET',
+296        TRSTRESC label='TRSTRESC',LDIAM format=6.1 label='LDIAM',SAXIS
+297        format=6.1 label='SAXIS',SAXISU label='SAXISU',LDIAMU label='LDIAMU',
+298        TRDATE format=datetime20. label='TRDATE',TRDAT label='TRDAT'
+299        
+300        from connection to review
+301        (SELECT T23.CT_RECID  CT_RECID,T23.ENTRY_ID  ENTRY_ID,T23.STATUS  STATUS,T23.ENTRY_DATETIME
+302         ENTRY_DATETIME,T23.CTS$REASON  CTS_REASON,T23.SUBJECT_ID  SUBJECT_ID,T23.DB_ID
+303         DB_ID,T23.MERGE_DATETIME  MERGE_DATETIME,T23.SUBJID  SUBJID,T23.BLOCKID  BLOCKID,
+304        T23.BLOCKRPT  BLOCKRPT,T23.PAGE  PAGE,T23.PAGERPT  PAGERPT,T23.TRLNKID  TRLNKID,
+305        T23.TRSPID  TRSPID,T23.TRDATDD  TRDATDD,T23.TRDATMO  TRDATMO,T23.TRDATYY  TRDATYY,
+306        T23.TRPERF  TRPERF,T23.TRMETHOD  TRMETHOD,T23.TRMETHODOTH  TRMTHODO,T23.TUMSTATE_TARGET
+307         TUMSTATE,T23.TRSTRESC  TRSTRESC,T23.LDIAM  LDIAM,T23.SAXIS  SAXIS,T23.SAXISU  SAXISU,
+308        T23.LDIAMU  LDIAMU,to_date(lpad(replace(TRDATMO,'-99', '07'),2,'0') ||lpad(replace(TRDATDD,
+309        '-99', '15'),2,'0') || TRDATYY,'MMDDYYYY')  TRDATE,to_date(lpad(replace(T23.TRDATMO,
+310        '-99', '06'),2,'0')||lpad(replace(T23.TRDATDD,'-99', '15'),2,'0')|| T23.TRDATYY,
+311        'MMDDYYYY')  TRDAT FROM I3Y_MC_JPBZ.TU2001B_ALL T23  order by SUBJID,BLOCKID
+312        );
+NOTE: SQL view SLIB.TU2001B has been defined.
+313        
+314        create view slib.TU3001A as
+315        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+316        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+317        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+318        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+319        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+320        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+321        PAGERPT label='PAGERPT',TULNKINT label='TULNKID_NONTARGET',TUDATDD
+322        label='TUDATDD',TUDATMO label='TUDATMO',TUDATYY label='TUDATYY',
+323        TULOC label='TULOC',TULOCOTH label='TULOCOTH',TUMIDENT label='TUMIDENT_NONTARGET',
+324        TUCATREC label='TUCAT',TUDATE format=datetime20. label='TUDATE',
+325        TUDAT label='TUDAT'
+326        
+327        from connection to review
+328        (SELECT T24.CT_RECID  CT_RECID,T24.ENTRY_ID  ENTRY_ID,T24.STATUS  STATUS,T24.ENTRY_DATETIME
+329         ENTRY_DATETIME,T24.CTS$REASON  CTS_REASON,T24.SUBJECT_ID  SUBJECT_ID,T24.DB_ID
+330         DB_ID,T24.MERGE_DATETIME  MERGE_DATETIME,T24.SUBJID  SUBJID,T24.BLOCKID  BLOCKID,
+331        T24.BLOCKRPT  BLOCKRPT,T24.PAGE  PAGE,T24.PAGERPT  PAGERPT,T24.TULNKID_NONTARGET
+332         TULNKINT,T24.TUDATDD  TUDATDD,T24.TUDATMO  TUDATMO,T24.TUDATYY  TUDATYY,T24.TULOC
+333         TULOC,T24.TULOCOTH  TULOCOTH,T24.TUMIDENT_NONTARGET  TUMIDENT,T24.TUCAT  TUCATREC,
+334        to_date(lpad(replace(TUDATMO,'-99', '07'),2,'0') ||lpad(replace(TUDATDD,'-99', '15'),
+335        2,'0') || TUDATYY,'MMDDYYYY')  TUDATE,to_date(lpad(replace(TUDATMO,'-99', '01'),
+336        2,'0')||lpad(replace(TUDATDD,'-99', '01'),2,'0')|| TUDATYY,'MMDDYYYY')  TUDAT FROM
+337        I3Y_MC_JPBZ.TU3001A_ALL T24  order by SUBJID,BLOCKID
+338        );
+NOTE: SQL view SLIB.TU3001A has been defined.
+339        
+340        create view slib.TU3001B as
+341        select CT_RECID label='CT_RECID',ENTRY_ID label='Entry ID',STATUS format=2.
+342        label='Status',ENTRY_DATETIME format=datetime20. label='Entry DateTime',
+343        CTS_REASON label='CTS$REASON',SUBJECT_ID format=15. label='Subject ID (CT system)',
+344        DB_ID format=8. label='DB_ID',MERGE_DATETIME format=datetime20.
+345        label='Merge DateTime',SUBJID format=10. label='SUBJID',BLOCKID
+346        label='BLOCKID',BLOCKRPT label='BLOCKRPT',PAGE label='PAGE',
+347        PAGERPT label='PAGERPT',TRLNKID label='TRLNKID',TRSPID format=4.
+348        label='TRSPID',TRDATDD label='TRDATDD',TRDATMO label='TRDATMO',
+349        TRDATYY label='TRDATYY',TRPERF label='TRPERF',TRMETHOD label='TRMETHOD',
+350        TRMTHODO label='TRMETHODOTH',TUMSTATE label='TUMSTATE_NONTARGET',
+8                                                          The SAS System                             11:32 Wednesday, June 21, 2017
+
+351        TRDAT label='TRDAT',TRDATE format=datetime20. label='TRDATE'
+352        
+353        from connection to review
+354        (SELECT T25.CT_RECID  CT_RECID,T25.ENTRY_ID  ENTRY_ID,T25.STATUS  STATUS,T25.ENTRY_DATETIME
+355         ENTRY_DATETIME,T25.CTS$REASON  CTS_REASON,T25.SUBJECT_ID  SUBJECT_ID,T25.DB_ID
+356         DB_ID,T25.MERGE_DATETIME  MERGE_DATETIME,T25.SUBJID  SUBJID,T25.BLOCKID  BLOCKID,
+357        T25.BLOCKRPT  BLOCKRPT,T25.PAGE  PAGE,T25.PAGERPT  PAGERPT,T25.TRLNKID  TRLNKID,
+358        T25.TRSPID  TRSPID,T25.TRDATDD  TRDATDD,T25.TRDATMO  TRDATMO,T25.TRDATYY  TRDATYY,
+359        T25.TRPERF  TRPERF,T25.TRMETHOD  TRMETHOD,T25.TRMETHODOTH  TRMTHODO,T25.TUMSTATE_NONTARGET
+360         TUMSTATE,to_date(lpad(replace(TRDATMO,'-99', '01'),2,'0')||lpad(replace(TRDATDD,
+361        '-99', '01'),2,'0')|| TRDATYY,'MMDDYYYY')  TRDAT,to_date(lpad(replace(TRDATMO,'-99',
+362         '07'),2,'0') ||lpad(replace(TRDATDD,'-99', '15'),2,'0') || TRDATYY,'MMDDYYYY')
+363         TRDATE FROM I3Y_MC_JPBZ.TU3001B_ALL T25  order by SUBJID,BLOCKID
+364        );
+NOTE: SQL view SLIB.TU3001B has been defined.
+365        
+366        disconnect from review;
+367        quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.15 seconds
+      cpu time            0.03 seconds
+      
+
+368        
+369        %let irsubset="All patients";
+370        %let irsubval=0;
+371        %let irsubdsc='All patients';
+372        
+373        %let irsubtxt="All patients";
+374        %let irfiltertxt='';
+375        %let iruser='C185469';
+376        %let iruseru=C185469;
+377        %let irlguser='C185469';
+378        %let irctdata=ALL;
+379        %let irconnct='@PRD934';
+380        %let irproj='I3Y';
+381        %let irproju=I3Y;
+382        %let irprojdesc='I3Y';
+383        %let irprojdescu=I3Y;
+384        %let irprot='I3Y_MC_JPBZ';
+385        %let irprotu=I3Y_MC_JPBZ;
+386        %let irstdy='I3Y_MC_JPBZ';
+387        %let irstdyu=I3Y_MC_JPBZ;
+388        
+389        %let irfilbas='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11';
+390        %let irfilhtm='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.htm';
+391        %let irfilpdf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.pdf';
+392        %let irfilrtf='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.rtf';
+393        %let irfilcsv='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv';
+394        %let irfilxls='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.xls';
+395        %let irfiljpg='/sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.jpg';
+396        
+397        /* SAS program */
+398        OPTIONS ORIENTATION=PORTRAIT LS=80 PS=60 NUMBER DATE;
+399        %let irprgdsc='ONC_TU219_TU318';
+400        %let irprgseq=28308;
+401        
+402        %let NonTargetOnly=N;
+9                                The SAS System   11:32 Wednesday, June 21, 2017
+
+403        %let weeks=6;
+404        %let weeksfu=8;
+405        
+406        %include
+406      ! '/sasfs/data/jreview/PRD/jrsas/PRD934/JPBZ/ONC_TU219_TU318_V2.sas';
+NOTE: Table WORK.SITE created, with 159 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: Table WORK.EX1001 created, with 104 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.13 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.TU2001 created, with 660 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.03 seconds
+      
+
+NOTE: Table WORK.TU3001 created, with 641 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: There were 660 observations read from the data set WORK.TU2001.
+NOTE: There were 641 observations read from the data set WORK.TU3001.
+NOTE: The data set WORK.TUMOR has 1301 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 1301 observations read from the data set WORK.TUMOR.
+NOTE: The data set WORK.TUMOR has 1301 observations and 6 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.TUMOR_MIN created, with 108 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+10                               The SAS System   11:32 Wednesday, June 21, 2017
+
+NOTE: There were 108 observations read from the data set WORK.TUMOR_MIN.
+NOTE: There were 104 observations read from the data set WORK.EX1001.
+NOTE: There were 159 observations read from the data set WORK.SITE.
+NOTE: The data set WORK.PART1 has 0 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Input data set is empty.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.PART1 has 0 observations and 4 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: The query requires remerging summary statistics back with the original 
+      data.
+NOTE: Table WORK.MAXTRDAT created, with 434 rows and 6 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.SV1001 created, with 33 rows and 3 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 434 observations read from the data set WORK.MAXTRDAT.
+NOTE: There were 33 observations read from the data set WORK.SV1001.
+NOTE: The data set WORK.MAXTRDAT_SV has 434 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Missing values were generated as a result of performing an operation on 
+      missing values.
+      Each place is given by: (Number of times) at (Line):(Column).
+      434 at 567:29   
+NOTE: There were 434 observations read from the data set WORK.MAXTRDAT_SV.
+NOTE: The data set WORK.TUMOR_EXPVIS has 714 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 714 observations read from the data set WORK.TUMOR_EXPVIS.
+NOTE: The data set WORK.TUMOR_EXPVIS has 714 observations and 7 variables.
+11                               The SAS System   11:32 Wednesday, June 21, 2017
+
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: The data set WORK.RS1001CONT has 25 observations and 40 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.02 seconds
+      
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+OVRLRESP_NRP
+
+NOTE: There were 32 observations read from the data set CLNTRIAL.RS1001.
+      WHERE OVRLRESP='PD';
+NOTE: The data set WORK.RS1001 has 32 observations and 3 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 32 observations read from the data set WORK.RS1001.
+NOTE: 3 observations with duplicate key values were deleted.
+NOTE: The data set WORK.RS1001 has 29 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 15 observations read from the data set CLNTRIAL.DS1001.
+      WHERE DSDECOD in ('DEATH', 'LOST TO FOLLOW-UP', 'STUDY TERMINATED BY 
+      SPONSOR', 'WITHDRAWAL BY SUBJECT');
+NOTE: The data set WORK.DS1001 has 15 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: There were 15 observations read from the data set WORK.DS1001.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.DS1001 has 15 observations and 4 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 45 observations read from the data set CLNTRIAL.DS1001.
+      WHERE page='DS1001_LF1';
+12                               The SAS System   11:32 Wednesday, June 21, 2017
+
+NOTE: The data set WORK.DS1001_LF1 has 45 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 45 observations read from the data set WORK.DS1001_LF1.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.DS1001_LF1 has 45 observations and 1 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.DS1001_LF2 created, with 45 rows and 1 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.MINSSDAT created, with 25 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+      
+
+NOTE: Table WORK.SS1001 created, with 55 rows and 2 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: MERGE statement has more than one data set with repeats of BY values.
+NOTE: There were 714 observations read from the data set WORK.TUMOR_EXPVIS.
+NOTE: There were 45 observations read from the data set WORK.DS1001_LF2.
+NOTE: There were 29 observations read from the data set WORK.RS1001.
+NOTE: There were 45 observations read from the data set WORK.DS1001_LF1.
+NOTE: There were 15 observations read from the data set WORK.DS1001.
+NOTE: There were 25 observations read from the data set WORK.MINSSDAT.
+NOTE: There were 55 observations read from the data set WORK.SS1001.
+NOTE: The data set WORK.PART2A has 36 observations and 14 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 36 observations read from the data set WORK.PART2A.
+NOTE: The data set WORK.PART2A has 36 observations and 14 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+13                               The SAS System   11:32 Wednesday, June 21, 2017
+
+
+
+NOTE: There were 36 observations read from the data set WORK.PART2A.
+NOTE: The data set WORK.PART2B has 36 observations and 14 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 36 observations read from the data set WORK.PART2B.
+NOTE: There were 104 observations read from the data set WORK.EX1001.
+NOTE: There were 159 observations read from the data set WORK.SITE.
+NOTE: The data set WORK.PART2 has 36 observations and 9 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 159 observations read from the data set CLNTRIAL.DM1001.
+NOTE: The data set WORK.DM1001 has 159 observations and 1 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: There were 159 observations read from the data set WORK.DM1001.
+NOTE: 0 observations with duplicate key values were deleted.
+NOTE: The data set WORK.DM1001 has 159 observations and 1 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 159 observations read from the data set WORK.DM1001.
+NOTE: There were 660 observations read from the data set WORK.TU2001.
+NOTE: There were 45 observations read from the data set WORK.DS1001_LF1.
+NOTE: The data set WORK.PART3A has 18 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 18 observations read from the data set WORK.PART3A.
+NOTE: There were 104 observations read from the data set WORK.EX1001.
+NOTE: There were 159 observations read from the data set WORK.SITE.
+NOTE: The data set WORK.PART3 has 18 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: MERGE statement has more than one data set with repeats of BY values.
+14                               The SAS System   11:32 Wednesday, June 21, 2017
+
+NOTE: There were 159 observations read from the data set WORK.DM1001.
+NOTE: There were 641 observations read from the data set WORK.TU3001.
+NOTE: There were 660 observations read from the data set WORK.TU2001.
+NOTE: There were 45 observations read from the data set WORK.DS1001_LF1.
+NOTE: The data set WORK.PART4A has 12 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 12 observations read from the data set WORK.PART4A.
+NOTE: There were 104 observations read from the data set WORK.EX1001.
+NOTE: There were 159 observations read from the data set WORK.SITE.
+NOTE: The data set WORK.PART4 has 0 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 1299 observations read from the data set WORK.TUMOR.
+      WHERE TULNKID not = ' ';
+NOTE: The data set WORK.TUMOR_NOSPID has 0 observations and 6 variables.
+NOTE: The data set WORK.TUMOR_SPID has 1299 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: Input data set is empty.
+NOTE: The data set WORK.TUMOR_NOSPID has 0 observations and 6 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 1299 observations read from the data set WORK.TUMOR_SPID.
+NOTE: The data set WORK.TUMOR_SPID has 1299 observations and 6 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 0 observations read from the data set WORK.TUMOR_NOSPID.
+NOTE: There were 1299 observations read from the data set WORK.TUMOR_SPID.
+NOTE: The data set WORK.PART5A has 0 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 0 observations read from the data set WORK.PART5A.
+NOTE: There were 104 observations read from the data set WORK.EX1001.
+15                               The SAS System   11:32 Wednesday, June 21, 2017
+
+NOTE: There were 159 observations read from the data set WORK.SITE.
+NOTE: The data set WORK.PART5 has 0 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+
+NOTE: There were 0 observations read from the data set WORK.PART1.
+NOTE: There were 36 observations read from the data set WORK.PART2.
+NOTE: There were 18 observations read from the data set WORK.PART3.
+NOTE: There were 0 observations read from the data set WORK.PART4.
+NOTE: There were 0 observations read from the data set WORK.PART5.
+NOTE: The data set WORK.ONC_TU219_TU318A has 54 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Table WORK.ONC_TU219_TU318B created, with 54 rows and 11 columns.
+
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+
+NOTE: There were 54 observations read from the data set WORK.ONC_TU219_TU318B.
+NOTE: The data set WORK.ONC_TU219_TU318 has 54 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+NOTE: Writing CSV Body file: 
+      /sasfs/data/jreview/PRD/cdms/irserver/C1854691/C185469S11.csv
+NOTE: Unable to open SASUSER.PROFILE. WORK.PROFILE will be opened instead.
+NOTE: All profile changes will be lost at the end of the session.
+
+NOTE: There were 54 observations read from the data set WORK.ONC_TU219_TU318.
+NOTE: The PROCEDURE PRINT printed pages 1-3.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.02 seconds
+      
+
+
+NOTE: 0 lines were written to file PRINT.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+831        run;
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           1.60 seconds
+16                               The SAS System   11:32 Wednesday, June 21, 2017
+
+      cpu time            0.39 seconds
+      
