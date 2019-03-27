@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="Coding Query Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="z1x5585"/>
+<USERREF USERNAME="z1x5587"/>
+<USERREF USERNAME="c197814"/>
+<USERREF USERNAME="coder_query"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Data Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="c183592"/>
+<USERREF USERNAME="z1x3917"/>
+<USERREF USERNAME="ysx0870"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Developer">
+<!-- Insert Users -->
+<USERREF USERNAME="z2x0010"/>
+<USERREF USERNAME="z1x4636"/>
+<USERREF USERNAME="z3x1508"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="GPS">
+<!-- Insert Users -->
+<USERREF USERNAME="c225889"/>
+<USERREF USERNAME="c181877"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="c187136"/>
+<USERREF USERNAME="c175391"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor">
+<!-- Insert Users -->
+<USERREF USERNAME="c230653"/>
+<USERREF USERNAME="c230075"/>
+<USERREF USERNAME="c232135"/>
+<USERREF USERNAME="c230999"/>
+<USERREF USERNAME="c230652"/>
+<USERREF USERNAME="c230651"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PFView Only">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFkbarkoczi"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI Sign Only">
+<!-- Insert Users -->
+<USERREF USERNAME="MasashiIshikawa"/>
+<USERREF USERNAME="Hideakijinnouchi"/>
+<USERREF USERNAME="HitoshiIshii"/>
+<USERREF USERNAME="NobuyukiAbe"/>
+<USERREF USERNAME="MasakazuMizutani"/>
+<USERREF USERNAME="MasahikoTakai"/>
+<USERREF USERNAME="YukikoOnishi"/>
+<USERREF USERNAME="NobuakiWatanabe"/>
+<USERREF USERNAME="ArihiroKiyosue"/>
+<USERREF USERNAME="HitomiFujii"/>
+<USERREF USERNAME="YasushiFukushima"/>
+<USERREF USERNAME="YumikoIde"/>
+<USERREF USERNAME="TakeshiOsonoi"/>
+<USERREF USERNAME="KazunariMatsumoto"/>
+<USERREF USERNAME="ShuichiFukuda"/>
+<USERREF USERNAME="YoshimitsuYamasaki"/>
+<USERREF USERNAME="kenronishida"/>
+<USERREF USERNAME="genpeikuriya"/>
+<USERREF USERNAME="masakazumizutani"/>
+<USERREF USERNAME="nobuyukiabe"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Extractor">
+<!-- Insert Users -->
+<USERREF USERNAME="h9xjegbgf_RE"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+<!-- Insert Users -->
+<USERREF USERNAME="HironoAihara"/>
+<USERREF USERNAME="MiwaKurakane"/>
+<USERREF USERNAME="TomitaAkemi"/>
+<USERREF USERNAME="IwasakiChizuko"/>
+<USERREF USERNAME="MariSasaki"/>
+<USERREF USERNAME="ShizukaKomiya"/>
+<USERREF USERNAME="AyaTanida"/>
+<USERREF USERNAME="SatokoSuzuki"/>
+<USERREF USERNAME="IiokaYumiko"/>
+<USERREF USERNAME="KazumiAizawa"/>
+<USERREF USERNAME="YuriNakano"/>
+<USERREF USERNAME="HisanoImanaka"/>
+<USERREF USERNAME="MinaHonda"/>
+<USERREF USERNAME="SayakaTashiro"/>
+<USERREF USERNAME="SayuriNakamura"/>
+<USERREF USERNAME="ZuigunCho"/>
+<USERREF USERNAME="mikidoi"/>
+<USERREF USERNAME="kaoriyokoyama"/>
+<USERREF USERNAME="fumiekusano"/>
+<USERREF USERNAME="mikishibahara"/>
+<USERREF USERNAME="KaoriYokoyama"/>
+<USERREF USERNAME="FumieKusano"/>
+<USERREF USERNAME="SumikaKayumi"/>
+<USERREF USERNAME="KokiShimazu"/>
+<USERREF USERNAME="MatsuzawaSayuki"/>
+<USERREF USERNAME="KensukeOfuchi"/>
+<USERREF USERNAME="AkikoTerada"/>
+<USERREF USERNAME="miyukiIno"/>
+<USERREF USERNAME="sayatoyoshima"/>
+<USERREF USERNAME="yukokatabami"/>
+<USERREF USERNAME="yukishirasawa"/>
+<USERREF USERNAME="ayumiyagawa"/>
+<USERREF USERNAME="kazueIto"/>
+<USERREF USERNAME="sayakatashiro"/>
+<USERREF USERNAME="sayurinakamura"/>
+<USERREF USERNAME="zuiguncho"/>
+<USERREF USERNAME="ShigenoriOota"/>
+<USERREF USERNAME="YukiMoroto"/>
+<USERREF USERNAME="MegumiShimada"/>
+<USERREF USERNAME="KaoriKomori"/>
+<USERREF USERNAME="NorikoKeduka"/>
+<USERREF USERNAME="KazumiSugita"/>
+<USERREF USERNAME="ErikaYamamoto"/>
+<USERREF USERNAME="HirokoOno"/>
+<USERREF USERNAME="WakanaToyoshima"/>
+<USERREF USERNAME="MaikoTakaoka"/>
+<USERREF USERNAME="AyakaNagaike"/>
+<USERREF USERNAME="EriSugimoto"/>
+<USERREF USERNAME="KunikoHoshikawa"/>
+<USERREF USERNAME="KyokoIzumisawa"/>
+<USERREF USERNAME="SuzuyoYako"/>
+<USERREF USERNAME="MiyukiIno"/>
+<USERREF USERNAME="MikiDoi"/>
+<USERREF USERNAME="YukiShirasawa"/>
+<USERREF USERNAME="RikaTatsumi"/>
+<USERREF USERNAME="AyumiYagawa"/>
+<USERREF USERNAME="MayumiShimizu"/>
+<USERREF USERNAME="KiyokoIwamoto"/>
+<USERREF USERNAME="SayaToyoshima"/>
+<USERREF USERNAME="YukoKatabami"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Study Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="wj02308"/>
+<USERREF USERNAME="c233817"/>
+<USERREF USERNAME="c199329"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Activator RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFobodnar"/>
+<USERREF USERNAME="ZPFnkovacs"/>
+<USERREF USERNAME="ZPFmiwaki"/>
+<USERREF USERNAME="ZPFmandone"/>
+<USERREF USERNAME="ZPFepenzes"/>
+<USERREF USERNAME="ZPFedervishaj"/>
+<USERREF USERNAME="ZPFdnagy"/>
+<USERREF USERNAME="ZPFcmolom"/>
+<USERREF USERNAME="ZPFckalinyak"/>
+<USERREF USERNAME="ZPFcdelacruz"/>
+<USERREF USERNAME="ZPFabalogh"/>
+<USERREF USERNAME="ZPFprojas"/>
+<USERREF USERNAME="ZPFpvamos"/>
+<USERREF USERNAME="ZPFrcalorico"/>
+<USERREF USERNAME="ZPFrducusin"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Manager RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFklim"/>
+<USERREF USERNAME="ZPFkpinter"/>
+<USERREF USERNAME="ZPFlbalubar"/>
+<USERREF USERNAME="ZPFlcseke"/>
+<USERREF USERNAME="ZPFlmate"/>
+<USERREF USERNAME="ZPFmtoth"/>
+<USERREF USERNAME="ZPFnqi"/>
+<USERREF USERNAME="ZPFnreis"/>
+<USERREF USERNAME="ZPFnvergara"/>
+<USERREF USERNAME="ZPFoely"/>
+<USERREF USERNAME="ZPFpvallar"/>
+<USERREF USERNAME="ZPFrsulit"/>
+<USERREF USERNAME="ZPFsaguilar"/>
+<USERREF USERNAME="ZPFsdasilva"/>
+<USERREF USERNAME="ZPFskholti"/>
+<USERREF USERNAME="ZPFstayco"/>
+<USERREF USERNAME="ZPFtcabanes"/>
+<USERREF USERNAME="ZPFtfabian"/>
+<USERREF USERNAME="ZPFtszabo"/>
+<USERREF USERNAME="ZPFkkovacs"/>
+<USERREF USERNAME="ZPFkcsobalyka"/>
+<USERREF USERNAME="ZPFkcco"/>
+<USERREF USERNAME="ZPFjistenes"/>
+<USERREF USERNAME="ZPFijohl"/>
+<USERREF USERNAME="ZPFhtsuchida"/>
+<USERREF USERNAME="ZPFgyvarga"/>
+<USERREF USERNAME="ZPFgkrucso"/>
+<USERREF USERNAME="ZPFvzdirko"/>
+<USERREF USERNAME="ZPFfillesy"/>
+<USERREF USERNAME="ZPFekosa"/>
+<USERREF USERNAME="ZPFdvittay"/>
+<USERREF USERNAME="ZPFddiomede"/>
+<USERREF USERNAME="ZPFawarsama"/>
+<USERREF USERNAME="ZPFaterjek"/>
+<USERREF USERNAME="ZPFasomogyi"/>
+<USERREF USERNAME="ZPFapervaiz"/>
+<USERREF USERNAME="ZPFaktoth"/>
+<USERREF USERNAME="ZPFfvarga"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
