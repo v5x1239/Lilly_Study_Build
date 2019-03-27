@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="a803236"/>
+<USERREF USERNAME="c212182"/>
+<USERREF USERNAME="I8IMCJYAA_RE"/>
+<USERREF USERNAME="c211215"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="c222415"/>
+<USERREF USERNAME="c212182"/>
+<USERREF USERNAME="c211215"/>
+<USERREF USERNAME="a803236"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRBMEANING="Approved"
+
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="hburris"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="c211215"/>
+<USERREF USERNAME="I8IMCJYAA_RE"/>
+<USERREF USERNAME="a803236"/>
+<USERREF USERNAME="c212182"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFkbarkoczi"/>
+<USERREF USERNAME="ZPFskonig"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="a803236"/>
+<USERREF USERNAME="c211215"/>
+<USERREF USERNAME="c212182"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="efisher"/>
+<USERREF USERNAME="hburris"/>
+<USERREF USERNAME="amundy"/>
+<USERREF USERNAME="lflynn"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="rb35632"/>
+<USERREF USERNAME="z1x4636"/>
+<USERREF USERNAME="c212182"/>
+<USERREF USERNAME="a803236"/>
+<USERREF USERNAME="I8IMCJYAA_RE"/>
+<USERREF USERNAME="rq92934"/>
+<USERREF USERNAME="c222415"/>
+<USERREF USERNAME="z2X0010"/>
+<USERREF USERNAME="c211215"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="z3X1508"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="a803236"/>
+<USERREF USERNAME="I8IMCJYAA_RE"/>
+<USERREF USERNAME="c222415"/>
+<USERREF USERNAME="c211215"/>
+<USERREF USERNAME="c212182"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="rb35632"/>
+<USERREF USERNAME="rq92934"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
