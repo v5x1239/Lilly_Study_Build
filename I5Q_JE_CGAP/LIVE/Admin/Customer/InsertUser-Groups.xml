@@ -1,0 +1,354 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="i5qjecgap_RE"/>
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="wj01137"/>
+<USERREF USERNAME="c225898"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="C179732"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="wj01137"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="ykawai"/>
+<USERREF USERNAME="ayoshida"/>
+<USERREF USERNAME="ytsukui"/>
+<USERREF USERNAME="snagata"/>
+<USERREF USERNAME="C179732"/>
+<USERREF USERNAME="rmaruyama"/>
+<USERREF USERNAME="mfukaya"/>
+<USERREF USERNAME="aotsuki"/>
+<USERREF USERNAME="yarakawa"/>
+<USERREF USERNAME="koota"/>
+<USERREF USERNAME="c225898"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="mmikoshiba"/>
+<USERREF USERNAME="fkawasaki"/>
+<USERREF USERNAME="mokano"/>
+<USERREF USERNAME="mtanaka"/>
+<USERREF USERNAME="tsato"/>
+<USERREF USERNAME="snose"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="GPS_Query"
+GROUPDESCRIPTION="GPS_Query">
+<!-- Insert Users -->
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="c225889"/>
+<USERREF USERNAME="c175391"/>
+<USERREF USERNAME="v4x1447"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="c224208"/>
+<USERREF USERNAME="c181877"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="c218040"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRBMEANING="Approved"
+
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="hyamada"/>
+<USERREF USERNAME="yfukuuchi"/>
+<USERREF USERNAME="mtamura"/>
+<USERREF USERNAME="hooba"/>
+<USERREF USERNAME="hohba"/>
+<USERREF USERNAME="anihira"/>
+<USERREF USERNAME="skitamura"/>
+<USERREF USERNAME="tishikawa"/>
+<USERREF USERNAME="tnaka"/>
+<USERREF USERNAME="hfujita"/>
+<USERREF USERNAME="doihikaru"/>
+<USERREF USERNAME="kmoriyama"/>
+<USERREF USERNAME="nimai"/>
+<USERREF USERNAME="awatanabe"/>
+<USERREF USERNAME="atakahashi"/>
+<USERREF USERNAME="sooba"/>
+<USERREF USERNAME="mkudo"/>
+<USERREF USERNAME="higarashi"/>
+<USERREF USERNAME="ymatsumori"/>
+<USERREF USERNAME="ytatsuoka"/>
+<USERREF USERNAME="knegoro"/>
+<USERREF USERNAME="nshinohara"/>
+<USERREF USERNAME="ttakeshima"/>
+<USERREF USERNAME="mishikawa"/>
+<USERREF USERNAME="tmonzen"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="c225898"/>
+<USERREF USERNAME="C179732"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="i5qjecgap_RE"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="wj01137"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="C179732"/>
+<USERREF USERNAME="wj01137"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="c225898"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="wabe"/>
+<USERREF USERNAME="mkadomatsu"/>
+<USERREF USERNAME="rsakata"/>
+<USERREF USERNAME="tmuromaki"/>
+<USERREF USERNAME="hyamada"/>
+<USERREF USERNAME="yfukuuchi"/>
+<USERREF USERNAME="doihitoka"/>
+<USERREF USERNAME="yhashino"/>
+<USERREF USERNAME="hfuruzono"/>
+<USERREF USERNAME="knumata"/>
+<USERREF USERNAME="aogi"/>
+<USERREF USERNAME="akamiya"/>
+<USERREF USERNAME="sshibuya"/>
+<USERREF USERNAME="mmorishita"/>
+<USERREF USERNAME="rnagai"/>
+<USERREF USERNAME="asato"/>
+<USERREF USERNAME="yinaoka"/>
+<USERREF USERNAME="jmiyahara"/>
+<USERREF USERNAME="kyamakawa"/>
+<USERREF USERNAME="hmori"/>
+<USERREF USERNAME="hfujita"/>
+<USERREF USERNAME="mhamada"/>
+<USERREF USERNAME="nmiyashita"/>
+<USERREF USERNAME="doihikaru"/>
+<USERREF USERNAME="kniwa"/>
+<USERREF USERNAME="mshibata"/>
+<USERREF USERNAME="smiura"/>
+<USERREF USERNAME="skaneko"/>
+<USERREF USERNAME="atomonobu"/>
+<USERREF USERNAME="kmoriyama"/>
+<USERREF USERNAME="koba"/>
+<USERREF USERNAME="hyamazaki"/>
+<USERREF USERNAME="cnagata"/>
+<USERREF USERNAME="tmaehira"/>
+<USERREF USERNAME="amatsumura"/>
+<USERREF USERNAME="misomoto"/>
+<USERREF USERNAME="tyokoo"/>
+<USERREF USERNAME="rnoguchi"/>
+<USERREF USERNAME="yyaguchi"/>
+<USERREF USERNAME="eikeji"/>
+<USERREF USERNAME="nimai"/>
+<USERREF USERNAME="awatanabe"/>
+<USERREF USERNAME="mkanekawa"/>
+<USERREF USERNAME="atakahashi"/>
+<USERREF USERNAME="sooba"/>
+<USERREF USERNAME="khirotsuru"/>
+<USERREF USERNAME="mkudo"/>
+<USERREF USERNAME="nsakaguchi"/>
+<USERREF USERNAME="higarashi"/>
+<USERREF USERNAME="ynishiyama"/>
+<USERREF USERNAME="meto"/>
+<USERREF USERNAME="yfukatani"/>
+<USERREF USERNAME="ymatsumori"/>
+<USERREF USERNAME="asugaya"/>
+<USERREF USERNAME="ishimohara"/>
+<USERREF USERNAME="ytatsuoka"/>
+<USERREF USERNAME="nokada"/>
+<USERREF USERNAME="knegoro"/>
+<USERREF USERNAME="nhayashi"/>
+<USERREF USERNAME="nshinohara"/>
+<USERREF USERNAME="yueki"/>
+<USERREF USERNAME="aosanai"/>
+<USERREF USERNAME="ttakeshima"/>
+<USERREF USERNAME="enishida"/>
+<USERREF USERNAME="ryamaguchi"/>
+<USERREF USERNAME="kyamamoto"/>
+<USERREF USERNAME="mnosaka"/>
+<USERREF USERNAME="mnakamura"/>
+<USERREF USERNAME="akubo"/>
+<USERREF USERNAME="akudo"/>
+<USERREF USERNAME="ymatsuda"/>
+<USERREF USERNAME="aiida"/>
+<USERREF USERNAME="ntanaka"/>
+<USERREF USERNAME="mishikawa"/>
+<USERREF USERNAME="tmonzen"/>
+<USERREF USERNAME="tnaka"/>
+<USERREF USERNAME="ttanahashi"/>
+<USERREF USERNAME="tyoshimura"/>
+<USERREF USERNAME="tishikawa"/>
+<USERREF USERNAME="eikeda"/>
+<USERREF USERNAME="nmizutani"/>
+<USERREF USERNAME="ssaito"/>
+<USERREF USERNAME="skitamura"/>
+<USERREF USERNAME="nyamaguchi"/>
+<USERREF USERNAME="anihira"/>
+<USERREF USERNAME="rfujii"/>
+<USERREF USERNAME="ksugiue"/>
+<USERREF USERNAME="yozawa"/>
+<USERREF USERNAME="eebina"/>
+<USERREF USERNAME="hohba"/>
+<USERREF USERNAME="hooba"/>
+<USERREF USERNAME="moishi"/>
+<USERREF USERNAME="mfukuda"/>
+<USERREF USERNAME="mtamura"/>
+<USERREF USERNAME="yyamasaki"/>
+<USERREF USERNAME="ahaiki"/>
+<USERREF USERNAME="tshiraishi"/>
+<USERREF USERNAME="tnishihata"/>
+<USERREF USERNAME="ykawarasaki"/>
+<USERREF USERNAME="mkanki"/>
+<USERREF USERNAME="syashida"/>
+<USERREF USERNAME="skikui"/>
+<USERREF USERNAME="ykashiwaya"/>
+<USERREF USERNAME="hsugiyama"/>
+<USERREF USERNAME="tnaruse"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="c165127"/>
+<USERREF USERNAME="c177945"/>
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="z2x0010"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="c164617"/>
+<USERREF USERNAME="ykawai"/>
+<USERREF USERNAME="ayoshida"/>
+<USERREF USERNAME="ytsukui"/>
+<USERREF USERNAME="snagata"/>
+<USERREF USERNAME="c218665"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="c225889"/>
+<USERREF USERNAME="c175391"/>
+<USERREF USERNAME="v4x1447"/>
+<USERREF USERNAME="c218040"/>
+<USERREF USERNAME="C179732"/>
+<USERREF USERNAME="SKlein"/>
+<USERREF USERNAME="rmaruyama"/>
+<USERREF USERNAME="mfukaya"/>
+<USERREF USERNAME="aotsuki"/>
+<USERREF USERNAME="yarakawa"/>
+<USERREF USERNAME="koota"/>
+<USERREF USERNAME="c225898"/>
+<USERREF USERNAME="wj02194"/>
+<USERREF USERNAME="c116642"/>
+<USERREF USERNAME="c212879"/>
+<USERREF USERNAME="c224208"/>
+<USERREF USERNAME="z1x4636"/>
+<USERREF USERNAME="z3x1508"/>
+<USERREF USERNAME="c181877"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="mmikoshiba"/>
+<USERREF USERNAME="fkawasaki"/>
+<USERREF USERNAME="mokano"/>
+<USERREF USERNAME="mtanaka"/>
+<USERREF USERNAME="tsato"/>
+<USERREF USERNAME="snose"/>
+<USERREF USERNAME="wj01137"/>
+<USERREF USERNAME="c157837"/>
+<USERREF USERNAME="c210905"/>
+<USERREF USERNAME="c233900"/>
+<USERREF USERNAME="i5qjecgap_RE"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="v4x1447"/>
+<USERREF USERNAME="snose"/>
+<USERREF USERNAME="tsato"/>
+<USERREF USERNAME="mtanaka"/>
+<USERREF USERNAME="mokano"/>
+<USERREF USERNAME="fkawasaki"/>
+<USERREF USERNAME="mmikoshiba"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="Z1X5585"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="i5qjecgap_RE"/>
+<USERREF USERNAME="c242230"/>
+<USERREF USERNAME="C197814"/>
+<USERREF USERNAME="ykawai"/>
+<USERREF USERNAME="ayoshida"/>
+<USERREF USERNAME="ytsukui"/>
+<USERREF USERNAME="snagata"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="c225889"/>
+<USERREF USERNAME="c175391"/>
+<USERREF USERNAME="wj01137"/>
+<USERREF USERNAME="c218040"/>
+<USERREF USERNAME="C179732"/>
+<USERREF USERNAME="rmaruyama"/>
+<USERREF USERNAME="mfukaya"/>
+<USERREF USERNAME="aotsuki"/>
+<USERREF USERNAME="yarakawa"/>
+<USERREF USERNAME="koota"/>
+<USERREF USERNAME="c225898"/>
+<USERREF USERNAME="c224208"/>
+<USERREF USERNAME="c181877"/>
+<USERREF USERNAME="wj01513"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="c181877"/>
+<USERREF USERNAME="c224208"/>
+<USERREF USERNAME="c164617"/>
+<USERREF USERNAME="v4x1447"/>
+<USERREF USERNAME="c175391"/>
+<USERREF USERNAME="c225889"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="c218040"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
