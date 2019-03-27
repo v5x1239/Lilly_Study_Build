@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SPONSOR 
+NAME="Eli Lilly"
+PROGRAM="I1V-JE-EIBI"
+ADDRESS="Eli Lilly and Company"
+ADDRESS2="Lilly Corporate Center"
+CITY="Indianapolis"
+STATE="IN"
+POSTCODE="46285"
+COUNTRY="UNITED STATES"
+PHONE="+ (1) 317-276-2000"/>
+
+
+</MEDMLDATA>
