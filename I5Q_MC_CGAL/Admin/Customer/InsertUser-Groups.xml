@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="z2x8989"/>
+<USERREF USERNAME="z1x1861"/>
+<USERREF USERNAME="z2x1263"/>
+<USERREF USERNAME="z3x1326"/>
+<USERREF USERNAME="z2x7036"/>
+<USERREF USERNAME="z1x0689"/>
+<USERREF USERNAME="z2x5837"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="z1x9560"/>
+<USERREF USERNAME="z2x2414"/>
+<USERREF USERNAME="z1x1819"/>
+<USERREF USERNAME="z3x0336"/>
+<USERREF USERNAME="z1x1803"/>
+<USERREF USERNAME="z3x2560"/>
+<USERREF USERNAME="z1x1836"/>
+<USERREF USERNAME="z2x7948"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRBMEANING="Approved"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="mkallela"/>
+<USERREF USERNAME="mnissila"/>
+<USERREF USERNAME="jsuomi"/>
+<USERREF USERNAME="milmavirta"/>
+<USERREF USERNAME="amccreath"/>
+<USERREF USERNAME="mfarkkila"/>
+<USERREF USERNAME="rcady"/>
+<USERREF USERNAME="rgiammarco"/>
+<USERREF USERNAME="mwilson"/>
+<USERREF USERNAME="dwatson"/>
+<USERREF USERNAME="dkudrow"/>
+<USERREF USERNAME="lmechtler"/>
+<USERREF USERNAME="fconidi"/>
+<USERREF USERNAME="ssilberstein"/>
+<USERREF USERNAME="dstickler"/>
+<USERREF USERNAME="stepper"/>
+<USERREF USERNAME="schristie"/>
+<USERREF USERNAME="saurora"/>
+<USERREF USERNAME="jsaper"/>
+<USERREF USERNAME="hmarkley"/>
+<USERREF USERNAME="tmonteith"/>
+<USERREF USERNAME="jbonner"/>
+<USERREF USERNAME="cmillen"/>
+</SIGNATUREGROUP>
+
+</MEDMLDATA>
