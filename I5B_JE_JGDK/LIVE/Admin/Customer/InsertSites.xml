@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(110) National Cancer Center Hospital"    MNEMONIC="110"
+ADDRESS="511 Tsukiji Chuo ku Tokyo"
+COUNTRY="JAPAN"
+PHONE="8181335422511"
+ALTPHONE="81"
+FAX="81"
+TIMEZONE="(GMT+09:00) Osaka, Sapporo, Tokyo"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="03/13/2015"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+</MEDMLDATA>
