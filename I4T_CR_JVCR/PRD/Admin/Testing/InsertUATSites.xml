@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(110) Test Site"    MNEMONIC="110"
+ADDRESS="123 Jones St."
+PROVINCE="MA"
+CITY="Waltham"
+STATE="MA"
+POSTCODE="02451"
+COUNTRY="USA"
+ZIPCODE="02451"
+TIMEZONE="(UTC+09:00) Osaka, Sapporo, Tokyo"
+STARTDATE="11/23/2016"
+STUDYLOCALE="en-US"
+/>
+
+<SITE  NAME="(112) Test Site"    MNEMONIC="112"
+ADDRESS="123 Jones St."
+PROVINCE="MA"
+CITY="Waltham"
+STATE="MA"
+POSTCODE="02451"
+COUNTRY="USA"
+ZIPCODE="02451"
+TIMEZONE="(UTC+09:00) Osaka, Sapporo, Tokyo"
+STARTDATE="11/23/2016"
+STUDYLOCALE="en-US"
+/>
+
+</MEDMLDATA>
