@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/Events/DA009
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: Date must be >= randomization date.
+	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_1Mar2018.xlsx
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/DA009_D.sql
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I3Y_MC_JPCF
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	27NOV2017 	Deenadayalan 		Original Version of the Report
+	2.0	16MAR2017	Premkumar		RNDDTTXT date added
+
+*eoh*****************************************************************************************************/

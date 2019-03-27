@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/Panels/CM702*SQL*
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: If any excluded hormonal medications, as defined in protocol, are reported as part of the subject's Therapy, they must be documented as Protocol Deviations.
+   	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_1Mar2018.xlsx
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: DM1001C*SQL, CM702*SQL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I3Y_MC_JPCF
+   	SPECIAL INSTRUCTIONS       	: NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04MAY2018	Joe Cooney		Original Version of the Report
+
+*eoh*****************************************************************************************************/

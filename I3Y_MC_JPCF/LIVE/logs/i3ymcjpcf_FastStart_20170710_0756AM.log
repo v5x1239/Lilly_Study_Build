@@ -1,0 +1,64 @@
+Starting Faststart 
+ 
+Trial: i3ymcjpcf 
+Inform Version: 6.0	 
+Engineer: schedtasks 
+Central Designer Executable: Yes 
+ 
+ 
+ 
+Checking Central Designer Package Version 
+Central Designer Executable Version: 2.0.317.263 
+ 
+ 
+Designer Package Version is 2.0 or above 
+Checking .net Version to Confirm 4.0 Installed 
+.net Version 4.0 found 
+Continuing Script 
+ 
+Central Designer package is 2.x.x or higher 
+Checking Oracle Client is at least version 10.2.0.3 with ODP.NET 2.102.3.3 
+ 
+Oracle Client Version: 11.2.0.4.0 
+ 
+Oracle Client version greater than 10g 
+Continuing script 
+ 
+Checking E:\PF\InForm\bin\dbora\dropdb.sql 
+*** File OK *** 
+ 
+Tablespace configuration = SINGLE 
+ 
+Creating InForm Server and Trial for 'i3ymcjpcf' 
+ 
+ 
+Running Central Designer Package FS_I3YMCJPCF_LIVE_20170710.exe 
+ 
+ 
+Configuring Trial for InForm Monitoring Service 
+ServiceHealth was successfully setup.
+IIS Resetting ...
+
+Attempting stop...
+Internet services successfully stopped
+Attempting start...
+Internet services successfully restarted
+Trial Configuration For Inform Monitoring Service Complete 
+ 
+  FastStart Process Completed Successfully 
+  Trial Name: i3ymcjpcf 
+  InForm Server: MMV0LLYINFP0122a 
+  Log File: i3ymcjpcf_FS_20170710_0756AM_CD.log 
+ 
+Installing portal 
+ 
+Executing MedML Installer 
+Engineer indicated that the cook complete successfully 
+ 
+Checking Site Time Zones for i3ymcjpcf... 
+ 
+One or more sites have FAILED the Site Time Zone Check or do(es)not contain any Time Zone information. 
+Please create an INC for Customer Support to check the BAD/VERIFY or enter a valid time zone. 
+Please attach E:\Custom\TimeZone\dbai3ymcjpcf_SiteTimeZoneCheck_20170710_BAD_201707110117.log for details. 
+ 
+Faststart Script Complete 

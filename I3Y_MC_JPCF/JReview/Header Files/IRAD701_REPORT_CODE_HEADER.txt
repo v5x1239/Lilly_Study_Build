@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/PR/IRAD701
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: Per protocol, A washout period of at least 14 days is required between end of radiotherapy and randomization. 
+	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_1Mar2018.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/IRAD701_P
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I3Y_MC_JPCF
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	16MAR2018	Premkumar		Original Version of the Report
+
+*eoh*****************************************************************************************************/

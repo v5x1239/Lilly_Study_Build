@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/IWRS/IWRS01
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: Ensure that any collected IWRS data points that could be used for clinical decision (randomization, dose escalation, and so forth) reconciles with the collected data in InForm.
+	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_Spec_8Dec2017_Batch 4_DM comments.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/IWRS01.sql
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I3Y_MC_JPCF
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	26DEC2017 	Joseph Cooney		Original Version of the Report
+
+*eoh*****************************************************************************************************/

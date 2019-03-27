@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/IWRS/IWRS701
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: If a patient has been assigned to PK in IWRS but no data has been entered on EX_PK CRF page, query should be sent to the sites for missing data
+	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_Spec_8Dec2017_Batch 4_DM comments.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/IWRS04.sql
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I3Y_MC_JPCF
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	08JAN2018 	Joseph Cooney		Original Version of the Report
+
+*eoh*****************************************************************************************************/

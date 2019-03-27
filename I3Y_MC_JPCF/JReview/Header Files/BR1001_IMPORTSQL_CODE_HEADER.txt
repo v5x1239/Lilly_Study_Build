@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		 -DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y-MC-JPCF/Panels/BR1001_GS*SQL*
+	PROJECT NAME			: I3Y
+	DESCRIPTION			:Ensure bioposy diagnosis is also entered on the adverse events form.
+        SPECIFICATION LOCATION/NAME	: I3Y-MC-JPCF_Manual Data Verification Plan_Spec_Batch 6_14Jun18.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/SU5001_ALL,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I3Y-MC-JPCF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13JUL2018        Sruthi		        Original Version of the Report
+
+*eoh*****************************************************************************************************/

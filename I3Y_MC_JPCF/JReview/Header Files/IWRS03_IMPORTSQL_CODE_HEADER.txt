@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y_MC_JPCF/Panels/IWRS03*SQL*
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: Identify incorrect or missing subjects by checking for subject numbers that exist in one data collection system (that is, GLS, IWRS/e-CTS, Clintrial) but not in the others.
+   	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191356\0_docs\cds\specs\Manual Data Verification Plan_Spec_8Dec2017_Batch 4_DM comments.xlsx
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: CIV1001_ALL, IVRS_SUBJECT_DATA_VW,inf_site_update,inf_subject,DM1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I3Y_MC_JPCF
+   	SPECIAL INSTRUCTIONS       : NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	01FEB2018	Joseph Cooney		Original Version of the Report
+
+*eoh*****************************************************************************************************/

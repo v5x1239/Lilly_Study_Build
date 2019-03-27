@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		 -DSS
+	LOCATION/NAME			: J-Review:PRD934/I3Y-MC-JPCF/Panels/CM703_GS*SQL*
+	PROJECT NAME			: I3Y
+	DESCRIPTION			: Any  bone modifying agents should not be recorded on CM form
+        SPECIFICATION LOCATION/NAME	: I3Y-MC-JPCF_Manual Data Verification Plan_Spec_Batch 6_14Jun18.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I3Y-MC-JPCF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	12JUL2018        Sruthi		        Original Version of the Report
+
+*eoh*****************************************************************************************************/
