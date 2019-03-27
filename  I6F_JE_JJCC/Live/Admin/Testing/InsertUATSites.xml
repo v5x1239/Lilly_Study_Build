@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(100) National Cancer Center Hospital East"    MNEMONIC="100"
+ADDRESS="6-5-1 Kashiwanoha Kashiwa-shi Chiba"
+COUNTRY="JAPAN"
+PHONE="8181471331111"
+ALTPHONE="81"
+FAX="81"
+TIMEZONE="(UTC+08:00) Irkutsk (RTZ 7)"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="08/12/2016"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+</MEDMLDATA>
