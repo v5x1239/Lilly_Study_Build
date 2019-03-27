@@ -1,0 +1,1241 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(102) Sozialmedizinisches Zentrum Ost - Donauspital Dermatologische Abteilung"    MNEMONIC="102"
+ADDRESS="Langobardenstrabe 122 1220 Wien"
+COUNTRY="AUSTRIA"
+PHONE="4300431288022903"
+ALTPHONE="43"
+FAX="43"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(101) Medizinische Universitat Wien Universitatsklinik fur DermatologieKlinische Abteilung fur Immundermatologie und infektiose Hautkrankheiten"    MNEMONIC="101"
+ADDRESS="Wahringer Gurtel 18-20 1090 Wien"
+COUNTRY="AUSTRIA"
+PHONE="43004314040077000"
+ALTPHONE="43"
+FAX="43"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(103) Krankenanstalt Rudolfstiftung Abteilung fur Dermatologie und Venerologie"    MNEMONIC="103"
+ADDRESS="Boerhaavegasse 13 1030 Wien"
+COUNTRY="AUSTRIA"
+PHONE="43004317116592797"
+ALTPHONE="43"
+FAX="43"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(100) Medizinische Universitat Innsbruck Universitatsklinik fur DermatologieVenerologie und Allergologie"    MNEMONIC="100"
+ADDRESS="Anichstrasse 35 A-6020 Innsbruck"
+COUNTRY="AUSTRIA"
+PHONE="43004351250480743"
+ALTPHONE="43"
+FAX="43"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(112) Universitair Ziekenhuis Brussel"    MNEMONIC="112"
+ADDRESS="Laarbeeklaan 101 - 1090 Brussel"
+COUNTRY="BELGIUM"
+PHONE="32003224776358"
+ALTPHONE="32"
+FAX="32"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(110) Cliniques Universitaires Saint-Luc - UCL Bruxelles"    MNEMONIC="110"
+ADDRESS="Avenue Hippocrate 10 - 1200 Bruxelles"
+COUNTRY="BELGIUM"
+PHONE="32003227641288"
+ALTPHONE="32"
+FAX="32"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(113) Universitaire Ziekenhuizen Leuven- Campus Gasthuisberg"    MNEMONIC="113"
+ADDRESS="Herestraat 49 -3000 Leuven"
+COUNTRY="BELGIUM"
+PHONE="32003216337865"
+ALTPHONE="32"
+FAX="32"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(111) Universitair Ziekenhuis Gent"    MNEMONIC="111"
+ADDRESS="Sint – Pietersnieuwsstraat 25 9000 Ghent"
+COUNTRY="BELGIUM"
+PHONE="32003293324915"
+ALTPHONE="32"
+FAX="32"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(300) Faculdade de Medicina do ABC - Serviço de Dermatologia"    MNEMONIC="300"
+ADDRESS="Avenida Príncipe de Gales  821 - sala 65 1º andar - Príncipe de Gales - Prédio CEPES"
+COUNTRY="BRAZIL"
+PHONE="551149935459"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(301) Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo - Serviço de Dermatologia"    MNEMONIC="301"
+ADDRESS="Avenida Doutor Enéas Carvalho De Aguiar  255 - 3º andar  Cerqueira César"
+COUNTRY="BRAZIL"
+PHONE="551126618036"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(306) Faculdade de Ciências Médicas - UNICAMP - Departamento de Clínica Médica - Disciplina de Dermatologia"    MNEMONIC="306"
+ADDRESS="Rua Tessália Vieira de Camargo  126 - Cidade Universitária Zeferino Vaz"
+COUNTRY="BRAZIL"
+PHONE="551935217106"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(305) CEDOES - Centro de Diagnóstico e Pesquisa Osteoporose Espírito Santo Ltda"    MNEMONIC="305"
+ADDRESS="Rua João da Silva Abreu  78 - Praia do Canto"
+COUNTRY="BRAZIL"
+PHONE="552721250228"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(304) Santa Casa de Misericórdia de Porto Alegre - Serviço de Dermatologia"    MNEMONIC="304"
+ADDRESS="Rua Professor Annes Dias  295 - Centro Histórico"
+COUNTRY="BRAZIL"
+PHONE="555132148163"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(303) Hospital das Clínicas da Faculdade de Medicina de Ribeirão Preto da Universidade de São Paulo"    MNEMONIC="303"
+ADDRESS="Bloco G Subsolo II - Avenida dos Bandeirantes  n.º 3900  Campus Universitário  Monte Alegre"
+COUNTRY="BRAZIL"
+PHONE="551636022482"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(302) Instituto de Dermatologia e Estética do Brasil - IDERJ"    MNEMONIC="302"
+ADDRESS="Avenida Alexandre Ferreira  206 Lagoa"
+COUNTRY="BRAZIL"
+PHONE="552125372108"
+TIMEZONE="(UTC-04:00) Cuiaba"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(450) Helsinki University Central Hospital Department of Dermatology and Allergology"    MNEMONIC="450"
+ADDRESS="Meilahdentie 2 00250 Helsinki"
+COUNTRY="FINLAND"
+PHONE="358003580503362208"
+ALTPHONE="358"
+FAX="358"
+TIMEZONE="(UTC+02:00) Chisinau"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(452) Hospital Mehilainen Neo"    MNEMONIC="452"
+ADDRESS="Joukahisenkatu 6 20520 Turku"
+COUNTRY="FINLAND"
+PHONE="35800358102353535"
+ALTPHONE="358"
+FAX="358"
+TIMEZONE="(UTC+02:00) Chisinau"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(451) Terveystalo Tampere"    MNEMONIC="451"
+ADDRESS="Rautatienkatu 27 33100 Tampere"
+COUNTRY="FINLAND"
+PHONE="35800358400355470"
+ALTPHONE="358"
+FAX="358"
+TIMEZONE="(UTC+02:00) Chisinau"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(127) Groupe Hospitalier de la région de Mulhouse et Sud Alsace - Hôpital Emile Muller"    MNEMONIC="127"
+ADDRESS="20 rue du Dr René Laennec  68100 Mulhouse"
+COUNTRY="FRANCE"
+PHONE="0033389646185"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(126) CHU de Lille - Hôpital Claude HURIEZ"    MNEMONIC="126"
+ADDRESS="1 Place de Verdun   59037 Lille"
+COUNTRY="FRANCE"
+PHONE="0033320444193"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(125) CHU de Besançon Hôpital Jean Minjoz"    MNEMONIC="125"
+ADDRESS="3 Boulevard Alexander Fleming  25030 Besancon Cedex"
+COUNTRY="FRANCE"
+PHONE="0033381218102"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(124) Centre Hospitalier de Valence"    MNEMONIC="124"
+ADDRESS="179 Avenue du Maréchal Juin  26953 Valence"
+COUNTRY="FRANCE"
+PHONE="0033475757549"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(121) CHU de Nice - Hôpital de lArchet"    MNEMONIC="121"
+ADDRESS="151 Route Saint Antoine de Ginestiere 06202 Nice Cedex 3"
+COUNTRY="FRANCE"
+PHONE="0033492036119"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(120) CHU de Toulouse - Hôpital Larrey"    MNEMONIC="120"
+ADDRESS="24 chemin de Pouvourville 31059 Toulouse cedex"
+COUNTRY="FRANCE"
+PHONE="0033567778140"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(123) CHU de Nantes - Hôtel Dieu"    MNEMONIC="123"
+ADDRESS="1 place Alexis Ricordeau  44000 Nantes"
+COUNTRY="FRANCE"
+PHONE="0033240084086"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(122) CHU de Brest - Hôpital Morvan"    MNEMONIC="122"
+ADDRESS="5 Avenue Foch  29200 Brest"
+COUNTRY="FRANCE"
+PHONE="0033298223527"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(217) Fachklinik Bad Bentheim - Fachbereich Dermatologie"    MNEMONIC="217"
+ADDRESS="Am Bade 1
+48455 Bad Bentheim
+Germany"
+COUNTRY="GERMANY"
+PHONE="4900495922740"
+ALTPHONE="49"
+FAX="49"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(216) Charite Universitatsmedizin Berlin-Klinik für Dermatologie Allergologie und Venerologie"    MNEMONIC="216"
+ADDRESS="Chariteplatz 1 
+Gelandeadresse Luisenstrabe 2
+10117 Berlin"
+COUNTRY="GERMANY"
+PHONE="493045050"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(215) Medizinische Hochschule Hannover - Klinik für Dermatologie Allergologie und Venerologie"    MNEMONIC="215"
+ADDRESS="Carl-Neuberg-Strasse 1
+30625 Hannover"
+COUNTRY="GERMANY"
+PHONE="495115327663"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(214) Universitatsklinikum Erlangen - Hautklinik"    MNEMONIC="214"
+ADDRESS="Ulmenweg 18
+91054 Erlangen"
+COUNTRY="GERMANY"
+PHONE="4991318535000"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(212) Universitatsklinikum Essen -AoR- Klinik für Dermatologie Venerologie und Allergologie"    MNEMONIC="212"
+ADDRESS="Hufelandstraße 55
+45147 Essen"
+COUNTRY="GERMANY"
+PHONE="00492017232225"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(211) Universitatsklinikum Heidelberg-Hautklinik"    MNEMONIC="211"
+ADDRESS="Im Neuenheimer Feld 440
+69120 Heidelberg"
+COUNTRY="GERMANY"
+PHONE="00496221564002"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(209) GP Dr Rotterdam and Kollegen"    MNEMONIC="209"
+ADDRESS="Feldmarkstraße 109
+45883 Gelsenkirchen"
+COUNTRY="GERMANY"
+PHONE="4920915540204"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(208) Johann Wolfgang Goethe-Universitat Frankfurt- Klinik für Dermatologie Venerologie und Allergologie"    MNEMONIC="208"
+ADDRESS="Theordor-Stern-Kai 7
+ 60590 Frankfurt"
+COUNTRY="GERMANY"
+PHONE="00496963015418"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(207) Klinische Forschung Osnabrück"    MNEMONIC="207"
+ADDRESS="Hakenstraße 1
+49074 Osnabrück"
+COUNTRY="GERMANY"
+PHONE="0049541800490330"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(206) Universitatsklinikum Münster - Klinik für Hautkrankheiten"    MNEMONIC="206"
+ADDRESS="Von-Esmarch-Straße 58
+48149 Münster"
+COUNTRY="GERMANY"
+PHONE="00492518356501"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(205) Hautarztliche Gemeinschaftspraxis Dres  Leitz¡ and Kollegen"    MNEMONIC="205"
+ADDRESS="Marienstraße 1
+70178 Stuttgart"
+COUNTRY="GERMANY"
+PHONE="00497112293166"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(203) Ruhr-Universitat Bochum - St Josef Hospital - Klinik fur Dermatologie"    MNEMONIC="203"
+ADDRESS="Gudrunstraße 56
+44791 Bochum"
+COUNTRY="GERMANY"
+PHONE="00492345093458"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(202) Klinikum rechts der Isar der TU München - Klinik und Poliklinik für Dermatologie und Allergie am Biederstein"    MNEMONIC="202"
+ADDRESS="Biedersteiner Str. 29
+80802 München"
+COUNTRY="GERMANY"
+PHONE="0049891400"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(201) Universitatsklinikum Hamburg-Eppendorf-Competenzzentrum Versorgungsforschung in der Dermatologie"    MNEMONIC="201"
+ADDRESS="Martinistrasse 52
+20246 Hamburg"
+COUNTRY="GERMANY"
+PHONE="4940741058681"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(200) Universitatsklinikum Bonn-Klinik und Poliklinik für Dermatologie und Allergologie"    MNEMONIC="200"
+ADDRESS="Sigmund-Freud-Strasse 25
+53105 Bonn"
+COUNTRY="GERMANY"
+PHONE="004922828715821"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(213) Universitatsmedizin der Johannes Gutenberg-Universitat Mainz-Hautklinik"    MNEMONIC="213"
+ADDRESS="Langenbeckstr. 1
+ 55131 Mainz"
+COUNTRY="GERMANY"
+PHONE="496131175244"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(204) Elbe Kliniken Stade Buxtehude GmbH - Klinikum Buxtehude - Klinik für Dermatologie - Schwerpunkt Allergiezentrum"    MNEMONIC="204"
+ADDRESS="Am Krankenhaus 1
+21614 Buxtehude"
+COUNTRY="GERMANY"
+PHONE="004941617036202"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(226) Ospedale Maggiore Policlinico di Milano - U O  Dermatologia"    MNEMONIC="226"
+ADDRESS="Via Pace  9  20122 Milano"
+COUNTRY="ITALY"
+PHONE="390255035146"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(225) Clinica Dermatologica - Università La Sapienza - Policlinico Umberto I"    MNEMONIC="225"
+ADDRESS="Viale del Policlinico 155 - 00161 Roma"
+COUNTRY="ITALY"
+PHONE="390649976934"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(224) Policlinico San Donato Dermatologia"    MNEMONIC="224"
+ADDRESS="Piazza Edmondo Malan  2   20097 San Donato M.se Milano"
+COUNTRY="ITALY"
+PHONE="39025277458082"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(223) ASST Spedali Civili"    MNEMONIC="223"
+ADDRESS="Ingresso Satellite- settore ovest  Scala 11 - Piano 5  - Piazzale Spedali Civili  1 25123  Brescia"
+COUNTRY="ITALY"
+PHONE="390303995307"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(221) U O C  Dermatologia  linea 3 -2 piano Settore C- Università Policlinico Tor Vergata"    MNEMONIC="221"
+ADDRESS="Viale Oxford  81 - 00133 Roma"
+COUNTRY="ITALY"
+PHONE="390620902739"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(220) Centro Ricerche Cliniche  di Verona Policlinico G B Rossi"    MNEMONIC="220"
+ADDRESS="8° piano lotto B  - P.le L.A.Scuro  10 - 37134 Verona"
+COUNTRY="ITALY"
+PHONE="390458126669"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(229) SOD- Clinica di Dermatologia - Az Ospedali Riuniti di Ancona"    MNEMONIC="229"
+ADDRESS="Via Corridoni  11 - 60123 Ancona"
+COUNTRY="ITALY"
+PHONE="390715963568"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(228) Centro Ricerca Clinica - CeSI - Fondazione G  dAnnunzio"    MNEMONIC="228"
+ADDRESS="Via Luigi Polacchi  11-13
+66100 Chieti"
+COUNTRY="ITALY"
+PHONE="390871358032"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(227) SS Dermatologia Immunologica e Pediatrica - Struttura Complessa di Dermatologia - Arcispedale Santa Maria Nuova"    MNEMONIC="227"
+ADDRESS="Viale Risorgimento 80 - 42123 Reggio Emilia"
+COUNTRY="ITALY"
+PHONE="390522296873"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(222) Sezione di Dermatologia Clinica Allergologica e Venereologica del Dipartimento di Medicina dell Universita degli Studi di Perugia"    MNEMONIC="222"
+ADDRESS="Piazzale Menghini  3 - Ospedale Santa Maria della Misericordia  - 06129 Perugia"
+COUNTRY="ITALY"
+PHONE="390755783452"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(402) Amphia Ziekenhuis location Molengracht"    MNEMONIC="402"
+ADDRESS="Molengracht 21  4818 CK Breda"
+COUNTRY="NETHERLANDS"
+PHONE="31765955000"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(401) Academisch Medisch Centrum"    MNEMONIC="401"
+ADDRESS="Meibergdreef 9  1105 AZ Amsterdam"
+COUNTRY="NETHERLANDS"
+PHONE="31205669111"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(400) Bravis Ziekenhuis"    MNEMONIC="400"
+ADDRESS="Boerhaaveplein 1  4624 VT  Bergen op Zoom"
+COUNTRY="NETHERLANDS"
+PHONE="31887068000"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(244) Wojskowy Instytut Medyczny CSK MON Klinika Dermatologiczna"    MNEMONIC="244"
+ADDRESS="ul. Szaserów 128
+04-141 Warszawa"
+COUNTRY="POLAND"
+PHONE="48261816241"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(243) DermoDent Centrum Medyczne Czajkowscy"    MNEMONIC="243"
+ADDRESS="ul. Tuberozy 3 
+86-031 Osielsko"
+COUNTRY="POLAND"
+PHONE="48607390626"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(242) CSK MSWiA w Warszawie Klinika Dermatologii"    MNEMONIC="242"
+ADDRESS="ul. Woloska 137
+02-507 Warszawa"
+COUNTRY="POLAND"
+PHONE="0048225081480"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(241) Miejski Szpital Zespolony w Olsztynie Klinika Dermatologii Chorób Przenoszonych Drogą Płciową i Immunologii Klinicznej"    MNEMONIC="241"
+ADDRESS="Al. Wojska Polskiego 30
+10-229 Olsztyn"
+COUNTRY="POLAND"
+PHONE="896786617"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(246) Centrum Badań Klinicznych PI – House sp  z o  o"    MNEMONIC="246"
+ADDRESS="ul. Na Zaspe 3 
+80-546 Gdansk"
+COUNTRY="POLAND"
+PHONE="0048587192222"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(249) Diamond Clinic"    MNEMONIC="249"
+ADDRESS="ul. Gen. Augusta Fieldorfa-Nila 14 JU2  31-209 Krakow"
+COUNTRY="POLAND"
+PHONE="48696049029"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(248) Centrum Medyczne Angelius Provita"    MNEMONIC="248"
+ADDRESS="ul. Fabryczna 13D 
+40-611 Katowice"
+COUNTRY="POLAND"
+PHONE="48607566402"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(247) Laser Clinic s c Tomasz Kochanowski dr Andrzej Królicki"    MNEMONIC="247"
+ADDRESS="Aleja Piastow 65 1 
+70-332 Szczecin"
+COUNTRY="POLAND"
+PHONE="0048604148677"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(245) NZOZ Specjalistyczna Przychodnia Dermatologiczna SPECDERM"    MNEMONIC="245"
+ADDRESS="ul. Prezydenta Ryszarda Kaczorowskiego 7  lokal 50U
+15-375 Białystok"
+COUNTRY="POLAND"
+PHONE="0048857461640"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(240) Dermed Centrum Medyczne Sp  z o o"    MNEMONIC="240"
+ADDRESS="ul. Piotrkowska 48 90-265 Lodz"
+COUNTRY="POLAND"
+PHONE="0048426631444"
+TIMEZONE="(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(351) LLC Medical Center  Kurator"    MNEMONIC="351"
+ADDRESS="125  Krasnoputilovskaya street
+Saint-Petersburg
+196240"
+COUNTRY="RUSSIAN FEDERATION"
+PHONE="79217590102"
+TIMEZONE="(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(350) LLC ArsVitae NorthWest"    MNEMONIC="350"
+ADDRESS="Building 2  44 Toreza prospect
+Saint-Petersburg
+194223"
+COUNTRY="RUSSIAN FEDERATION"
+PHONE="78126448187"
+TIMEZONE="(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(354) State scientific centre for dermatovenerology and cosmetology"    MNEMONIC="354"
+ADDRESS="Korolenko str.  3 build. 6
+Moscow
+107076"
+COUNTRY="RUSSIAN FEDERATION"
+PHONE="74997852040"
+TIMEZONE="(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(353) First Moscow State Medical University n a  I M Sechenov"    MNEMONIC="353"
+ADDRESS="Bolshaya Pirogovskaya str. 6  building 1
+Moscow
+119991"
+COUNTRY="RUSSIAN FEDERATION"
+PHONE="74992480181"
+TIMEZONE="(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(352) Saint-Petersburg State Budgetary Healthcare Institution  Dermatovenerologic dispensary No  10 - Clinic of Dermatology and Venereology"    MNEMONIC="352"
+ADDRESS="Pakhomenko av. 29
+Saint-Petersburg
+194021"
+COUNTRY="RUSSIAN FEDERATION"
+PHONE="78126705070"
+TIMEZONE="(UTC+03:00) Moscow, St. Petersburg, Volgograd"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(252) Hospital Universitario Puerta de Hierro"    MNEMONIC="252"
+ADDRESS="Consultas externas servicio de dermatología 2ª planta 
+Manuel de Falla  1
+28220 Majadahonda Madrid"
+COUNTRY="SPAIN"
+PHONE="34659359266"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(255) Hospital de Manises"    MNEMONIC="255"
+ADDRESS="Servicio de Dermatologia 
+Av. Generalitat Valenciana 50.
+46940 Manises Valencia"
+COUNTRY="SPAIN"
+PHONE="34961845000"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(254) Hospital de Basurto"    MNEMONIC="254"
+ADDRESS="Avda. de Montevideo  18
+48013 Bilbao Vizcaya"
+COUNTRY="SPAIN"
+PHONE="34944006063"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(253) Hospital Universitari de Bellvitge"    MNEMONIC="253"
+ADDRESS="Feixa Llarga s n
+8907 Barcelona Barcelona"
+COUNTRY="SPAIN"
+PHONE="34658908310"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(251) Hospital Universitario de Torrejón"    MNEMONIC="251"
+ADDRESS="Servicio de Dermatologia 
+C. Mateo Inurria  s n 
+Soto del Henares 
+ 28850 - Torrejón de Ardoz"
+COUNTRY="SPAIN"
+PHONE="34646500878"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(250) Hospital Universitario Dr  Peset"    MNEMONIC="250"
+ADDRESS="C. Juan Garay  21 
+Edificio Consultas Externas  Piso 5
+46017 Valencia Valencia"
+COUNTRY="SPAIN"
+PHONE="34961622496"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(263) Kantonsspital St Gallen"    MNEMONIC="263"
+ADDRESS="Rorschacherstrasse 95  St. Gallen  9007"
+COUNTRY="SWITZERLAND"
+PHONE="41714941111"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(262) Hopitaux Universitaires de Geneve"    MNEMONIC="262"
+ADDRESS="Rue Gabrielle-Perret-Gentil 4  Geneve 1205"
+COUNTRY="SWITZERLAND"
+PHONE="41223729427"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(261) Bern Inselspital"    MNEMONIC="261"
+ADDRESS="Freiburgstrasse 34  Eingang 14 A-D  Bern 3010"
+COUNTRY="SWITZERLAND"
+PHONE="41316327820"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(260) Universitatsspital Zürich"    MNEMONIC="260"
+ADDRESS="Gloriastrasse 31  Zurich 8091"
+COUNTRY="SWITZERLAND"
+PHONE="41442553847"
+TIMEZONE="(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(271) The Dudley Group NHS Foundation Trust"    MNEMONIC="271"
+ADDRESS="Russells Hall Hospital
+Dudley
+West Midlands
+DY1 2HQ"
+COUNTRY="UNITED KINGDOM"
+PHONE="44138445611"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(270) Whipps Cross University Hospital"    MNEMONIC="270"
+ADDRESS="Clinical Research Unit
+Lower Ground Floor Junction 9
+Whipps Cross Road 
+Leytonstone
+E11 1NR"
+COUNTRY="UNITED KINGDOM"
+PHONE="442085395522"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(274) The Royal Liverpool University Hospital"    MNEMONIC="274"
+ADDRESS="Dermatology Dept Room 5
+Kent Lodge Thomas Drive
+Liverpool
+Merseyside
+L14 3LB"
+COUNTRY="UNITED KINGDOM"
+PHONE="441512826958"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(273) Salford Royal NHS Foundation Trust"    MNEMONIC="273"
+ADDRESS="Dermatopharmacology Department 1st Floor Barnes Building
+Stott Lane
+Salford
+M6 8HD"
+COUNTRY="UNITED KINGDOM"
+PHONE="441612064344"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(275) West Glasgow Ambulatory Care Hospital"    MNEMONIC="275"
+ADDRESS="NHS Greater Glasgow and Clyde
+Research and Development Central Office
+Dalnair Street
+Yorkhill
+Glasgow G3 8SJ"
+COUNTRY="UNITED KINGDOM"
+PHONE="444.4014123218e+12"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+<SITE  NAME="(272) Guy’s Hospital"    MNEMONIC="272"
+ADDRESS="9th Floor Tower Wing Great Maze Pond
+London
+SE1 9RT"
+COUNTRY="UNITED KINGDOM"
+PHONE="4402071887188"
+ALTPHONE="44"
+FAX="44"
+TIMEZONE="(UTC+00:00) Dublin, Edinburgh, Lisbon, London"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="05/08/2018"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+</MEDMLDATA>

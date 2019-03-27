@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="rm63558"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm83966"/>
+<USERREF USERNAME="z1x3959"/>
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="i4v-mc-jain_RE"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="rm63558"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm83966"/>
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="z1x3959"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRBMEANING="Approved"
+
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="cpaul"/>
+<USERREF USERNAME="jplacour"/>
+<USERREF USERNAME="wplacek"/>
+<USERREF USERNAME="mworm"/>
+<USERREF USERNAME="rrenner"/>
+<USERREF USERNAME="mpapapanagiotou"/>
+<USERREF USERNAME="srotterdam"/>
+<USERREF USERNAME="sbarbarot"/>
+<USERREF USERNAME="fskowron"/>
+<USERREF USERNAME="amartorell"/>
+<USERREF USERNAME="igudkova"/>
+<USERREF USERNAME="akubanov"/>
+<USERREF USERNAME="mtjioe"/>
+<USERREF USERNAME="Iposthumus"/>
+<USERREF USERNAME="cmichel"/>
+<USERREF USERNAME="keyerich"/>
+<USERREF USERNAME="spauser"/>
+<USERREF USERNAME="jruschenburg"/>
+<USERREF USERNAME="kschaekel"/>
+<USERREF USERNAME="wsondermann"/>
+<USERREF USERNAME="msticherling"/>
+<USERREF USERNAME="mgalluzzo"/>
+<USERREF USERNAME="sdadamio"/>
+<USERREF USERNAME="tgrieco"/>
+<USERREF USERNAME="cchello"/>
+<USERREF USERNAME="eszymanska"/>
+<USERREF USERNAME="wowczarek"/>
+<USERREF USERNAME="mpoznanska"/>
+<USERREF USERNAME="aokuniewska"/>
+<USERREF USERNAME="ribelloso"/>
+<USERREF USERNAME="lfrench"/>
+<USERREF USERNAME="dsimon"/>
+<USERREF USERNAME="cbangert"/>
+<USERREF USERNAME="atsianakas"/>
+<USERREF USERNAME="pghislain"/>
+<USERREF USERNAME="jgutermuth"/>
+<USERREF USERNAME="hlapeere"/>
+<USERREF USERNAME="gholzer"/>
+<USERREF USERNAME="jmandelin"/>
+<USERREF USERNAME="lmisery"/>
+<USERREF USERNAME="mradtke"/>
+<USERREF USERNAME="tgambichler"/>
+<USERREF USERNAME="akleinheinz"/>
+<USERREF USERNAME="nleitz"/>
+<USERREF USERNAME="nmagnolo"/>
+<USERREF USERNAME="ggirolomoni"/>
+<USERREF USERNAME="lbianchi"/>
+<USERREF USERNAME="pamerio"/>
+<USERREF USERNAME="fpanarese"/>
+<USERREF USERNAME="akaszuba"/>
+<USERREF USERNAME="kturekurasinska"/>
+<USERREF USERNAME="mkolanko"/>
+<USERREF USERNAME="elaffitte"/>
+<USERREF USERNAME="aedin"/>
+<USERREF USERNAME="maugustin"/>
+<USERREF USERNAME="skreutzer"/>
+<USERREF USERNAME="apinter"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="z1x3959"/>
+<USERREF USERNAME="i4v-mc-jain_RE"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm63558"/>
+<USERREF USERNAME="rm83966"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="rm63558"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm83966"/>
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="z1x3959"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="cpaul"/>
+<USERREF USERNAME="jplacour"/>
+<USERREF USERNAME="cballuteaud"/>
+<USERREF USERNAME="sbayorodriguez"/>
+<USERREF USERNAME="ebariller"/>
+<USERREF USERNAME="sbarbarot"/>
+<USERREF USERNAME="rtribalier"/>
+<USERREF USERNAME="fskowron"/>
+<USERREF USERNAME="amartorell"/>
+<USERREF USERNAME="anavarini"/>
+<USERREF USERNAME="aschenkel"/>
+<USERREF USERNAME="jpueschel"/>
+<USERREF USERNAME="mwienand"/>
+<USERREF USERNAME="cbuergler"/>
+<USERREF USERNAME="vmaedergiangaspero"/>
+<USERREF USERNAME="bgermann"/>
+<USERREF USERNAME="jluz"/>
+<USERREF USERNAME="igudkova"/>
+<USERREF USERNAME="akubanov"/>
+<USERREF USERNAME="mtjioe"/>
+<USERREF USERNAME="Iposthumus"/>
+<USERREF USERNAME="svandenheykant"/>
+<USERREF USERNAME="cmichel"/>
+<USERREF USERNAME="hkammler"/>
+<USERREF USERNAME="jgarcia"/>
+<USERREF USERNAME="straeuber"/>
+<USERREF USERNAME="sweiland"/>
+<USERREF USERNAME="keyerich"/>
+<USERREF USERNAME="pseiringer"/>
+<USERREF USERNAME="hyamani"/>
+<USERREF USERNAME="vwitte"/>
+<USERREF USERNAME="tbobylev"/>
+<USERREF USERNAME="cbeiermeister"/>
+<USERREF USERNAME="llang"/>
+<USERREF USERNAME="kbuddendick"/>
+<USERREF USERNAME="lachterholt"/>
+<USERREF USERNAME="hhoeing"/>
+<USERREF USERNAME="ckaatz"/>
+<USERREF USERNAME="spauser"/>
+<USERREF USERNAME="shaferkamp"/>
+<USERREF USERNAME="mkischkel"/>
+<USERREF USERNAME="cconze"/>
+<USERREF USERNAME="hpaul"/>
+<USERREF USERNAME="jruschenburg"/>
+<USERREF USERNAME="kwehner"/>
+<USERREF USERNAME="kschaekel"/>
+<USERREF USERNAME="wsondermann"/>
+<USERREF USERNAME="balex"/>
+<USERREF USERNAME="awerner"/>
+<USERREF USERNAME="msticherling"/>
+<USERREF USERNAME="jpopp"/>
+<USERREF USERNAME="fheppt"/>
+<USERREF USERNAME="sfriedel"/>
+<USERREF USERNAME="irossi"/>
+<USERREF USERNAME="mgalluzzo"/>
+<USERREF USERNAME="sdadamio"/>
+<USERREF USERNAME="gconte"/>
+<USERREF USERNAME="tgrieco"/>
+<USERREF USERNAME="cchello"/>
+<USERREF USERNAME="eszymanska"/>
+<USERREF USERNAME="mroszkiewicz"/>
+<USERREF USERNAME="abialecka"/>
+<USERREF USERNAME="wowczarek"/>
+<USERREF USERNAME="anawrocka"/>
+<USERREF USERNAME="mpoznanska"/>
+<USERREF USERNAME="mszyrynska"/>
+<USERREF USERNAME="aokuniewska"/>
+<USERREF USERNAME="mskrzypczyk"/>
+<USERREF USERNAME="nlitka"/>
+<USERREF USERNAME="asoluch"/>
+<USERREF USERNAME="egwiazda"/>
+<USERREF USERNAME="bkostuch"/>
+<USERREF USERNAME="isalcedo"/>
+<USERREF USERNAME="ribelloso"/>
+<USERREF USERNAME="lfrench"/>
+<USERREF USERNAME="chuembeli"/>
+<USERREF USERNAME="fanzengruber"/>
+<USERREF USERNAME="dsimon"/>
+<USERREF USERNAME="nmaes"/>
+<USERREF USERNAME="cvleminckx"/>
+<USERREF USERNAME="cbangert"/>
+<USERREF USERNAME="tquint"/>
+<USERREF USERNAME="msimovic"/>
+<USERREF USERNAME="atsianakas"/>
+<USERREF USERNAME="pghislain"/>
+<USERREF USERNAME="jgutermuth"/>
+<USERREF USERNAME="dmonteyne"/>
+<USERREF USERNAME="hlapeere"/>
+<USERREF USERNAME="gholzer"/>
+<USERREF USERNAME="jmandelin"/>
+<USERREF USERNAME="agritsch"/>
+<USERREF USERNAME="sdekeyser"/>
+<USERREF USERNAME="prosiere"/>
+<USERREF USERNAME="cwittmann"/>
+<USERREF USERNAME="lmisery"/>
+<USERREF USERNAME="ckergourlay"/>
+<USERREF USERNAME="alefebvre"/>
+<USERREF USERNAME="llumubyeyi"/>
+<USERREF USERNAME="adabri"/>
+<USERREF USERNAME="mramstein"/>
+<USERREF USERNAME="afroehlich"/>
+<USERREF USERNAME="ykliesch"/>
+<USERREF USERNAME="mradtke"/>
+<USERREF USERNAME="tgambichler"/>
+<USERREF USERNAME="akleinheinz"/>
+<USERREF USERNAME="detz"/>
+<USERREF USERNAME="nleitz"/>
+<USERREF USERNAME="erozsa"/>
+<USERREF USERNAME="nmagnolo"/>
+<USERREF USERNAME="khovestadt"/>
+<USERREF USERNAME="kfischer"/>
+<USERREF USERNAME="divanova"/>
+<USERREF USERNAME="therterkermann"/>
+<USERREF USERNAME="gronn"/>
+<USERREF USERNAME="ggirolomoni"/>
+<USERREF USERNAME="lbianchi"/>
+<USERREF USERNAME="pamerio"/>
+<USERREF USERNAME="fpanarese"/>
+<USERREF USERNAME="akaszuba"/>
+<USERREF USERNAME="amyslinska"/>
+<USERREF USERNAME="igrudziecka"/>
+<USERREF USERNAME="aowczarczyksaczonek"/>
+<USERREF USERNAME="akruszewska"/>
+<USERREF USERNAME="mwieczorek"/>
+<USERREF USERNAME="zlagun"/>
+<USERREF USERNAME="rczajkowski"/>
+<USERREF USERNAME="uadamska"/>
+<USERREF USERNAME="epaluchowska"/>
+<USERREF USERNAME="mslowinska"/>
+<USERREF USERNAME="apoznanska"/>
+<USERREF USERNAME="sokulowicz"/>
+<USERREF USERNAME="jpuchalska"/>
+<USERREF USERNAME="kturekurasinska"/>
+<USERREF USERNAME="mkolanko"/>
+<USERREF USERNAME="aszczubial"/>
+<USERREF USERNAME="drodak"/>
+<USERREF USERNAME="brewerska"/>
+<USERREF USERNAME="dkostuch"/>
+<USERREF USERNAME="rlayunta"/>
+<USERREF USERNAME="sradonjichoesli"/>
+<USERREF USERNAME="elaffitte"/>
+<USERREF USERNAME="svonderweid"/>
+<USERREF USERNAME="aedin"/>
+<USERREF USERNAME="gmarrane"/>
+<USERREF USERNAME="maugustin"/>
+<USERREF USERNAME="cseeger"/>
+<USERREF USERNAME="skreutzer"/>
+<USERREF USERNAME="bbunselmeyer"/>
+<USERREF USERNAME="apinter"/>
+<USERREF USERNAME="kpeter"/>
+<USERREF USERNAME="sloitsch"/>
+<USERREF USERNAME="srotterdam"/>
+<USERREF USERNAME="mpapapanagiotou"/>
+<USERREF USERNAME="nbay"/>
+<USERREF USERNAME="kjunge"/>
+<USERREF USERNAME="lmieles"/>
+<USERREF USERNAME="ngiese"/>
+<USERREF USERNAME="rrenner"/>
+<USERREF USERNAME="amoreira"/>
+<USERREF USERNAME="lhubert"/>
+<USERREF USERNAME="mkruegermolkenbur"/>
+<USERREF USERNAME="mworm"/>
+<USERREF USERNAME="alungwitz"/>
+<USERREF USERNAME="kwiesenack"/>
+<USERREF USERNAME="kpoznanskakurowska"/>
+<USERREF USERNAME="sgawecka"/>
+<USERREF USERNAME="wplacek"/>
+<USERREF USERNAME="ewygonowska"/>
+<USERREF USERNAME="ewozniak"/>
+<USERREF USERNAME="kklag"/>
+<USERREF USERNAME="atimofeeva"/>
+<USERREF USERNAME="tnesmelova"/>
+<USERREF USERNAME="abriskman"/>
+<USERREF USERNAME="akaramova"/>
+<USERREF USERNAME="jjanssens"/>
+<USERREF USERNAME="gappel"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="rm63558"/>
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="z1x3959"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="i4v-mc-jain_RE"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm83966"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="rm83966"/>
+<USERREF USERNAME="c252518"/>
+<USERREF USERNAME="z1x3959"/>
+<USERREF USERNAME="i4v-mc-jain_RE"/>
+<USERREF USERNAME="c248686"/>
+<USERREF USERNAME="rm63558"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
