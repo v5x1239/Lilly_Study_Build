@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="c119240"/>
+<USERREF USERNAME="c182702"/>
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+<USERREF USERNAME="ZPFskonig"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Authors"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting and Report Studio">
+<!-- Insert Users -->
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="z2x7759"/>
+<USERREF USERNAME="C183157"/>
+<USERREF USERNAME="c200622"/>
+<USERREF USERNAME="c119240"/>
+<USERREF USERNAME="v2x6106"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="c182702"/>
+<USERREF USERNAME="C193412"/>
+<USERREF USERNAME="z2x1701"/>
+<USERREF USERNAME="Z3X0977"/>
+<USERREF USERNAME="z2x7756"/>
+<USERREF USERNAME="c187845"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Directory Administrators"
+GROUPDESCRIPTION="Users who can administer authorization rights. They administer groups, accounts, contacts, distribution lists, data sources, and printers">
+<!-- Insert Users -->
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="GPS_Query"
+GROUPDESCRIPTION="GPS_Query">
+<!-- Insert Users -->
+<USERREF USERNAME="c141647"/>
+<USERREF USERNAME="c039853"/>
+<USERREF USERNAME="wj02268"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="c185515"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="c189509"/>
+<USERREF USERNAME="c149578"/>
+<USERREF USERNAME="c191720"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="c015393"/>
+<USERREF USERNAME="c114196"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signatures"
+GROUPDESCRIPTION=""
+CRBMEANING="Approved"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="htakahashi"/>
+<USERREF USERNAME="shotta"/>
+<USERREF USERNAME="khashimoto"/>
+<USERREF USERNAME="tyuhara"/>
+<USERREF USERNAME="akiyosue"/>
+<USERREF USERNAME="yide"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="c182702"/>
+<USERREF USERNAME="c119240"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFaflathers"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="hono"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+<USERREF USERNAME="stachikawa"/>
+<USERREF USERNAME="ciinuma"/>
+<USERREF USERNAME="kimaizumi"/>
+<USERREF USERNAME="htakahashi"/>
+<USERREF USERNAME="nshimazaki"/>
+<USERREF USERNAME="shotta"/>
+<USERREF USERNAME="mkawamata"/>
+<USERREF USERNAME="khashimoto"/>
+<USERREF USERNAME="motsubo"/>
+<USERREF USERNAME="mseki"/>
+<USERREF USERNAME="aadachi"/>
+<USERREF USERNAME="stamekawa"/>
+<USERREF USERNAME="kmitsuishi"/>
+<USERREF USERNAME="ciwamoto"/>
+<USERREF USERNAME="nkeduka"/>
+<USERREF USERNAME="mharada"/>
+<USERREF USERNAME="tyuhara"/>
+<USERREF USERNAME="mogiwara"/>
+<USERREF USERNAME="mshimizu"/>
+<USERREF USERNAME="nkaitsuka"/>
+<USERREF USERNAME="mkawasumi"/>
+<USERREF USERNAME="asawahata"/>
+<USERREF USERNAME="ynagamitsu"/>
+<USERREF USERNAME="hnaito"/>
+<USERREF USERNAME="mkobayashi"/>
+<USERREF USERNAME="nfujimoto"/>
+<USERREF USERNAME="akiyosue"/>
+<USERREF USERNAME="yide"/>
+<USERREF USERNAME="ksugita"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="c095695"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+<USERREF USERNAME="c189509"/>
+<USERREF USERNAME="c149578"/>
+<USERREF USERNAME="c191720"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="c015393"/>
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="wj01454"/>
+<USERREF USERNAME="z2x7756"/>
+<USERREF USERNAME="c187845"/>
+<USERREF USERNAME="Z3X0977"/>
+<USERREF USERNAME="z2x1701"/>
+<USERREF USERNAME="C193412"/>
+<USERREF USERNAME="c182702"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="c169714"/>
+<USERREF USERNAME="c191717"/>
+<USERREF USERNAME="v2x6106"/>
+<USERREF USERNAME="z2x7759"/>
+<USERREF USERNAME="C183157"/>
+<USERREF USERNAME="c200622"/>
+<USERREF USERNAME="c119240"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="c185515"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="wj02268"/>
+<USERREF USERNAME="c141647"/>
+<USERREF USERNAME="c039853"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="c109058"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="c182702"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="c039853"/>
+<USERREF USERNAME="c141647"/>
+<USERREF USERNAME="c189509"/>
+<USERREF USERNAME="c149578"/>
+<USERREF USERNAME="c191720"/>
+<USERREF USERNAME="wj10098"/>
+<USERREF USERNAME="c015393"/>
+<USERREF USERNAME="l1V-JE-EIBG_RE"/>
+<USERREF USERNAME="z2x7756"/>
+<USERREF USERNAME="c187845"/>
+<USERREF USERNAME="Z3X0977"/>
+<USERREF USERNAME="z2x1701"/>
+<USERREF USERNAME="C193412"/>
+<USERREF USERNAME="ZPFmszemjonka"/>
+<USERREF USERNAME="c114196"/>
+<USERREF USERNAME="wj01740"/>
+<USERREF USERNAME="v2x6106"/>
+<USERREF USERNAME="z2x7759"/>
+<USERREF USERNAME="C183157"/>
+<USERREF USERNAME="c200622"/>
+<USERREF USERNAME="c119240"/>
+<USERREF USERNAME="ysx0859"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="c185515"/>
+<USERREF USERNAME="wj01513"/>
+<USERREF USERNAME="wj02268"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="c191717"/>
+<USERREF USERNAME="c169714"/>
+<USERREF USERNAME="wj01454"/>
+<USERREF USERNAME="c109058"/>
+<USERREF USERNAME="c095695"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
