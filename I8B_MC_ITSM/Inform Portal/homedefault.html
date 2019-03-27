@@ -1,0 +1,363 @@
+<html>
+	<head>
+		<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+		<title>InForm GTM Home Page</title>
+		<style type="text/css">
+			#building {
+				display: block;
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+			}
+			#background {
+				display: block;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				width: 100%;
+				height: 19px;
+			}
+			body {
+				font-family: arial;
+				font-size: 14px;
+				background-color: #F0F4FF;
+				overflow: hidden;
+				padding: 0px;
+				margin: 0px;
+				height: 100%;
+			}
+			.banner{
+				height: 104px;
+				background-image: url('./images/products.jpg');
+				background-repeat: no-repeat;
+				background-position: center top;
+				vertical-align: bottom;
+				text-align: center;
+			}
+			.content {
+				width: 100%;
+				margin-bottom: 40px;
+				position:absolute;
+				z-index:1;
+				text-align: center;
+				overflow-x: hidden;
+				overflow-y: auto;
+				height: 305px;
+			}
+			.customerLogo1 {
+				display: none;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				background-image: url('./images/Company_Logo.gif');
+				background-repeat: no-repeat;
+				background-position: center center;
+				z-index: 1;
+				height: 94px;
+				width: 200px;
+			}
+			.customerLogo2 {
+				display: none;
+				margin: 5px;
+				width: 100%;
+			}
+			.help {
+				display: none;
+				position: absolute;
+				top: 25px;
+				left: 25px;
+				z-index: 2;
+				height: 125px;
+				width: 300px;
+				background-color: #FEF1D4;
+				border: 1px solid black;
+				padding: 6px 4px 0px 6px;
+			}
+			.welcome {
+				width: 50%;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
+				text-align:center;
+				font-weight:bold;
+				font-size:1.6em;
+				height: 47px;
+				position: relative;
+				top: 28px;
+			}
+			.support{
+				width: 587px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top: 15px;
+				text-align: left;
+			}
+			.supportoptions{
+				width: 587px;
+				margin-left:auto;
+				margin-right:auto;
+				padding-left: 20px;
+				line-height: 150%;
+				text-align: left;
+			}
+			.talk{
+				width: 625px;
+				margin-left:auto;
+				margin-right:auto;
+				padding: 5px;
+			}
+			.talkpoint {
+				width: 625px;
+				margin: 15px auto 5px;
+				font-weight:bold
+			}
+			.talkpointbullets {
+				width: 625px;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:5px;
+				text-align: left;
+			}
+		</style>
+		<script type="text/javascript">
+			/* Declare some local variables */
+			var winHeight = 0;
+
+			window.onresize = function () {
+				// Only continue if the height of the window changes
+				if (winHeight != (window.innerHeight || document.body.clientHeight)){
+					// Set the available height of the browsing viewport
+					winHeight = window.innerHeight || document.body.clientHeight;
+
+					// Resize the content div
+					setContentSize();
+				}
+			}
+
+			function closeHelp()
+			{
+				document.getElementById('phoneHelp').style.display = 'none';
+			}
+
+			function displayPhone(t)
+			{
+				document.getElementById('supportNumber').innerHTML = t.value;
+			}
+
+			function doLoad()
+			{
+				// Set the available height of the browsing viewport
+				winHeight = window.innerHeight || document.body.clientHeight;
+
+				// Resize the content div
+				setContentSize();
+
+				// Setup the talking points
+				showPoints(-1);
+
+				// Define the onmouseout for the parent talk div
+				document.getElementById('mainTalk').onmouseout = hidePoints;
+
+				// Update the phone number
+				displayPhone(document.getElementById('country'));
+			}
+
+			function getElLeft(el) {
+				xPos = el.offsetLeft;
+				tempEl = el.offsetParent;
+				while (tempEl != null) {
+					xPos += tempEl.offsetLeft;
+					  tempEl = tempEl.offsetParent;
+				}
+				return xPos;
+			}
+			function getElTop(el) {
+				yPos = el.offsetTop;
+				tempEl = el.offsetParent;
+				while (tempEl != null) {
+					yPos += tempEl.offsetTop;
+					  tempEl = tempEl.offsetParent;
+				}
+				return yPos;
+			}
+
+			function hidePoints(e)
+			{
+				if (!e) var e = window.event;
+				var tg = (window.event) ? e.srcElement : e.target;
+				if (tg.id != 'mainTalk') return;
+				var reltg = (e.relatedTarget) ? e.relatedTarget : e.toElement;
+				if (reltg.id != 'mainContent' && reltg.id != 'mainBanner') return;
+				showPoints(-1);
+			}
+
+			function setContentSize()
+			{
+				document.getElementById('mainContent').style.height = winHeight - 175 + 'px';
+			}
+
+			function showHelp()
+			{
+				var ph = document.getElementById('phoneHelp');
+
+				// Set the position
+				var helpX = getElLeft(document.getElementById('helpBtn'));
+				var helpY = getElTop(document.getElementById('helpBtn'));
+				var scrollY = document.getElementById('mainContent').scrollTop;
+				ph.style.left = helpX - 284;
+				ph.style.top = helpY - 109 - scrollY;
+				ph.style.display = 'block';
+			}
+
+			function showPoints(dividx)
+			{
+				if (dividx >= 1 && dividx <= 6)
+				{
+					document.getElementById('pnt' + dividx + 'blt').style.display = 'block';
+					document.getElementById('pnt' + dividx + 'span').onmouseover = function() { void(0); }
+					document.getElementById('pnt' + dividx + 'span').style.color = '#B53C07';
+				}
+
+				for (i=1; i<=6; i++)
+				{
+					if (dividx != i)
+					{
+						document.getElementById('pnt' + i + 'blt').style.display = 'none';
+						document.getElementById('pnt' + i + 'span').style.color = '#000000';
+					}
+				}
+
+				if (dividx != 1) document.getElementById('pnt1span').onmouseover = function() { showPoints(1); }
+				if (dividx != 2) document.getElementById('pnt2span').onmouseover = function() { showPoints(2); }
+				if (dividx != 3) document.getElementById('pnt3span').onmouseover = function() { showPoints(3); }
+				if (dividx != 4) document.getElementById('pnt4span').onmouseover = function() { showPoints(4); }
+				if (dividx != 5) document.getElementById('pnt5span').onmouseover = function() { showPoints(5); }
+				if (dividx != 6) document.getElementById('pnt6span').onmouseover = function() { showPoints(6); }
+			}
+		</script>
+	</head>
+	<body onload="doLoad()">
+		<img id="background" src="./images/bgbar.gif" />
+		<img id="building" src="./images/orclbuilding.gif" />
+		<span style="display:block; position:absolute; bottom:0px; width:100%; text-align:center; height:16px; font-family:calibri,arial; font-size:0.90em; color:#595F71">Oracle Corporation | 500 Oracle Parkway | Redwood Shores, CA 94065 | United States</span>
+		<span style="display:block; position:absolute; bottom:20px; width:100%; text-align:left; margin-left: 5px; height:16px; font-family:calibri,arial; font-size:0.90em;">Copyright © 2002-2011 Oracle Corporation. All rights reserved</span>
+		<div class="banner" id="mainBanner"><div class="welcome"><div style="display: inline">Welcome To&nbsp;&nbsp;</div><div style="display: inline"><img src="./images/informgtm.gif" style="vertical-align: middle" /></div></div></div>
+		<div class="help" id="phoneHelp"><div style="text-align: left; font-weight: bold; float: left">eClinical Support</div><div style="text-align: right; float: right"><img src="./images/close.png" onclick="closeHelp();" onmouseover="this.style.cursor='pointer';" onmouseout="this.style.cursor='default';" style="vertical-align: middle" /></div><div style="clear: both; padding-top: 2px; height: 3px"><img src="./images/helpdiv.gif" style="width: 100%; height: 1px"></div><div>If you are experiencing difficulties with any of the toll free numbers you can call +44 (0)207 131 2801 (please note that this is an international number and you will be charged when dialling it).</div></div>
+		<div class="customerLogo1"></div>
+		<div class="content" id="mainContent">
+			<div class="customerLogo2"><img src="./images/Company_Logo.gif" /></div>
+			<div class="talk" id="mainTalk">
+				<div class="talkpoint" id="pnt1" style="text-align: left">
+					<span id="pnt1span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;Proven Usability</span>
+				</div>
+				<div class="talkpointbullets" id="pnt1blt"><ul style="margin-bottom:0px;">
+					<li>Intuitive, workflow-based interface designed to maximize user efficiency</li>
+					<li>Roles-based functionality helps organizations streamline workflow</li>
+					<li>Extensive query management processing features enables efficient discrepancy resolution</li>
+					<li>Standard and user-driven reporting provides real-time data visibility</li></ul>
+				</div>
+				<div class="talkpoint" id="pnt3" style="text-align: left">
+					<span id="pnt3span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;Flexible System Configurability</span>
+				</div>
+				<div class="talkpointbullets" id="pnt3blt"><ul style="margin-bottom:0px;">
+					<li>Streamlined trial design and setup through regulatory submission</li>
+					<li>Simple and reliable connections to third-party systems such as IVRS, CTMS, ePRO and Imaging</li>
+					<li>Available as a point system or as a comprehensive eCDM solution</li></ul>
+				</div>
+				<div class="talkpoint" id="pnt6" style="text-align: left">
+					<span id="pnt6span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;One Environment for All Global Studies</span>
+				</div>
+				<div class="talkpointbullets" id="pnt6blt"><ul style="margin-bottom:0px;">
+					<li>One study version &ndash; from streamlined design through multi-language cross-trial coding and submission</li>
+					<li>Local language data entry ensures data accuracy</li>
+					<li>Support for complex character sets such as Japanese and Chinese</li></ul>
+				</div>
+				<div class="talkpoint" id="pnt4" style="text-align: left">
+					<span id="pnt4span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;World-Class Delivery and Support</span>
+				</div>
+				<div class="talkpointbullets" id="pnt4blt"><ul style="margin-bottom:0px;">
+					<li>Service Professionals with extensive domain experience can meet the requirements of any size organization</li>
+					<li>Global 24x7 multilingual support available</li></ul>
+				</div>
+				<div class="talkpoint" id="pnt2" style="text-align: left">
+					<span id="pnt2span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;Trusted Performance and Scalability</span>
+				</div>
+				<div class="talkpointbullets" id="pnt2blt"><ul style="margin-bottom:0px;">
+					<li>Used in over 3,000 trials worldwide across more than 50 therapeutic areas</li>
+					<li>Tiered system architecture designed to support trials of all types and sizes</li></ul>
+				</div>
+				<div class="talkpoint" id="pnt5" style="text-align: left">
+					<span id="pnt5span"><img src="./images/touch.gif" style="vertical-align: middle" />
+					&nbsp;&nbsp;Commitment to Standards and Industry Regulations</span>
+				</div>
+				<div class="talkpointbullets" id="pnt5blt"><ul style="margin-bottom:0px;">
+					<li>Support for CDISC and other standards</li>
+					<li>Full support to enable compliance with GCP, 21 CFR Part 11 and other regulatory guidance</li></ul>
+				</div>
+			</div>
+			<div id="mainSupport">
+				<div></div>
+				<div class="support">
+					Customer Support can be contacted using one of the following methods:
+				</div>
+				<div class="supportoptions">
+					<span style="font-weight: bold">Oracle Customer Support Portal:&nbsp;</span> <a href="https://hsgbu.custhelp.com/">https://hsgbu.custhelp.com/</a><br />
+					<span style="font-weight: bold">Phone:&nbsp;</span>
+						<select id="country" onchange="displayPhone(this);">
+							<option value="800 666 1657">Argentina</option>
+							<option value="1800 143 695">Australia</option>
+							<option value="0800 293 245">Austria</option>
+							<option value="0800 77926">Belgium</option>
+							<option value="+ 1 877 653 8582">Canada (French)</option>
+							<option value="+ 1 877 658 3157">Canada (English)</option>
+							<option value="1 230 0206 142">Chile</option>
+							<option value="10800 441 0070">South China</option>
+							<option value="800 142 562">Czech Republic</option>
+							<option value="8088 3155">Denmark</option>
+							<option value="0800 116909">Finland</option>
+							<option value="0800 910 614">France</option>
+							<option value="0800 181 2948">Germany</option>
+							<option value="00800 4413 1290">Greece</option>
+							<option value="800 900 876">Hong Kong</option>
+							<option value="06800 141 43">Hungary</option>
+							<option value="800 8433">Iceland</option>
+							<option value="1800 620 420">Ireland</option>
+							<option value="180 945 5814">Israel</option>
+							<option value="800 780 134">Italy</option>
+							<option value="0120 09 1406">Japan</option>
+							<option value="0079844341143">South Korea</option>
+							<option value="1800 80 4529">Malaysia</option>
+							<option value="0018 00 514 0172">Mexico (Primary)</option>
+							<option value="0018 00 123 3319">Mexico (Secondary)</option>
+							<option value="0800 023 2436">Netherlands</option>
+							<option value="0800 443 527">New Zealand</option>
+							<option value="800 14096">Norway</option>
+							<option value="00800 441 2288">Poland</option>
+							<option value="800 880 324">Portugal</option>
+							<option value="+1 866 882 8280">Puerto Rico</option>
+							<option value="810 800 2040 2044">Russia</option>
+							<option value="800 44 111 91">Singapore</option>
+							<option value="0800 996 167">South Africa</option>
+							<option value="900 998986">Spain</option>
+							<option value="0200 214938">Sweden</option>
+							<option value="0800 834 854">Switzerland</option>
+							<option value="0080 1044194">Taiwan</option>
+							<option value="001 800 442 035">Thailand</option>
+							<option value="0800 036 9540">UK</option>
+							<option value="+ 1 866 843 1953" selected>USA (Primary)</option>
+							<option value="+ 1 877 652 9403">USA (Secondary)</option>
+							<option value="+ 1 866 546 9526">USA (Fax)</option>
+							<option value="+(44) 1189243708">International Fax</option>
+						</select>
+					<span id="supportNumber" style="padding-left: 15px; padding-right: 5px">+1 866 843 1953</span><img src="./images/question.png" id="helpBtn" style="vertical-align: middle" onclick="showHelp();" onmouseover="this.style.cursor='pointer';" onmouseout="this.style.cursor='default';" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
