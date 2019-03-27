@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION=""
+CRBMEANING="Approved"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+
+</SIGNATUREGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION=""/>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query"/>
+
+<QUERYGROUP
+GROUPNAME="GPS_Query"
+GROUPDESCRIPTION=""/>
+
+</MEDMLDATA>

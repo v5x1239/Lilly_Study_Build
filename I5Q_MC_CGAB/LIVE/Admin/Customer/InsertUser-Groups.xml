@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="i5qmccgab_RE"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="c238940"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="c238940"/>
+<USERREF USERNAME="z1x0687"/>
+<USERREF USERNAME="c233384"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="">
+<!-- Insert Users -->
+<USERREF USERNAME="z2x2047_CQ"/>
+<USERREF USERNAME="c238940_CQ"/>
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION=""
+CRBMEANING="Approved"
+
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="vmehra"/>
+<USERREF USERNAME="mdavis"/>
+<USERREF USERNAME="mconrad"/>
+<USERREF USERNAME="sclevinger"/>
+<USERREF USERNAME="ebretton"/>
+<USERREF USERNAME="jsaper"/>
+<USERREF USERNAME="brankin"/>
+<USERREF USERNAME="wkoltun"/>
+<USERREF USERNAME="danderson"/>
+<USERREF USERNAME="ajonas"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="i5qmccgab_RE"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="c238940"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="c238940"/>
+<USERREF USERNAME="z2x2047"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="mconrad"/>
+<USERREF USERNAME="mdavis"/>
+<USERREF USERNAME="ebretton"/>
+<USERREF USERNAME="tanderson"/>
+<USERREF USERNAME="bcorbin"/>
+<USERREF USERNAME="jsaper"/>
+<USERREF USERNAME="brankin"/>
+<USERREF USERNAME="lzachary"/>
+<USERREF USERNAME="wkoltun"/>
+<USERREF USERNAME="ajonas"/>
+<USERREF USERNAME="jzona"/>
+<USERREF USERNAME="ccoogan"/>
+<USERREF USERNAME="vmehra"/>
+<USERREF USERNAME="danderson"/>
+<USERREF USERNAME="sclevinger"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="C228307"/>
+<USERREF USERNAME="c238940_CQ"/>
+<USERREF USERNAME="z2x2047_CQ"/>
+<USERREF USERNAME="rm99395"/>
+<USERREF USERNAME="z1x0687"/>
+<USERREF USERNAME="c233384"/>
+<USERREF USERNAME="c238940"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="Z1X0701"/>
+<USERREF USERNAME="Z1X1836"/>
+<USERREF USERNAME="a619388"/>
+<USERREF USERNAME="c011112"/>
+<USERREF USERNAME="rm96003"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="i5qmccgab_RE"/>
+<USERREF USERNAME="Z1X1849"/>
+<USERREF USERNAME="Z1X2000"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="i5qmccgab_RE"/>
+<USERREF USERNAME="z2x2047"/>
+<USERREF USERNAME="c238940"/>
+<USERREF USERNAME="c233384"/>
+<USERREF USERNAME="z1x0687"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+</QUERYGROUP>
+
+</MEDMLDATA>
