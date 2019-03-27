@@ -1,0 +1,18 @@
+Apply workaround for CD-15376 as per below instructions.
+
+1. Save the attached file to file system (CD-15376_detect.sql)
+2. In a command window navigate to the directory where the files were saved
+3. Connect to SQLPLUS as trial schema user and Execute CD-15376_detect.sql
+
+            Example:  sqlplus <Trial UID>/<Trial PID>@<Connection String> @ CD-15376_detect.sql
+
+       Note: An output file will be generated (CD-15376_fix.sql). Please attach this to the remedy ticket work info section.
+
+4.  Connect to SQLPLUS as trial schema user and Execute CD-15376_fix.sql
+
+            Example:  sqlplus <Trial UID>/<Trial PID>@<Connection String> @ CD-15376_fix.sql
+
+       Note: Please take a screenshot of DOS window showing rows updated and attach this to the remedy ticket work info section.
+
+
+thank you
