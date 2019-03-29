@@ -1,0 +1,16 @@
+
+Checking if DotNet 3.5 exists...
+
+
+
+ROUM Package already exist for MMV0LLYINFP0080...
+
+
+
+SETUP ROUM...
+
+
+ReadOnlyUserManagerInstaller.exe i8xmcjeca SETUP /accountparams:E:\Custom\ROUM\args.txt
+Read Only User Manager installtion SUCCESS. Completed with status = 0
+
+                ROUM SETUP Completed

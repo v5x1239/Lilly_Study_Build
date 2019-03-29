@@ -1,0 +1,44 @@
+Starting Faststart 
+ 
+Trial: i8xmcjeca 
+Inform Version: 6.0	 
+Engineer: schedtasks 
+Central Designer Executable: Yes 
+ 
+ 
+ 
+Checking Central Designer Package Version 
+Central Designer Executable Version: 2.0.317.263 
+ 
+ 
+Designer Package Version is 2.0 or above 
+Checking .net Version to Confirm 4.0 Installed 
+.net Version 4.0 found 
+Continuing Script 
+ 
+Central Designer package is 2.x.x or higher 
+Checking Oracle Client is at least version 10.2.0.3 with ODP.NET 2.102.3.3 
+ 
+Oracle Client Version: 11.2.0.3.0 
+ 
+Oracle Client version greater than 10g 
+Continuing script 
+ 
+Checking E:\PF\InForm\bin\dbora\dropdb.sql 
+*** File OK *** 
+ 
+Tablespace configuration = SINGLE 
+ 
+Creating InForm Server and Trial for 'i8xmcjeca' 
+ 
+ 
+Running Central Designer Package FS_I8XMCJECA_LIVE_20161004.exe 
+ 
+  FastStart Process Completed Successfully 
+  Trial Name: i8xmcjeca 
+  InForm Server: MMV0LLYINFP0080f 
+  Log File: i8xmcjeca_FS_20161005_1239AM_CD.log 
+ 
+Installing portal 
+ 
+Executing MedML Installer 
