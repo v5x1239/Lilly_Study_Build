@@ -1,0 +1,12 @@
+SQL> @Workaround_INF-14628.SQL
+SP2-0734: unknown command beginning "SQL> spool..." - rest of line ignored.
+SQL> @Workaround_INF-14628.SQL
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
