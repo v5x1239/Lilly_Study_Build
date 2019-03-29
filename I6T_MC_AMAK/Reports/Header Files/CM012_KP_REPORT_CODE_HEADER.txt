@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I6T-MC-AMAK/CM/CM012 
+ PROJECT NAME                        : I6T
+ DESCRIPTION                         : Concomitant Therapies which are only allowed for a certain study period must have start and stop dates which are within the specified period.
+ SPECIFICATION LOCATION/NAME         : I6T-MC-AMAK_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/CM012_KP*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I6T-MC-AMAK 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   19JUL2018   Kiran Kumar Pendyala         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/
