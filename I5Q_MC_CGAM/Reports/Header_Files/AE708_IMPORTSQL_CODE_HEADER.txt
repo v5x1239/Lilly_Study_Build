@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAM/AE3001A*SQL* 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : Review all Infection forms entered for any safety concerns.
+ SPECIFICATION LOCATION/NAME           : I5Q-MC-CGAM_Manual_Data_Verification_Plan_V2_20Feb2018    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/ ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAM 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   17MAY2016   Joseph Cooney         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

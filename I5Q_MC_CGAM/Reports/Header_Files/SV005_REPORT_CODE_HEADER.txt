@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAM/Subject Visit/SV005 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : CONDITIONAL ONLY INCLUDE if Unscheduled visits exist in trial:  Check that all unscheduled visit numbers are unique within a scheduled visit interval and are consistent with the protocol requirements.
+ SPECIFICATION LOCATION/NAME           : I5Q-MC-CGAM_Manual_Data_Verification_Plan_V2_20Feb2018    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/ 
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAM 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   02NOV2016   Joseph Cooney         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

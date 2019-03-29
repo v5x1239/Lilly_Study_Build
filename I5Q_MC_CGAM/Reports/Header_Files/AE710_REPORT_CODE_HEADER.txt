@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAM/AE (Adverse Events)/AE710 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If  AE start date = date of injection received in V3 or V9 and relationship to study treatment is Yes on the AE CRF and if the response to the question  Did any event start or worsen after first dose  on the AE_STEX CRF in the corresponding visit  is No site will be queried to confirm if the response to the question  Did any event start or worsen after first dose should be Yes and the AE number is recorded in the add entry section
+ SPECIFICATION LOCATION/NAME           : I5Q-MC-CGAM_Manual_Data_Verification_Plan_V2_20Feb2018    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AE710*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAM 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   10MAY2016   Deenadayalan Murugesan         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/
