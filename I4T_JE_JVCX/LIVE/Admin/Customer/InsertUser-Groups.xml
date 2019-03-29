@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA_Query"
+GROUPDESCRIPTION="CDM_CRA_Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="Osakit"/>
+<USERREF USERNAME="yukom"/>
+<USERREF USERNAME="Nakaoy"/>
+<USERREF USERNAME="Ignatiusd"/>
+<USERREF USERNAME="thomass"/>
+<USERREF USERNAME="takahashim"/>
+<USERREF USERNAME="mtakahashi"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signatures"
+GROUPDESCRIPTION=""
+CRBMEANING="Approved"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="tnishina"/>
+<USERREF USERNAME="dsakai"/>
+<USERREF USERNAME="skadowaki"/>
+<USERREF USERNAME="kshitara"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="Ignatiusd"/>
+<USERREF USERNAME="yukom"/>
+<USERREF USERNAME="thomass"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFaflathers"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="tnishina"/>
+<USERREF USERNAME="ykawakami"/>
+<USERREF USERNAME="yyoshihara"/>
+<USERREF USERNAME="yito"/>
+<USERREF USERNAME="ryamada"/>
+<USERREF USERNAME="kkomata"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="tkudo"/>
+<USERREF USERNAME="amatsuyama"/>
+<USERREF USERNAME="kshitara"/>
+<USERREF USERNAME="nhirano"/>
+<USERREF USERNAME="skadowaki"/>
+<USERREF USERNAME="khibino"/>
+<USERREF USERNAME="yyamagiwa"/>
+<USERREF USERNAME="dsakai"/>
+<USERREF USERNAME="ksakurai"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="takahashim"/>
+<USERREF USERNAME="yukom"/>
+<USERREF USERNAME="Nakaoy"/>
+<USERREF USERNAME="l1V-JE-EIBI_RE"/>
+<USERREF USERNAME="thomass"/>
+<USERREF USERNAME="Ignatiusd"/>
+<USERREF USERNAME="mtakahashi"/>
+<USERREF USERNAME="Osakit"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="ZPFaflathers"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="Fujiiy"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
