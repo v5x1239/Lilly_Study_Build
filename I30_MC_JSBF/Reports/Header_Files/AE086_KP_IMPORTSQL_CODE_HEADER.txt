@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A-MC-JLDA/Panels//Events/AE086*sql
+	PROJECT NAME			: I9A
+	DESCRIPTION			: Reconciliation Requirement between the CRF and Product Complaint Database. The following data items are required to match: Protocol/Project code, Investigator number, Subject Number, Unique Tracking Number UTN (product complaint database)/Adverse Event ID+serious Flag (Clinical Database)
+	SPECIFICATION LOCATION/NAME	: I9A-MC-JLDA Manual Data Verification Plan_V6.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AE4001a_all,AE4001b_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A-MC-JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	03MAY2018	Kiran		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

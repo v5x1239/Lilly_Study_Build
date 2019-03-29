@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A-MC-JLDA/Panels//Events/IRAD029*sql
+	PROJECT NAME			: I9A
+	DESCRIPTION			: If reason for regimen on radiotherapy is neoadjuvant, there should be a surgery starting shortly after the end of the radiotherapy.
+	SPECIFICATION LOCATION/NAME	: I9A-MC-JLDA Manual Data Verification Plan_V6.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/IRAD3001B_ALL,SG1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A-MC-JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04MAY2018	Harish		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8X-MC-JECA/DM065_AJ*SQL*
+	PROJECT NAME			: I8X
+	DESCRIPTION			: In France, race and/or ethnicity is sensitive personal information and should only be collected if there is a scientific reason for collection expressed in the protocol or a separate request has been submitted and approved by IRB(s), and explicit consent is obtained in the informed consent.
+        SPECIFICATION LOCATION/NAME	: 0219-1258_I8X-MC-JECA_Manual Data Verification Plan_V5 draft_24Apr2018	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DM1001_all,J-Review/Panels/inf_site_update,  J-Review/Panels/inf_subject
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8X-MC-JECA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	08MAY2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

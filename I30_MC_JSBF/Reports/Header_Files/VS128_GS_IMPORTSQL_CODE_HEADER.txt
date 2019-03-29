@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A-MC-JLDA/Panels/VS/VS128*sql
+	PROJECT NAME			: I9A
+	DESCRIPTION			: Every Respiratory Rate record must be unique (must have at least one difference in a value or a field).
+	SPECIFICATION LOCATION/NAME	: I9A-MC-JLDA Manual Data Verification Plan_V6.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/VS1001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A-MC-JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	03MAY2018	SRUTHI	      Original Version of the Report
+
+*eoh*****************************************************************************************************/

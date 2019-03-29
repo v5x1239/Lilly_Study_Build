@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A-MC-JLDA/IRAD027_AJ*SQL*
+	PROJECT NAME			: I9A
+	DESCRIPTION			: If the Radiotherapy End Date Month and Year are = the informed consent date month and year, the radiotherapy end date must be a complete date .
+        SPECIFICATION LOCATION/NAME	: I9A_MC_JLDA_Manual Data Verification Plan_V6.0_20Apr18	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/IRAD3001B_all,DS2001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A-MC-JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04MAY2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

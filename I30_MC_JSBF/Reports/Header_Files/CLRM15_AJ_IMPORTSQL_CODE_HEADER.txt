@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A_MC_JLDA/CLRM15_AJ*SQL*
+	PROJECT NAME			: I9A
+	DESCRIPTION			: Ensure that dose dates and times collected on the CRF are logical when compared with the PK sample dates and times, per the protocol-defined intervals.
+        SPECIFICATION LOCATION/NAME	: I9A_MC_JLDA_Manual Data Verification Plan_V6.0_08May18	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/EX1001_LF1,  EX1001_C1LF1 ,EX1001_C4LF1,J-Review/Panels/inf_site_update ,CLRMLAB Document
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A_MC_JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	16MAY2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/
