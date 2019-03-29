@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I8F_MC_GPGF/AE/AE072 
+ PROJECT NAME                        : I8F
+ DESCRIPTION                         : When subject died all Adverse Events must have a stop date prior to the death date OR checked YES for Ongoing except the Adverse Event indicated as the cause of death.
+ SPECIFICATION LOCATION/NAME           : I8F-MC-GPGF_MDVP_V3_Specification_25Apr2018_Output _Validation    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AE072_P*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I8F_MC_GPGF 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   29NOV2017   Prem Kumar         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

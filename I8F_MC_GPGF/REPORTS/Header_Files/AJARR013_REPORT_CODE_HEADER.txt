@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I8F_MC_GPGF/Adjudication - Serious Arrhythmia/AJARR013 
+ PROJECT NAME                        : I8F
+ DESCRIPTION                         : The Atrial Arrhythmia Sub-Classification Other specify field should not contain any reference to an existing Atrial Arrhythmia Sub-Classification.
+ SPECIFICATION LOCATION/NAME           : I8F-MC-GPGF_MDVP_V3_Specification_25Apr2018_Output _Validation    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AJARR013_P*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I8F_MC_GPGF 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   01DEC2017   Prem Kumar         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

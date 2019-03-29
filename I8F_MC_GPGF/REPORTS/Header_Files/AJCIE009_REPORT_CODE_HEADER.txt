@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I8F_MC_GPGF/Adjudication -Cardiac Ischemic Event/AJCIE009 
+ PROJECT NAME                        : I8F
+ DESCRIPTION                         : Date of Event (Adjudicators Assessment)  should not be same as Date of Event (Investigators Assessment) .
+ SPECIFICATION LOCATION/NAME           : I8F-MC-GPGF_MDVP_V3_Specification_25Apr2018_Output _Validation    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                     : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AJCIE009_GS*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I8F_MC_GPGF 
+                                                                         
+ SPECIAL INSTRUCTIONS                  :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   30APR2018   Sruthi Golla         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/
