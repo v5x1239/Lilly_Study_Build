@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I6T-MC-AMAK/AE/AE081 
+ PROJECT NAME                        : I6T
+ DESCRIPTION                         : If an event starts or worsens in severity on the same day as the first dose of study medication then time is required to be completed.
+ SPECIFICATION LOCATION/NAME         : I6T-MC-AMAK_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AE081_AJ*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I6T-MC-AMAK 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   19JUL2018   Ankit Jha         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

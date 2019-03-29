@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I6T-MC-AMAK/AJCIE700_AJ*SQL* 
+ PROJECT NAME                        : I6T
+ DESCRIPTION                         : The Date of Event (Adjudicators Assessment) should be within 5 days of the AE start date for the corresponding AE group ID in the AE form.
+ SPECIFICATION LOCATION/NAME         : I6T-MC-AMAK_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AJCIE3001 AE3001 ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I6T-MC-AMAK 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   19JUL2018   Ankit Jha         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/
