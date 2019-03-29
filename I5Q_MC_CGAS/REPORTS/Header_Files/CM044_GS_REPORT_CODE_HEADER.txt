@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAS/Concomitant Therapy/CM044 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If Adverse Event is selected as Indication and the AE Group ID entered matches an AE Group ID in Study Adverse Events CRF  then the start date of the medication must be >= the start date of the associated Event ID.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_mDVP-Report-Specification_v3.0_16AUG2021    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/CM044_GS*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   20AUG2018   Sruthi Golla         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

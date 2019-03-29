@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5Q-MC-CGAS/Panels//Events/EX700*sql
+	PROJECT NAME			: I5Q
+	DESCRIPTION			: Start date must = start date of previous injection CRF (within the same visit) and the time should be equal to or after the previous Injection CRF
+	SPECIFICATION LOCATION/NAME	: I5Q-MC-CGAS_mDVP-Report-Specification_v2.0_17MAY2018_latest.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/SV1001_all,EX1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5Q-MC-CGAS
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04JUN2018	Kiran		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

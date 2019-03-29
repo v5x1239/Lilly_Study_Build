@@ -1,0 +1,26 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5Q-MC-CGAS/Panels//Events/DS017*sql
+	PROJECT NAME			: I5Q
+	DESCRIPTION			: Confirm that there are no other CRF dates after the LTF date (exclude AE, ConMed and visit dates as these are already checked with standard edits)
+	SPECIFICATION LOCATION/NAME	: I5Q-MC-CGAS_mDVP-Report-Specification_v2.0_17MAY2018_latest.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/DS1001_ALL, BR1001_ALL, DM1001_ALL, DS2001_ALL, EX1001_ALL, 
+					   HMPR1001_ALL, HRFA1001_ALL, ISR1001_ALL, LRSS1001_ALL, MH7001_ALL,
+					   MHPRESP1001_ALL,  SFUQ3001_ALL, SU1001_ALL, SU2001_ALL, SU3001_ALL,
+				           SU4001_ALL, SU5001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5Q-MC-CGAS
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04JUN2018	Kiran		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

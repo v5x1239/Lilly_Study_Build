@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q-MC-CGAS/Events/AE071 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : Outcome Fatal can only be selected for one event. The one considered as the Primary Cause of Death.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AE071_HE*SQL
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q-MC-CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   29JUL2018   Harish Esampalli         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

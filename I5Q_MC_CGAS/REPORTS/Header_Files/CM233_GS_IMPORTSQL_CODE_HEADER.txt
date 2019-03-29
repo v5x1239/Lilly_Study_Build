@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAS/CM233_GS*SQL* 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : Dose and unit must be consistent compared to the units within the same treatment if present across the study.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_mDVP-Report-Specification_v3.0_16AUG2023    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/CM2001 ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   20AUG2018   Sruthi Golla         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

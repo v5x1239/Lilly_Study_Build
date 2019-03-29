@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q-MC-CGAS/DS016_HE*SQL 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If status is Lost to follow-up all free-text fields for that patient must contain no information which indicates a contact to the patient or information about the status of the patient to be known.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/DS1001 ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q-MC-CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   20JUL2018   Harish Esampalli         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

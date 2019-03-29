@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q-MC-CGAS/Exposure/EX702 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If No  is selected then reason must be provided. If reason not done is AE AE ID Must be provided. If reason not done is Other specify field must be completed.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/EX702_HE*SQL
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q-MC-CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   29JUL2018   Harish Esampalli         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

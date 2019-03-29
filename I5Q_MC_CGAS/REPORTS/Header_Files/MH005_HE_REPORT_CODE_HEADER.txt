@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q-MC-CGAS/Medical History/MH005 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If medical history disease/condition is ongoing and identical term is recorded on AE CRF a change of severity must be recorded or event must become serious
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/MH005_HE*SQL
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q-MC-CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   29JUL2018   Harish Esampalli         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

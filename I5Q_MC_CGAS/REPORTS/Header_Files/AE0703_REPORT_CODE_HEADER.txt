@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/ADVERSE EVENTS/AE703
+	PROJECT NAME			: I5Q
+	DESCRIPTION			: Confirm the Injection Site Reaction Follow-Up Form is completed for the necessary terms per the PT list provided.
+        SPECIFICATION LOCATION/NAME	: I5Q-MC-CGAS_mDVP-Report-Specification_v2.0_17MAY2018	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/AE703_AJ*SQL*
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5Q_MC_CGAS
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	6JUNE2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/
+C

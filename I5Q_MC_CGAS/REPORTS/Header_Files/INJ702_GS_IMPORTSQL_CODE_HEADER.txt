@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5Q_MC_CGAS/INJ702_GS*SQL*
+	PROJECT NAME			: I5Q
+	DESCRIPTION			: Output for all injection forms where item 1- Did subject take study treatment = No and provide the status at the associated visit.  If a patient misses an injection but appears to be continuing in the treatment period, notify CDA/medical team.
+        SPECIFICATION LOCATION/NAME	: I5Q-MC-CGAS_mDVP-Report-Specification_v2.0_17MAY2018	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/EX1001,STAT1001,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5Q_MC_CGAS
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	06JUN2018	sruthi	       Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q_MC_CGAS/Adverse Events/AE073 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : For an event not changing in severity during the trial (E.g. Only one entry) if Event Outcome = Recovered/Resolved Recovered/Resolved With Sequelae or Fatal then a final event end date must be present.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_mDVP-Report-Specification_v3.0_16AUG2019    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/AE073_GS*SQL*
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q_MC_CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   20AUG2018   Sruthi Golla         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

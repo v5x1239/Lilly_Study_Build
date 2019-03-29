@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I5Q-MC-CGAS/DS020_HE*SQL 
+ PROJECT NAME                        : I5Q
+ DESCRIPTION                         : If  status is Screen Failure Specify Criteria the criteria in the specify field must match any of the inclusion/exclusion criteria listed in the study protocol.
+ SPECIFICATION LOCATION/NAME         : I5Q-MC-CGAS_Manual Data Verification specification    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/DS1001 ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I5Q-MC-CGAS 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   21JUL2018   Harish Esampalli         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/
