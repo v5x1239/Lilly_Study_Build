@@ -1,0 +1,58 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>e:
+
+E:\>cd E:\Custom\i8kmcjpda\FastForward\20180104CRQ000000871765
+
+E:\Custom\i8kmcjpda\FastForward\20180104CRQ000000871765>sqlplus dbai8kmcjpda/*********@MMV0LLYINF
+P0050_inf1p178 @INF-9423.sql
+
+SQL*Plus: Release 11.2.0.4.0 Production on Fri Jan 5 03:45:16 2018
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning and Automatic Storage Management options
+
+
+4871 rows updated.
+
+
+Commit complete.
+
+SQL> exit
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning and Automatic Storage Management options
+
+E:\Custom\i8kmcjpda\FastForward\20180104CRQ000000871765>bounce i8kmcjpda /y
+
+
+Stopping InForm trial i8kmcjpda and server MMV0LLYINFP0050b. . .
+
+
+Sleeping for 15 . . .
+
+DBUID CORRUPTION TEST -----> PASS
+
+ntp-mmntphost.int.oracleindustry.com
+Time verification: clock offset is -0.144594s
+ntp-mmntphost.int.oracleindustry.com
+Time verification: clock offset is -0.144987s
+Time is OK - Start trials....
+
+Starting InForm server MMV0LLYINFP0050b . . .
+
+Starting InForm trial i8kmcjpda . . .
+checking for trial running in PRODUCTION mode ...
+
+
+Trial was started successfully in PRODUCTION Mode!
+
+
+TRIAL BOUNCE SUCCESSFUL!!!
+
+
+E:\Custom\i8kmcjpda\FastForward\20180104CRQ000000871765>
