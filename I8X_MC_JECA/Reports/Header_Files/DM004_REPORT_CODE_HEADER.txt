@@ -1,0 +1,30 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8X-MC-JECA/DM004_GS*SQL*
+	PROJECT NAME			: I8X
+	DESCRIPTION			: "If Planned Arm Code = Part C combination and C1 , ensure the below is met.
+
+From BCLC2001 form 
+BCLC Classification = either Staging A/Staging 
+                                           B/ Staging C
+
+From CLIP2001 form
+Child-Pugh Stage = Child-Pugh Stage A"
+        SPECIFICATION LOCATION/NAME	: 0219-1258_I8X-MC-JECA_Manual Data Verification Plan_V5 draft_12Apr2018	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DM2001_ALL,BCLC2001_ALL,CLIP2001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8X-MC-JECA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13APR2018	  Sruthi 		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

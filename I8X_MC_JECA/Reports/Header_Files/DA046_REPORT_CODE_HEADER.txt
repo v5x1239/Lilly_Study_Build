@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8X-MC-JECA/DA046_GS*SQL*
+	PROJECT NAME			: I4V
+	DESCRIPTION			: A returned entry must be present for each dispensed entry for each treatment and strength.  Please enter the missing data for treatment and/or strength.
+        SPECIFICATION LOCATION/NAME	: 0219-1258_I8X-MC-JECA_Manual Data Verification Plan_V5 draft_12Apr2018	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DA1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8X-MC-JECA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	10APR2018	  Sruthi 		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

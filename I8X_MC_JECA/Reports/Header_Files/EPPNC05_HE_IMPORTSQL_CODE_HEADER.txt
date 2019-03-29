@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/Panels//Events/EPPNC05*sql
+	PROJECT NAME			: I8F
+	DESCRIPTION			: If 'Yes', than at least one of the PNCR10 should be completed. 
+	SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification Updated.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/EPPNC2001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	10APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/AE025_AJ*SQL*
+	PROJECT NAME			: I8F
+	DESCRIPTION			: A returned entry must be present for each dispensed entry for each treatment and strength.  Please enter the missing data for treatment and/or strength.
+        SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification updated	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DA1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	24APR2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

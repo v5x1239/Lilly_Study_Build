@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/AE_078_AJ*SQL*
+	PROJECT NAME			: I8F
+	DESCRIPTION			: AE <_____> has Action Taken with Study Treatment of Drug Withdrawn more than once.Please verify when the study treatment was withdrawn.
+        SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification updated	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DS1001_ALL, AE3001_ALL, AE3001a_ALL, AE3001b_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	24APR2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

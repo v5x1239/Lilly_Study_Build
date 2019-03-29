@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/Panels//Events/CM039*sql
+	PROJECT NAME			: I8F
+	DESCRIPTION			: Dose and unit must be consistent compared to the units within the same medication, if present, across the study
+	SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification Updated.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001_all, CM2001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	10APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

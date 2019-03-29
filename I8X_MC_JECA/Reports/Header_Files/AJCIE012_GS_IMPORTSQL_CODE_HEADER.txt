@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/AJCIE012_GS*SQL*
+	PROJECT NAME			: I8F
+	DESCRIPTION			:CEC Adjudication is marked as Event; however the response to one or more items -Cardiac Ischemic Event Type, Clinical Presentation,
+                                         Biomarkers performed, ECG  performed, Event fatal and /or Complications'" are missing.
+        SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification updated	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/AJCIE3001_ALL,DS2001_ALL,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	17APR2018	  sruthi                Original Version of the Report
+
+*eoh*****************************************************************************************************/

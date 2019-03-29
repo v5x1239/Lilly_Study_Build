@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+ Eli Lilly and Company         -DSS
+ LOCATION/NAME                       : J-Review:PRD934/I8X_MC_JECA/CIV001_AJ*SQL* 
+ PROJECT NAME                        : I8X
+ DESCRIPTION                         : Previous Subject Screen Failure Flag
+ SPECIFICATION LOCATION/NAME         : I8X-MC-JECA_Manual Data Verification Plan_V6_01Jun2028    
+ VALIDATION APPROACH                 : Peer Review 
+ SOFTWARE/VERSION#                   : J-Review/Version 11.0.1
+ INPUT LOCATION/NAME                 : J-Review/panels/CIV1001 ,J-Review/Panels/inf_site_update
+ OUTPUT LOCATION/NAME                : Interactive J-Review Report (view-only)
+ STUDY REFERENCE                     : PRD934.I8X_MC_JECA 
+                                                                         
+ SPECIAL INSTRUCTIONS                :  NA
+                                                                   
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+ Version History:
+ Ver#  Date        Author                  Code History Description
+ ----  -------           ---------------         ----------------------------------------------------------
+ 1.0   12JUN2018   Ankit Jha         Original Version of the Report
+                                                                                     
+ *eoh*****************************************************************************************************/

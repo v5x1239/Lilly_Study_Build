@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F-MC-GPGF/Panels//Events/AJCIE018*sql
+	PROJECT NAME			: I4V
+	DESCRIPTION			: The Clinical Event identifier must correspond to a cardiac ischemic event on the CE form.
+	SPECIFICATION LOCATION/NAME	: I8F-MC-GPGF MDVP_Specification updated.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AJCIE3001_all, AE3001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8F-MC-GPGF
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	10APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

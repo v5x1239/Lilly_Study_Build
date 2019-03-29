@@ -1,0 +1,28 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8X-MC-JECA/DM003_GS*SQL*
+	PROJECT NAME			: I8X
+	DESCRIPTION			: "For Part C, Cohort 1 subjects the dose administered must be equal to 200mg.OR
+
+
+                                           For Part C, Cohort 2 subjects the dose administered must be equal to 700mg.OR 
+
+For Part C, Cohort 3 subjects the dose administered must be equal to 700mg
+        SPECIFICATION LOCATION/NAME	: 0219-1258_I8X-MC-JECA_Manual Data Verification Plan_V5 draft_12Apr2018	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DM2001_ALL,EX1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8X-MC-JECA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13APR2018	  Sruthi 		       Original Version of the Report
+
+*eoh*****************************************************************************************************/
