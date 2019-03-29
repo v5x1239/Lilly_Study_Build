@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+<SYSCONFIG CONFIGNAME="EnrollWithIncompleteForms"           TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="USERNAMEORDER"                                 TYPE="0"    VALUE="F,L"/>
+<SYSCONFIG CONFIGNAME="RequireCommentForNA"                 TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="AutoAnswerManualQueries"             TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="QueryMaxLength"                      TYPE="0"    VALUE="160"/>
+<SYSCONFIG CONFIGNAME="UNIQUEINTLDOBSWTCH"                  TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="UNIQUEPATIDSWTCH"                    TYPE="0"    VALUE="2"/>
+<SYSCONFIG CONFIGNAME="SPONSOREDITFROZEN"                   TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="TrialDateFormat"                     TYPE="0"    VALUE="Day_Month_Year"/>
+<SYSCONFIG CONFIGNAME="NavigationMode"                      TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="MinutesReauthenticate"               TYPE="0"    VALUE="15"/>
+<SYSCONFIG CONFIGNAME="DaysPasswordExpiration"              TYPE="0"    VALUE="60"/>
+<SYSCONFIG CONFIGNAME="MinutesReIdentification"             TYPE="0"    VALUE="120"/>
+<SYSCONFIG CONFIGNAME="MinPasswordLength"                   TYPE="0"    VALUE="8"/>
+<SYSCONFIG CONFIGNAME="InactivateRetryCount"                TYPE="0"    VALUE="5"/>
+<SYSCONFIG CONFIGNAME="OneNumericalCharacter"               TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="OneUppercaseCharacter"               TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="OneNonAlphaNumericCharacter"         TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="AllowPasswordReuse"                  TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="EnableForgotPassword"                TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="EnforceVisitDate"                    TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="ViewCRFSignList"                     TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="NumOfExePlanListenThreads"           TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="MaxNumOfResubmissions"               TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="PostQueryForConflictResolution"      TYPE="0"    VALUE="0"/>
+<SYSCONFIG CONFIGNAME="SSLFlag"                             TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="ScreeningSequence"                   TYPE="0"    VALUE="SN:1%04q"/>
+<SYSCONFIG CONFIGNAME="RandomizationSrc"                    TYPE="0"    VALUE="Inform.PFRandomization.1"/>
+<SYSCONFIG CONFIGNAME="FormSaveMode"                        TYPE="0"    VALUE="1"/>
+<SYSCONFIG CONFIGNAME="InlineDuration"                      TYPE="0"    VALUE="3"/>
+<SYSCONFIG CONFIGNAME="QuerySelection"                      TYPE="0"    VALUE="QUERYACTION_CREATEOPEN"/>
+
+</MEDMLDATA>

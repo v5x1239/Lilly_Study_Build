@@ -1,0 +1,48 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+%s
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Enrollment Confirmation</title>
+<link rel="stylesheet" type="text/css" href=%s>
+<style>
+<!--
+    body{text-align:left;overflow:auto;background-color:#ffffff;color:#003366}    
+-->
+</style>
+<script>
+bSubmit=false
+function OnFormSubmit(){
+if(bSubmit)alert("Subject enrollment in progress. Please wait...")
+else{
+var pID=%ld,sID=%ld,pgnv="%s",sei="%s",stmnt=""
+top.C.location.href="%s&pfOverride="+stmnt+"&%s="+pID+"&%s="+sID+pgnv+"&%s="+sei 
+bSubmit=true}}
+</script>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:EnterpriseDocumentLanguageTaxHTField0 msdt:dt="string">eng|39540796-0396-4e54-afe9-a602f28bbe8f</mso:EnterpriseDocumentLanguageTaxHTField0>
+<mso:TaxCatchAll msdt:dt="string">3;#GREEN|ec74153f-63be-46a4-ae5f-1b86c809897d;#2;#eng|39540796-0396-4e54-afe9-a602f28bbe8f;#1;#ADM130|70dc3311-3e76-421c-abfa-d108df48853c</mso:TaxCatchAll>
+<mso:EnterpriseRecordSeriesCodeTaxHTField0 msdt:dt="string">ADM130|70dc3311-3e76-421c-abfa-d108df48853c</mso:EnterpriseRecordSeriesCodeTaxHTField0>
+<mso:EnterpriseSensitivityClassificationTaxHTField0 msdt:dt="string">GREEN|ec74153f-63be-46a4-ae5f-1b86c809897d</mso:EnterpriseSensitivityClassificationTaxHTField0>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Jane DeLay</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Document_x0020_Description msdt:dt="string"></mso:Document_x0020_Description>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:Order msdt:dt="string">1500.00000000000</mso:Order>
+<mso:Lilly_x0020_Owner msdt:dt="string"></mso:Lilly_x0020_Owner>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:EnterpriseRecordSeriesCode msdt:dt="string">1;#ADM130|70dc3311-3e76-421c-abfa-d108df48853c</mso:EnterpriseRecordSeriesCode>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Jane DeLay</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x0101002BCA21D8D63448448A7DB77CF65EF6D2</mso:ContentTypeId>
+<mso:EnterpriseSensitivityClassification msdt:dt="string">3;#GREEN|ec74153f-63be-46a4-ae5f-1b86c809897d</mso:EnterpriseSensitivityClassification>
+<mso:Document_x0020_Type msdt:dt="string"></mso:Document_x0020_Type>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+<mso:EnterpriseDocumentLanguage msdt:dt="string">2;#eng|39540796-0396-4e54-afe9-a602f28bbe8f</mso:EnterpriseDocumentLanguage>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body ><form autocomplete=off name=Override method=post>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td style="white-space:nowrap;padding-left:8px;"> Click the “Enroll” button below to continue entering data. </td></tr>
+</table>
+</form><br/></body></html>
