@@ -1,0 +1,8 @@
+2015-02-27 12:07:21,797 Central Designer Version:1.4.338.0
+2015-02-27 12:07:22,281 Command line arguments:/BootStrapper \\pa-filer-1b\cvs_data\us\project\l\0219\1050\CDMS\InForm_LillyCDFM\FastForward\CPPC1\DeploymentPackage\I4TJEJVCX_CPPC1.exe 
+2015-02-27 12:07:22,874 Exception: System.Configuration.Install.InstallException
+Message: InForm registry key not found: Phase Forward
+Source: PhaseForward.Designer.StudyInstaller
+   at PhaseForward.Designer.DeploymentSite.StudyInstaller.GetInFormBinValue()
+   at PhaseForward.Designer.DeploymentSite.StudyInstaller.CopyDbgHelpToTempDir()
+
