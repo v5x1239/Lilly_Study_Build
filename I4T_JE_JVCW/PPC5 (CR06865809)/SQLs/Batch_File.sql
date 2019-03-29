@@ -1,0 +1,2 @@
+@fixdynamics.sql;
+@InactivateCCTriggers.sql;
