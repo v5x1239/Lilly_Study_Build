@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/Panels//Events/SV013*sql
+	PROJECT NAME			: I5B
+	DESCRIPTION			:Protocol will be the source for determining which treatment determines the start of the visit/cycle. This check should be used for studies that have infused treatment as part of 
+                                         their regimen and studies where more than one treatment is part of the regimen.
+	SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ Manual Data Verification Plan V8.0_29Mar2018 .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/SV1001_all,EX1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	27APR2018	sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

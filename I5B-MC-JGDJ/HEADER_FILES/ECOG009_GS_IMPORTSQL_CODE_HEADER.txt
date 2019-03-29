@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/QS/ECOG009_GS*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			: ECOG Performance Status is Dead; however the Subject's Status must be death on the Treatment Discontinuation Disposition CRF.
+	SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ Manual Data Verification Plan_V6_Final.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/ECOG1001B_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	18DEC2017	    Sruthi 		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

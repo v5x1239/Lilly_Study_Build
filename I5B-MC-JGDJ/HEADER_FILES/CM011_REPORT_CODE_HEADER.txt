@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/CM/CM011_GS*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			:  if pain/analgesic med is recorded (code list from WhoDRUG) on CM1001_LF1, then CMDOSE_CMPD_CMF1; CMDOSFRQ_CM1F1;and CMROUTE_CM1F1 must be completed.
+	SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ Manual Data Verification Plan_V6_Final.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/CM3001b
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	18DEC2017	    Sruthi 		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

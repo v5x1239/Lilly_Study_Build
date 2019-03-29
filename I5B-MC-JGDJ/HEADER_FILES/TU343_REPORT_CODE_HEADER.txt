@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/TU/TU343a_GS,TU343b_GS,TU343c_GS,TU343d_GS*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			: Date cannot be after the date of <___> when subject was last known to be alive;
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DS1001,RS1001,SS1001_DS1001,TU2001A,TU2001B,TU3001A,TU2001B,TU1001A,TU2001B
+        OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	18DEC2017	 Sruthi 		Original Version of the Report
+
+*eoh*****************************************************************************************************/

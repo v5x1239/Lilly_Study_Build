@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/Panels//Events/SYST046*sql
+	PROJECT NAME			: I5B
+	DESCRIPTION			: If the End Date Month and Year are = the informed consent date month and year, the end date must be a complete date (e.g. No date part can be selected as UNK).
+	SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ Manual Data Verification Plan V8.0_29MAR2018 .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/SYS3001b_all,DS2001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	27APR2018	Harish                  Original Version of the Report
+
+*eoh*****************************************************************************************************/

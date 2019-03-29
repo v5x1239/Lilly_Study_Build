@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/EX/EX009d_GS*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			: Calculate BSA using Du Bois formula from height and Latest weight; 
+                                           then calculate expected dose and fire if not within +/-5% variance in the calculated total dose.
+        SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ Manual Data Verification Plan_V6_Final.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/EX1001a,VS1001
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	18DEC2017	 Sruthi 		Original Version of the Report
+
+*eoh*****************************************************************************************************/

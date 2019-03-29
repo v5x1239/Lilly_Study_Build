@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/PFS2004*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			: Ensure a new treatment has been started after initial progression.
+        VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/IRAD3001B_all, sg1001b_all, syst3001b_all, ds1001_all, inf_subject, inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13MAR2018	 Joe Cooney		Original Version of the Report
+
+*eoh*****************************************************************************************************/

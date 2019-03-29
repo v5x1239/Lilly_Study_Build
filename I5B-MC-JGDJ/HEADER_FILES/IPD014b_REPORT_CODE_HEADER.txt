@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/MH/IPD014b
+	PROJECT NAME			: I5B
+	DESCRIPTION			: On the TU_TARGET and TU_NONTARGET forms, where Tumor Location = Lung (codes 135, 455, 568, 569, 570, 571, 572, 645, and 					          1302), TNM Distant Metastasis must be Distant Metastasis M1 on the MH_IPD_ENTRY form.
+        VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/IPD014b*SQL*
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13MAR2018	Joe Cooney 		Original Version of the Report
+
+*eoh*****************************************************************************************************/

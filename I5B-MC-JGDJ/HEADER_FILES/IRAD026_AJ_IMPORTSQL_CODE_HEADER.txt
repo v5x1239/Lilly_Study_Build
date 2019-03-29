@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I5B-MC-JGDJ/IRAD026_AJ*SQL*
+	PROJECT NAME			: I5B
+	DESCRIPTION			: If the Radiotherapy Start Date Year is = the informed consent date year, the Radiotherapy Start Date must have a month and year
+        SPECIFICATION LOCATION/NAME	: I5B-MC-JGDJ__Manual Data Verification Plan V8.0_29Mar2018_updated	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/DS2001_ALL,IRAD3001B_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I5B-MC-JGDJ
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	26APR2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/
