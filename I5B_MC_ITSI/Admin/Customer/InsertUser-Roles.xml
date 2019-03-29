@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="Coding Query Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Data Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="z3X2633"/>
+<USERREF USERNAME="z1x9560"/>
+<USERREF USERNAME="c257609"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="GPS">
+<!-- Insert Users -->
+<USERREF USERNAME="c039853"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor">
+<!-- Insert Users -->
+<USERREF USERNAME="c232959"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="ODM Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="odm_user"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PFView Only">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFaverpeleti"/>
+<USERREF USERNAME="ZPFawarsama"/>
+<USERREF USERNAME="ZPFmsajid"/>
+<USERREF USERNAME="ZPFprojas"/>
+<USERREF USERNAME="ZPFsdamato"/>
+<USERREF USERNAME="ZPFkbarkoczi"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI">
+<!-- Insert Users -->
+<USERREF USERNAME="bbode"/>
+<USERREF USERNAME="pnorwood"/>
+<USERREF USERNAME="sgarg"/>
+<USERREF USERNAME="mmayor"/>
+<USERREF USERNAME="cmorales"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Extractor">
+<!-- Insert Users -->
+<USERREF USERNAME="i8bmcitsi_RE"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+<!-- Insert Users -->
+<USERREF USERNAME="nrastogi"/>
+<USERREF USERNAME="mduque"/>
+<USERREF USERNAME="crodino"/>
+<USERREF USERNAME="cmateo"/>
+<USERREF USERNAME="adowns"/>
+<USERREF USERNAME="arewers"/>
+<USERREF USERNAME="cbeatson"/>
+<USERREF USERNAME="mguerrero"/>
+<USERREF USERNAME="aaliaga"/>
+<USERREF USERNAME="mrodino"/>
+<USERREF USERNAME="icaballero"/>
+<USERREF USERNAME="meslava"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Tier1_Admin">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFralorico"/>
+<USERREF USERNAME="ZPFvbalint"/>
+<USERREF USERNAME="ZPFkcco"/>
+<USERREF USERNAME="ZPFidanyi"/>
+<USERREF USERNAME="ZPFedervishaj"/>
+<USERREF USERNAME="ZPFadonio"/>
+<USERREF USERNAME="ZPFrducusin"/>
+<USERREF USERNAME="ZPFoely"/>
+<USERREF USERNAME="ZPFtishizuka"/>
+<USERREF USERNAME="ZPFdkawashima"/>
+<USERREF USERNAME="ZPFakisfaludy"/>
+<USERREF USERNAME="ZPFmlalangan"/>
+<USERREF USERNAME="ZPFlmate"/>
+<USERREF USERNAME="ZPFnmiklosi"/>
+<USERREF USERNAME="ZPFpmore"/>
+<USERREF USERNAME="ZPFdnagy"/>
+<USERREF USERNAME="ZPFanakai"/>
+<USERREF USERNAME="ZPFanyiri"/>
+<USERREF USERNAME="ZPFstayco"/>
+<USERREF USERNAME="ZPFaktoth"/>
+<USERREF USERNAME="ZPFpvallar"/>
+<USERREF USERNAME="ZPFmzsoldos"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Activator RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFcmolom"/>
+<USERREF USERNAME="ZPFmiwaki"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Manager RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFtcabanes"/>
+<USERREF USERNAME="ZPFtfabian"/>
+<USERREF USERNAME="ZPFhhamada"/>
+<USERREF USERNAME="ZPFjistenes"/>
+<USERREF USERNAME="ZPFijohl"/>
+<USERREF USERNAME="ZPFskholti"/>
+<USERREF USERNAME="ZPFekosa"/>
+<USERREF USERNAME="ZPFgkrucso"/>
+<USERREF USERNAME="ZPFklim"/>
+<USERREF USERNAME="ZPFapervaiz"/>
+<USERREF USERNAME="ZPFnqi"/>
+<USERREF USERNAME="ZPFnreis"/>
+<USERREF USERNAME="ZPFasomogyi"/>
+<USERREF USERNAME="ZPFtszabo"/>
+<USERREF USERNAME="ZPFhtsuchida"/>
+<USERREF USERNAME="ZPFfvarga"/>
+<USERREF USERNAME="ZPFgyvarga"/>
+<USERREF USERNAME="ZPFnvergara"/>
+<USERREF USERNAME="ZPFmyuta"/>
+<USERREF USERNAME="ZPFvzdirko"/>
+<USERREF USERNAME="ZPFsaguilar"/>
+<USERREF USERNAME="ZPFlbalubar"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
