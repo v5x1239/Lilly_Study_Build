@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+<SITEGROUP SITENAME="(130) Abramson Cancer Center at Pennsylvania Hospital">
+<USERREF USERNAME="msnyder"/>
+<USERREF USERNAME="lhartner"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(244) Alexander Fleming">
+<USERREF USERNAME="mangel"/>
+<USERREF USERNAME="gcinat"/>
+<USERREF USERNAME="mdpereira"/>
+<USERREF USERNAME="rceidlin"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(351) Asan Medical Center">
+<USERREF USERNAME="jhahn"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(203) British Columbia Cancer Agency- Vancouver">
+<USERREF USERNAME="mknowling"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(107) Carolinas Medical Center Levine Cancer Institute">
+<USERREF USERNAME="dlewis"/>
+<USERREF USERNAME="ekim"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(242) Centro Oncologico Riojano Integral CORI">
+<USERREF USERNAME="jgarce"/>
+<USERREF USERNAME="ramarillo"/>
+<USERREF USERNAME="gboentenunez"/>
+<USERREF USERNAME="lkaen"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(102) City of Hope and Beckman Research Institute">
+<USERREF USERNAME="ksmith"/>
+<USERREF USERNAME="wchow"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(125) Columbia University">
+<USERREF USERNAME="dpaucar"/>
+<USERREF USERNAME="gschwartz"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(204) Cross Cancer Institute">
+<USERREF USERNAME="qchu"/>
+<USERREF USERNAME="mmiller"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(108) Dana Farber Cancer Institute">
+<USERREF USERNAME="awagner"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(121) Duke University Medical Center- Trent Drive">
+<USERREF USERNAME="rriedel"/>
+<USERREF USERNAME="mtorain"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(142) Fairfax Northern Virginia Hematology Oncology PC">
+<USERREF USERNAME="mcochrane"/>
+<USERREF USERNAME="aspira"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(241) Fundacion Investigar">
+<USERREF USERNAME="fjuarez"/>
+<USERREF USERNAME="glerzo"/>
+<USERREF USERNAME="gmarechal"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(263) Fundação PIO XII">
+<USERREF USERNAME="sserrano"/>
+<USERREF USERNAME="cpereira"/>
+<USERREF USERNAME="psilveira"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(126) Georgia Cancer Specialists">
+<USERREF USERNAME="alokhandwala"/>
+<USERREF USERNAME="gdamato"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(141) Gibbs Cancer Center">
+<USERREF USERNAME="mthomas"/>
+<USERREF USERNAME="wburdette"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(112) H Lee Moffitt Cancer Center and Research Institute">
+<USERREF USERNAME="bsauder"/>
+<USERREF USERNAME="dreed"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(302) Hadassah  Medical Center  Ein Karem">
+<USERREF USERNAME="dkatz"/>
+<USERREF USERNAME="araz"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(642) Hospital 12 De Octubre">
+<USERREF USERNAME="jlopez"/>
+<USERREF USERNAME="elaguna"/>
+<USERREF USERNAME="mgiuppi"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(643) Hospital Duran I Reynals">
+<USERREF USERNAME="ogarcia"/>
+<USERREF USERNAME="jgarcia"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(243) Hospital Provincial del Centenario">
+<USERREF USERNAME="gjuaristi"/>
+<USERREF USERNAME="mbartoli"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(264) Hospital Sao Lucas - PUC">
+<USERREF USERNAME="fdamian"/>
+<USERREF USERNAME="agelatti"/>
+<USERREF USERNAME="fviola"/>
+<USERREF USERNAME="vwebber"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(646) Hospital Universitario La Fe de Valencia">
+<USERREF USERNAME="crodrigo"/>
+<USERREF USERNAME="mgiralt"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(644) Hospital Vall d Hebron">
+<USERREF USERNAME="cvalverde"/>
+<USERREF USERNAME="smunoz"/>
+<USERREF USERNAME="jalonso"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(641) Hospital Virgen del Rocío">
+<USERREF USERNAME="jmartin"/>
+<USERREF USERNAME="jcuevas"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(261) INCA - Instituto Nacional Do Cancer">
+<USERREF USERNAME="bbaldino"/>
+<USERREF USERNAME="falves"/>
+<USERREF USERNAME="agarcez"/>
+<USERREF USERNAME="amelo"/>
+<USERREF USERNAME="bnovaes"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(144) Indiana University Simon Cancer Center">
+<USERREF USERNAME="drushing"/>
+<USERREF USERNAME="jfunke"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(262) Instituto do Cancer do Estado de Sao Paulo - ICESP">
+<USERREF USERNAME="tarthur"/>
+<USERREF USERNAME="ofeher"/>
+<USERREF USERNAME="vcamargo"/>
+<USERREF USERNAME="rmunhoz"/>
+<USERREF USERNAME="dtoloi"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(122) Kaiser Permanente - The Center for Health Research">
+<USERREF USERNAME="sclark"/>
+<USERREF USERNAME="jcarney"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(601) Klinika Nowotworow Tkanek Miekkich Kosci i Czerniakow">
+<USERREF USERNAME="annaklimczak"/>
+<USERREF USERNAME="pawelrogala"/>
+<USERREF USERNAME="majawasylecka"/>
+<USERREF USERNAME="piotrrutkowski"/>
+<USERREF USERNAME="elzbietabylina"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(132) Memorial Sloan-Kettering Cancer Center MSKCC New York">
+<USERREF USERNAME="wtap"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(128) Mount Sinai Medical Center">
+<USERREF USERNAME="jhum"/>
+<USERREF USERNAME="rmaki"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(353) National Cancer Center">
+<USERREF USERNAME="tyun"/>
+<USERREF USERNAME="skim"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(114) Nebraska Methodist Hospital">
+<USERREF USERNAME="kleu"/>
+<USERREF USERNAME="kmueller"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(106) Oncology Hematology Care - SCRI">
+<USERREF USERNAME="spartridge"/>
+<USERREF USERNAME="ngiven"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(123) Oregon Health and Science University">
+<USERREF USERNAME="ldavis"/>
+<USERREF USERNAME="dboodyalter"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(354) Samsung Medical Center">
+<USERREF USERNAME="yahn"/>
+<USERREF USERNAME="shpark"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(355) Severance Hospital Yonsei University Health System">
+<USERREF USERNAME="syrha"/>
+<USERREF USERNAME="hjpark"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(303) Sheba Medical Center">
+<USERREF USERNAME="rweitzen"/>
+<USERREF USERNAME="ragmon"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(145) Stanford University-Hospital and Clinics">
+<USERREF USERNAME="mahern"/>
+<USERREF USERNAME="kganjoo"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(301) Tel Aviv Sourasky Medical Center">
+<USERREF USERNAME="hcontente"/>
+<USERREF USERNAME="Omerimsky"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(105) Tennessee Oncology-Nashville - SCRI">
+<USERREF USERNAME="jhainsworth"/>
+<USERREF USERNAME="spickens"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(352) The Catholic University of Korea Seoul St Marys Hospital">
+<USERREF USERNAME="spark"/>
+<USERREF USERNAME="jhwang"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(115) The West Clinic">
+<USERREF USERNAME="rleimig"/>
+<USERREF USERNAME="dportnoy"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(202) Tom Baker Cancer Centre">
+<USERREF USERNAME="dmorris"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(103) UCLA">
+<USERREF USERNAME="asingh"/>
+<USERREF USERNAME="cwells"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(201) UHN-Princess Margaret Cancer Centre">
+<USERREF USERNAME="aabdulrazak"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(129) University of California San Diego">
+<USERREF USERNAME="jwenskunas"/>
+<USERREF USERNAME="sboles"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(113) University of California- Divisadero St">
+<USERREF USERNAME="esosa"/>
+<USERREF USERNAME="tjahan"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(101) University of Colorado Aurora Ct">
+<USERREF USERNAME="tcolvin"/>
+<USERREF USERNAME="vvillalobos"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(111) University of Florida- HD 102">
+<USERREF USERNAME="ldang"/>
+<USERREF USERNAME="aivey"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(119) University of Hawaii Cancer Center">
+<USERREF USERNAME="jacoba"/>
+<USERREF USERNAME="evillarreal"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(140) University of Louisville James Graham Brown Cancer Center">
+<USERREF USERNAME="kellis"/>
+<USERREF USERNAME="vsharma"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(146) University of Michigan Medical Center- Main Campus">
+<USERREF USERNAME="sschuetze"/>
+<USERREF USERNAME="rleavitt"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(124) University of New Mexico Cancer Center">
+<USERREF USERNAME="mshaheen"/>
+<USERREF USERNAME="oreynolds"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(143) University of Pittsburgh Cancer Pavillion at Shadyside">
+<USERREF USERNAME="htawbi"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(127) University of Texas MD Anderson Cancer Center">
+<USERREF USERNAME="mweaver"/>
+<USERREF USERNAME="nsomaiah"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(118) University of Utah - Huntsman Cancer Institute">
+<USERREF USERNAME="cfuertes"/>
+<USERREF USERNAME="jwright"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(116) University of Wisconsin Hospital and Clinics">
+<USERREF USERNAME="hbailey"/>
+<USERREF USERNAME="tkroeninger"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(120) Utah Cancer Specialists">
+<USERREF USERNAME="skendall"/>
+<USERREF USERNAME="jwalker"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(117) Vanderbilt University Vanderbilt-Ingram Cancer Center">
+<USERREF USERNAME="sgrant"/>
+<USERREF USERNAME="vkeedy"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(104) Washington University Medical Oncology">
+<USERREF USERNAME="ccallahan"/>
+<USERREF USERNAME="bvantine"/>
+</SITEGROUP>
+<SITEGROUP SITENAME="(356) Yeungnam University Medical Center">
+<USERREF USERNAME="mjkim"/>
+<USERREF USERNAME="khlee"/>
+</SITEGROUP>
+
+</MEDMLDATA>

@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="PI">
+<!-- Insert Users -->
+<USERREF USERNAME="spark"/>
+<USERREF USERNAME="mdpereira"/>
+<USERREF USERNAME="shpark"/>
+<USERREF USERNAME="gcinat"/>
+<USERREF USERNAME="mbartoli"/>
+<USERREF USERNAME="amelo"/>
+<USERREF USERNAME="cpereira"/>
+<USERREF USERNAME="syrha"/>
+<USERREF USERNAME="khlee"/>
+<USERREF USERNAME="gmarechal"/>
+<USERREF USERNAME="rmunhoz"/>
+<USERREF USERNAME="fviola"/>
+<USERREF USERNAME="Omerimsky"/>
+<USERREF USERNAME="dkatz"/>
+<USERREF USERNAME="rweitzen"/>
+<USERREF USERNAME="jhahn"/>
+<USERREF USERNAME="glerzo"/>
+<USERREF USERNAME="lkaen"/>
+<USERREF USERNAME="mangel"/>
+<USERREF USERNAME="tyun"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI Sign Only">
+<!-- Insert Users -->
+<USERREF USERNAME="jgarcia"/>
+<USERREF USERNAME="ldang"/>
+<USERREF USERNAME="dreed"/>
+<USERREF USERNAME="tjahan"/>
+<USERREF USERNAME="kleu"/>
+<USERREF USERNAME="dportnoy"/>
+<USERREF USERNAME="hbailey"/>
+<USERREF USERNAME="vkeedy"/>
+<USERREF USERNAME="jwright"/>
+<USERREF USERNAME="jacoba"/>
+<USERREF USERNAME="skendall"/>
+<USERREF USERNAME="rriedel"/>
+<USERREF USERNAME="jcarney"/>
+<USERREF USERNAME="aabdulrazak"/>
+<USERREF USERNAME="mknowling"/>
+<USERREF USERNAME="vsharma"/>
+<USERREF USERNAME="mthomas"/>
+<USERREF USERNAME="htawbi"/>
+<USERREF USERNAME="kganjoo"/>
+<USERREF USERNAME="sschuetze"/>
+<USERREF USERNAME="vvillalobos"/>
+<USERREF USERNAME="wchow"/>
+<USERREF USERNAME="asingh"/>
+<USERREF USERNAME="bvantine"/>
+<USERREF USERNAME="jhainsworth"/>
+<USERREF USERNAME="spartridge"/>
+<USERREF USERNAME="ekim"/>
+<USERREF USERNAME="awagner"/>
+<USERREF USERNAME="qchu"/>
+<USERREF USERNAME="piotrrutkowski"/>
+<USERREF USERNAME="jmartin"/>
+<USERREF USERNAME="cvalverde"/>
+<USERREF USERNAME="ldavis"/>
+<USERREF USERNAME="mshaheen"/>
+<USERREF USERNAME="gschwartz"/>
+<USERREF USERNAME="gdamato"/>
+<USERREF USERNAME="nsomaiah"/>
+<USERREF USERNAME="rmaki"/>
+<USERREF USERNAME="sboles"/>
+<USERREF USERNAME="lhartner"/>
+<USERREF USERNAME="wtap"/>
+<USERREF USERNAME="dmorris"/>
+<USERREF USERNAME="aspira"/>
+<USERREF USERNAME="drushing"/>
+<USERREF USERNAME="jlopez"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+<!-- Insert Users -->
+<USERREF USERNAME="sclark"/>
+<USERREF USERNAME="dboodyalter"/>
+<USERREF USERNAME="oreynolds"/>
+<USERREF USERNAME="dpaucar"/>
+<USERREF USERNAME="alokhandwala"/>
+<USERREF USERNAME="mweaver"/>
+<USERREF USERNAME="jhum"/>
+<USERREF USERNAME="jwenskunas"/>
+<USERREF USERNAME="msnyder"/>
+<USERREF USERNAME="rceidlin"/>
+<USERREF USERNAME="mcochrane"/>
+<USERREF USERNAME="mmiller"/>
+<USERREF USERNAME="falves"/>
+<USERREF USERNAME="bnovaes"/>
+<USERREF USERNAME="vcamargo"/>
+<USERREF USERNAME="dtoloi"/>
+<USERREF USERNAME="sserrano"/>
+<USERREF USERNAME="vwebber"/>
+<USERREF USERNAME="fdamian"/>
+<USERREF USERNAME="hcontente"/>
+<USERREF USERNAME="araz"/>
+<USERREF USERNAME="ragmon"/>
+<USERREF USERNAME="elzbietabylina"/>
+<USERREF USERNAME="pawelrogala"/>
+<USERREF USERNAME="jcuevas"/>
+<USERREF USERNAME="mgiuppi"/>
+<USERREF USERNAME="aivey"/>
+<USERREF USERNAME="bsauder"/>
+<USERREF USERNAME="esosa"/>
+<USERREF USERNAME="kmueller"/>
+<USERREF USERNAME="rleimig"/>
+<USERREF USERNAME="tkroeninger"/>
+<USERREF USERNAME="sgrant"/>
+<USERREF USERNAME="cfuertes"/>
+<USERREF USERNAME="evillarreal"/>
+<USERREF USERNAME="jwalker"/>
+<USERREF USERNAME="mtorain"/>
+<USERREF USERNAME="fjuarez"/>
+<USERREF USERNAME="gboentenunez"/>
+<USERREF USERNAME="ramarillo"/>
+<USERREF USERNAME="gjuaristi"/>
+<USERREF USERNAME="jfunke"/>
+<USERREF USERNAME="mahern"/>
+<USERREF USERNAME="rleavitt"/>
+<USERREF USERNAME="agarcez"/>
+<USERREF USERNAME="bbaldino"/>
+<USERREF USERNAME="ofeher"/>
+<USERREF USERNAME="tarthur"/>
+<USERREF USERNAME="psilveira"/>
+<USERREF USERNAME="agelatti"/>
+<USERREF USERNAME="annaklimczak"/>
+<USERREF USERNAME="majawasylecka"/>
+<USERREF USERNAME="elaguna"/>
+<USERREF USERNAME="ogarcia"/>
+<USERREF USERNAME="jalonso"/>
+<USERREF USERNAME="mgiralt"/>
+<USERREF USERNAME="tcolvin"/>
+<USERREF USERNAME="ksmith"/>
+<USERREF USERNAME="cwells"/>
+<USERREF USERNAME="ccallahan"/>
+<USERREF USERNAME="spickens"/>
+<USERREF USERNAME="ngiven"/>
+<USERREF USERNAME="dlewis"/>
+<USERREF USERNAME="jhwang"/>
+<USERREF USERNAME="skim"/>
+<USERREF USERNAME="yahn"/>
+<USERREF USERNAME="hjpark"/>
+<USERREF USERNAME="mjkim"/>
+<USERREF USERNAME="jgarce"/>
+<USERREF USERNAME="kellis"/>
+<USERREF USERNAME="wburdette"/>
+<USERREF USERNAME="smunoz"/>
+<USERREF USERNAME="crodrigo"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
