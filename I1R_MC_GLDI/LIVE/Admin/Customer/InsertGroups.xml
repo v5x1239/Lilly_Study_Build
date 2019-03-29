@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRFMEANING="X"
+CRFTEXT="None"
+CRBMEANING="Approved"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below" LANGUAGE="en-US">
+
+</SIGNATUREGROUP>
+
+<ITEMGROUP
+GROUPNAME="nonData_Manager_Hidden_readonly_DM"
+GROUPDESCRIPTION="Value is pre-populated for SDTM and hidden to all users, read-only to DM"/>
+
+<ITEMGROUP
+GROUPNAME="nonData_Manager_Hidden_readonly_DM_Coder"
+GROUPDESCRIPTION="Value is pre-populated by coding and hidden to all users, read-only to DM"/>
+
+<ITEMGROUP
+GROUPNAME="nonData_Manager_ReadOnly"
+GROUPDESCRIPTION="Items are Data_Manager editable, and Read-only for all other groups except Adjudicator and Central Grp.  For the Groups Adjudicator and Central Grp, it will be a Hidden Item"/>
+
+<ITEMGROUP
+GROUPNAME="nonData_Manager_Hidden_readonly_DM_Adj"
+GROUPDESCRIPTION="Value is pre-populated and hidden to all users, read-only to DM and Adjudicator"/>
+
+<ITEMGROUP
+GROUPNAME="Adjudicator_Editable"
+GROUPDESCRIPTION="Value is  hidden to all users, read-only to DM and editable to Adjudicator"/>
+
+<ITEMGROUP
+GROUPNAME="nonData_Manager_Hidden_editable_DM"
+GROUPDESCRIPTION="Items are Data_Manager editable, and hidden for all other groups."/>
+
+<ITEMGROUP
+GROUPNAME="Adjudicator_RO"
+GROUPDESCRIPTION="All items no nin Adjudication forms must be RO for Adjuticator"/>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query"/>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group"/>
+
+<QUERYGROUP
+GROUPNAME="GPS_Query"
+GROUPDESCRIPTION="GPS_Query"/>
+
+<QUERYGROUP
+GROUPNAME="Adjudicator Query"
+GROUPDESCRIPTION="Adjudicator Query"/>
+
+</MEDMLDATA>
