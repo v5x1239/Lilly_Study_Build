@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Events/CLRM701A,CLRM701B
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Check for CLRM lab and ECG collection date prior to informed consent date. 
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CLRM_LAB_STUDY_DATA_VW,DS2001 
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	19JAN2018 	Sruthi	     Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels//Events/CM1001_LF2*sql
+	PROJECT NAME			: I7S
+	DESCRIPTION			: If any Excluded Parkinson’s Disease  medications, as defined in protocol, are 						reported as part of the subject's Therapy, they must be checked with the CRP.  
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V5_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish			Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels//Events/CM701*sql
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Check if the recorded medications are subject's usage of acetaminophen/paracetamol within the two weeks prior to the beginning of the hepatic event.
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM3001_all,AE3001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	22JAN2018 	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

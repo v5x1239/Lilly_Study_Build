@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels//Events/AE015a*sql
+	PROJECT NAME			: I7S
+	DESCRIPTION			: "Entries within the same event (AEGRPID) must have consecutive gapless durations:
+					          Start Date second chronologic entry= End Date previous chronologic entry."
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V5_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AE3001A,AE3001B
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish			Original Version of the Report
+
+*eoh*****************************************************************************************************/

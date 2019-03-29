@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels/AE065b_GS*SQL*
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Event outcome of previous entry is Recovered with Sequelae, but this event has the same AE Group ID present with a start date on or after the end date of the previous entry. 
+	SPECIFICATION LOCATION/NAME	: HBEH New Listing review checks specs 5Apr2018.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/ AE3001a_ALL and AE3001B_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	25MAY2018	Sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

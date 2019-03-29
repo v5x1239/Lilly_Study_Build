@@ -1,0 +1,21 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8F_MC_GPGF/Panels/CLRM700_P_ECG
+	DESCRIPTION			: Ensure that all diagnostic data (including but not limited to scheduled labs, ECGs and PK samples) is in sequentual order by collection date by visit
+   	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan.xlsx
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: CLRM_ECG_STUDY_DATA_VW
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S_MC_HBEH
+   	SPECIAL INSTRUCTIONS       : NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author				Code History Description
+	----	-------		---------------			------------------------------------------
+	1.0	18JAN2017	Premkumar Chenthilnathan	Original Version of the Report
+
+*eoh*****************************************************************************************************/

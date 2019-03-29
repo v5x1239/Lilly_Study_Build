@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/AE/AE013
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Lab descriptions (i.e.- platelets, WBC, RBC…) must include a quantifier adjective, like 'Increase' or 'Decrease', as part of the term.
+	SPECIFICATION LOCATION/NAME	: \\pa-filer-07\sas_icr_dm_am\cds\l02191365\0_docs\cds\specs\I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch 1.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AE3001A, AE3001B, DM1001_C
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05DEC2017 	Paulraj 		Original Version of the Report
+
+*eoh*****************************************************************************************************/

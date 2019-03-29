@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S_MC_HBEH/CLRM/CLRM702C
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Check consistency of ECG dates (if critical safety information for trial). 
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan.xlsx
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: DM1001C*SQL*,SV1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I7S_MC_HBEH
+
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author				Code History Description
+	----	-------		---------------			------------------------------------------
+	1.0	16JAN2018	Premkumar Chenthilnathan	Original Version of the Report
+
+*eoh*****************************************************************************************************/

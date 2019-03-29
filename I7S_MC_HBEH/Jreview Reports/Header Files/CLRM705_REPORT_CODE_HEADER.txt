@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels/CLRM705A,CLRM705B_GS*SQL*
+	PROJECT NAME			: I7S
+	DESCRIPTION			:Ensure that dose dates and times collected on the CRF are logical when compared with the PK sample dates and times, per the protocol-defined intervals. Record on issues list all PK collection times outside the protocol-defined intervals. 
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CLRM_LAB_STUDY_DATA_VW,CLRM_ECG_STUDY_DATA_VW,SV1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	18JAN2018 	Sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

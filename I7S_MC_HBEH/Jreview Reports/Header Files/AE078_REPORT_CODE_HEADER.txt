@@ -1,0 +1,22 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/AE/AE078
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Only one AEACN of Drug Withdrawn can be populated per AEGRPID.
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch 3.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AE3001a,AE3001a
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: I7S-MC-HBEH
+	SPECIAL INSTRUCTIONS		:  
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	28DEC2017 	Harish 		     Original Version of the Report
+
+*eoh*****************************************************************************************************/

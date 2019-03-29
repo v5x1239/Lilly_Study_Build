@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I7S-MC-HBEH/Panels/CM007_D*SQL*
+	PROJECT NAME			: I7S
+	DESCRIPTION			: Excluded medications must be clarified depending on the protocol and must be checked with the CRP.
+	SPECIFICATION LOCATION/NAME	: I7S-MC-HBEH Manual Data Verification Plan V1.1_Spec._Batch 1.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001_all; AE3001A_all; MH7001_all; SV1001_ALL, EX1001_ALL, DS2001_ALL, inf_subject,inf_site_update, ivrs_sbjct_sts_vw
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I7S-MC-HBEH
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	13MAR2018 	Joe Cooney 		Original Version of the Report
+
+*eoh*****************************************************************************************************/
