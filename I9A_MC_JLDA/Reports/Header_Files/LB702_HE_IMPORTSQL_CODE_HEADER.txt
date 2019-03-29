@@ -1,0 +1,25 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A-MC-JLDA/Panels/LB/LB702*sql
+	PROJECT NAME			: I9A
+	DESCRIPTION			: No lab record must be reported for the subjects within site 102
+
+This check is for LB_HEP_SERO
+        SPECIFICATION LOCATION/NAME	: I9A-MC-JLDA Manual Data Verification Plan_V6.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/LB9001_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A-MC-JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA 
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04MAY2018	Sruthi                 Original Version of the Report
+
+*eoh*****************************************************************************************************/

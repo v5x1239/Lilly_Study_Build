@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I9A_MC_JLDA/TU252_AJ*SQL*
+	PROJECT NAME			: I9A
+	DESCRIPTION			: Ensure all tumor state is 'present' for all nodal tumors.
+        SPECIFICATION LOCATION/NAME	: I9A_MC_JLDA_Manual Data Verification Plan_V6.0_20Apr18	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/TU2001A_ALL,TU2001B_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I9A_MC_JLDA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	04MAY2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/

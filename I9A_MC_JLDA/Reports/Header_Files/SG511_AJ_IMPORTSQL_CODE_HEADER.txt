@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8X-MC-JECA/SG511_AJ*SQL*
+	PROJECT NAME			: I8X
+	DESCRIPTION			: Surgery start date must be at least 21 days prior to cycle 1 date..
+        SPECIFICATION LOCATION/NAME	: 0219-1258_I8X-MC-JECA_Manual Data Verification Plan_V5 draft_24Apr2018	  	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/SG1001_all,SV1001_all,J-Review/Panels/inf_site_update,  J-Review/Panels/inf_subject
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8X-MC-JECA
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	08MAY2018	  Ankit		       Original Version of the Report
+
+*eoh*****************************************************************************************************/
