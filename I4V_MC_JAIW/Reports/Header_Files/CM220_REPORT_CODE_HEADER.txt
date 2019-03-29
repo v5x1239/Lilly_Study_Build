@@ -1,0 +1,25 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I4V-MC-JAIW/Panels//Events/CM220*sql
+	PROJECT NAME			: I4V
+	DESCRIPTION			: For any protocol-required discontinuation of previous medication, there must be a stop date <= the protocol-specified date\time period.
+					   Systemic meds. End Date less than 4 weeks before V2.
+					   Topical meds. End Date less than 2 weeks before V2.
+	SPECIFICATION LOCATION/NAME	: I4V-MC-JAIW Manual Data Verification Plan V1.02_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/Cm2001_all,Sv1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I4V-MC-JAIW
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

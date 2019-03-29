@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I4V-MC-JAIW/Panels//Events/AE068*sql
+	PROJECT NAME			: I4V
+	DESCRIPTION			: If Event Outcome is FATAL, there must not be any entry with Start date after that entry's End Date.
+	SPECIFICATION LOCATION/NAME	: I4V-MC-JAIW Manual Data Verification Plan V1.02_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/AE3001a_all,Ae3001b_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I4V-MC-JAIW
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I4V-MC-JAIW/Panels//Events/EPHSPHF700*sql
+	PROJECT NAME			: I4V
+	DESCRIPTION			: If Event Identifier is selected, matching AE Group ID on the AE CRF that event should be marked as Serious="Yes" and Serious Code should be "Hospitalization"
+	SPECIFICATION LOCATION/NAME	: I4V-MC-JAIW Manual Data Verification Plan V1.02_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/EPHSPHF3001_all,AE3001b_all,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I4V-MC-JAIW
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

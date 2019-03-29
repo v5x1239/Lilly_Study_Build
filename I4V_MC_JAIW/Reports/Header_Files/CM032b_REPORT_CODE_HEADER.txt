@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I4V-MC-JAIW/Panels//Events/CM032b*sql
+	PROJECT NAME			: I4V
+	DESCRIPTION			: If 'Medical History' is selected as Indication, ensure the start date of the medication must be <= the end date of the associated Medical History End date.
+	SPECIFICATION LOCATION/NAME	: I4V-MC-JAIW Manual Data Verification Plan V1.02_Spec._Batch .xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/Cm1001_all,CM2001_all,Cmsi1001a_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I4V-MC-JAIW
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05APR2018	Harish 		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

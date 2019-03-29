@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I4V-MC-JAIW/AE/AJCIE020_GS*SQL*
+	PROJECT NAME			: I4V
+	DESCRIPTION			: The Date of Event (Investigators Assessment) on the adjudication form does not match the Date of Event (Investigator's Assessment) from the endpoint form where the
+                                          AE Group ID is the same.  Please verify and correct if necessary.
+        SPECIFICATION LOCATION/NAME	: JAIW Manual Data Verification Plan v1.02_16Mar2018.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/panels/AJCGS2001_all,EPCGS2001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I4V-MC-JAIW
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		  Author			Code History Description
+	----	-------		 ---------------		----------------------------------------------------------
+	1.0	02APR2018	  Sruthi 		        Original Version of the Report
+
+*eoh*****************************************************************************************************/
