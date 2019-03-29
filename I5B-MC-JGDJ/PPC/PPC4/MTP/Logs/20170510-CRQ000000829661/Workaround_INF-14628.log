@@ -1,0 +1,10 @@
+SQL> @Workaround_INF-14628.sql
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
