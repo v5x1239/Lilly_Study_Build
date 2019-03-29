@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITSI/Panels/PD703_GS*SQL*
+	PROJECT NAME			: I8B
+	DESCRIPTION			:The Insulin Adjustment Date for the morning meal record for Carbohydrate Ratio and Insulin Sensitivity Factor must be the same date.
+	SPECIFICATION LOCATION/NAME	: I8B-MC-ITSI Manual Data Verification Plan_V3.06.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/PDE1001_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITSI
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	16MAR2018	Sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

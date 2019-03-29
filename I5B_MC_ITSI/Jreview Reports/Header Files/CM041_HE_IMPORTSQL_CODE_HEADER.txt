@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITSI/Panels/CM041_HE*SQL*
+	PROJECT NAME			: I8B
+	DESCRIPTION			: Dose and Frequency must be consistent compared to the frequency within the same medication, if present, across the study.
+	SPECIFICATION LOCATION/NAME	: I8B-MC-ITSI Manual Data Verification Plan_V3.06.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM2001_ALL and CM1001_ALL,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITSI
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	15MAR2018	Harish 			Original Version of the Report
+
+*eoh*****************************************************************************************************/

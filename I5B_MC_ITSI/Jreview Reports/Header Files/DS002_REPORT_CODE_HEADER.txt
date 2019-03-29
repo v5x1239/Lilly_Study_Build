@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITSI/Panels/DS/DS002
+	PROJECT NAME			: I8B
+	DESCRIPTION			: Date of Disposition must be >=visit dates appropriate for the  Disposition Event Period.
+	SPECIFICATION LOCATION/NAME	: I8B-MC-ITSI Manual Data Verification Plan_V3.06.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: DM1001C*SQL*,DS1001_ALL,VS1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITSI
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	15MAR2018	Premkumar		Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITSI/Panels/AE074
+	PROJECT NAME			: I8B
+	DESCRIPTION			: SAE reconciliation with Pharmacovigilance Database:If "Is the adverse event serious" is answered "Yes," an e-mail will automatically be sent to GPS notifying them that an SAE was created/updated.
+	SPECIFICATION LOCATION/NAME	: I8B-MC-ITSI Manual Data Verification Plan_V3.06.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: DM1001C*SQL*,AE3001a_all,AE3001b_all
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITSI
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	15MAR2018	Premkumar		Original Version of the Report
+
+*eoh*****************************************************************************************************/

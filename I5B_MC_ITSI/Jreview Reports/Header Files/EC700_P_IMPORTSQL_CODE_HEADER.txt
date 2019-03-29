@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		-DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITSI/Panels/EC700_P*SQL*
+	PROJECT NAME			: I8B
+	DESCRIPTION			: Start date must be after end date of previous chronologic entry with same treatment name.
+	SPECIFICATION LOCATION/NAME	: I8B-MC-ITSI Manual Data Verification Plan_V3.06.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: EC1001_ALL,DM1001C*SQL*
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITSI
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	15MAR2018	Premkumar		Original Version of the Report
+
+*eoh*****************************************************************************************************/
