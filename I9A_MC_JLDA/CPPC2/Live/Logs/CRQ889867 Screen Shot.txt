@@ -1,0 +1,31 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+e:\PFScripts>cd /d E:\Custom\i9amcjlda\FastForward\20180420CRQ000000889867
+
+E:\Custom\i9amcjlda\FastForward\20180420CRQ000000889867>sqlplus dbai9amcjlda/*********@
+MMV0LLYINFP0117_inf1p752 @Workaround_INF-14628.SQL
+
+SQL*Plus: Release 11.2.0.4.0 Production on Sat Apr 21 02:30:08 2018
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning and Automatic Storage Management options
+
+
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+Commit complete.
+
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Produc
+tion
+With the Partitioning and Automatic Storage Management options
+
+E:\Custom\i9amcjlda\FastForward\20180420CRQ000000889867>

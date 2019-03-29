@@ -1,0 +1,36 @@
+
+E:\Custom\i9amcjlda\FastForward\20180423HCX180423-000119>net stop InFormServerAdapterServi
+ce
+The InFormServerAdapterService service is stopping.
+The InFormServerAdapterService service was stopped successfully.
+
+
+E:\Custom\i9amcjlda\FastForward\20180423HCX180423-000119>sqlplus dbai9amcjlda/************
+@%conn% @Fix_Rule_BatchID.sql
+
+SQL*Plus: Release 11.2.0.4.0 Production on Tue Apr 24 02:07:25 2018
+
+Copyright (c) 1982, 2013, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production
+With the Partitioning and Automatic Storage Management options
+
+
+30 rows updated.
+
+
+Commit complete.
+
+Disconnected from Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Produc
+tion
+With the Partitioning and Automatic Storage Management options
+
+E:\Custom\i9amcjlda\FastForward\20180423HCX180423-000119>net start InFormServerAdapterServ
+ice
+The InFormServerAdapterService service is starting.
+The InFormServerAdapterService service was started successfully.
+
+
+E:\Custom\i9amcjlda\FastForward\20180423HCX180423-000119>

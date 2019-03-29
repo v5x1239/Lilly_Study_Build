@@ -1,0 +1,33 @@
+Starting Fastforward 
+ 
+Trial: uati9amcjlda 
+Engineer: schedtasks 
+Central Designer Package: FF_I9AMCJLDA_UAT_20180301.exe 
+ 
+ 
+ 
+Checking Central Designer Package Version 
+Designer Package Version: 2.0.317.263 
+Designer Package Version is 2.0 or above 
+Checking .net Version to Confirm 4.0 Installed 
+.net Version 4.0 found 
+Continuing Script 
+ 
+Central Designer package is 2.x.x or higher 
+Checking Oracle Client is at least version 10.2.0.3 with ODP.NET 2.102.3.3 
+ 
+Oracle Client Version: 11.2.0.4.0 
+ 
+ 
+Oracle Client version greater than 10g 
+Continuing script 
+ 
+**Stopping Trial and Server** 
+ 
+ 
+Starting Central Designer Package 
+ 
+Run of Designer Package Completed Successfully 
+  Trial Name: uati9amcjlda 
+  InForm Server: MMV0LLYINFP0117b 
+  Log File: uati9amcjlda_FF_20180302_1041AM.log 
