@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+ 
+ <!-- Activate the user -->
+ <USER
+ 	USERNAME="PFImport1" 	
+ 	USERTYPE="SPONSOR"
+ 	ACTIVESTATE="FALSE"
+	DELETESTATE="TRUE"
+	PRODUCTLOCALE="en-US"
+	STUDYLOCALE="en-US"
+/> 
+ 	
+ </MEDMLDATA>
