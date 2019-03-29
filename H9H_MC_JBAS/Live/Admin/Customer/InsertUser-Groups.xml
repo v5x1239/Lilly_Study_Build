@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="HorningH"/>
+<USERREF USERNAME="PhanthadapornS"/>
+<USERREF USERNAME="ChoiG"/>
+<USERREF USERNAME="SonJ"/>
+<USERREF USERNAME="ChanK"/>
+<USERREF USERNAME="MahonL"/>
+<USERREF USERNAME="SuS"/>
+<USERREF USERNAME="YangW"/>
+<USERREF USERNAME="PfeifferL"/>
+<USERREF USERNAME="VecchioneS"/>
+<USERREF USERNAME="ChangJ"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="GPS_Query"
+GROUPDESCRIPTION="GPS_Query">
+<!-- Insert Users -->
+<USERREF USERNAME="WatkinsV"/>
+<USERREF USERNAME="DistelV"/>
+<USERREF USERNAME="WoodringS"/>
+<USERREF USERNAME="OgunnaikeK"/>
+<USERREF USERNAME="HoganT"/>
+<USERREF USERNAME="BurkhartM"/>
+<USERREF USERNAME="DillmanB"/>
+<USERREF USERNAME="RoepkeD"/>
+<USERREF USERNAME="NjorogeJ"/>
+<USERREF USERNAME="HodsonK"/>
+<USERREF USERNAME="GertiserH"/>
+<USERREF USERNAME="BrittonK"/>
+<USERREF USERNAME="WilsonJ"/>
+<USERREF USERNAME="WiningerL"/>
+<USERREF USERNAME="VandermarkS"/>
+<USERREF USERNAME="MeraA"/>
+<USERREF USERNAME="NagashiroR"/>
+<USERREF USERNAME="HyodoT"/>
+<USERREF USERNAME="InoueT"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRFMEANING="X"
+CRBMEANING="Approved"
+CRFTEXT="NULL"
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below" LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="Schan"/>
+<USERREF USERNAME="Aleung"/>
+<USERREF USERNAME="Ykkang"/>
+<USERREF USERNAME="Mhryu"/>
+<USERREF USERNAME="Sjsym"/>
+<USERREF USERNAME="Jylim"/>
+<USERREF USERNAME="Hylim"/>
+<USERREF USERNAME="Jopark"/>
+<USERREF USERNAME="Jylee"/>
+<USERREF USERNAME="Saim"/>
+<USERREF USERNAME="Swhan"/>
+<USERREF USERNAME="Khlee"/>
+<USERREF USERNAME="Hjchoi"/>
+<USERREF USERNAME="Ychao"/>
+<USERREF USERNAME="Tsyang"/>
+<USERREF USERNAME="Kmrau"/>
+<USERREF USERNAME="Alcheng"/>
+<USERREF USERNAME="Sthong"/>
+<USERREF USERNAME="Vsrimun"/>
+<USERREF USERNAME="Byryoo"/>
+<USERREF USERNAME="Srpark"/>
+<USERREF USERNAME="Dbshin"/>
+<USERREF USERNAME="Jycho"/>
+<USERREF USERNAME="Yspark"/>
+<USERREF USERNAME="Shpark"/>
+<USERREF USERNAME="Stkim"/>
+<USERREF USERNAME="Tykim"/>
+<USERREF USERNAME="Doh"/>
+<USERREF USERNAME="Taeyongkim"/>
+<USERREF USERNAME="Ywyang"/>
+<USERREF USERNAME="Hcchung"/>
+<USERREF USERNAME="Cjyen"/>
+<USERREF USERNAME="Tpua"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="HyodoT"/>
+<USERREF USERNAME="ZPFrgundluru"/>
+<USERREF USERNAME="NagashiroR"/>
+<USERREF USERNAME="MeraA"/>
+<USERREF USERNAME="VandermarkS"/>
+<USERREF USERNAME="WiningerL"/>
+<USERREF USERNAME="WilsonJ"/>
+<USERREF USERNAME="BrittonK"/>
+<USERREF USERNAME="GertiserH"/>
+<USERREF USERNAME="HodsonK"/>
+<USERREF USERNAME="NjorogeJ"/>
+<USERREF USERNAME="RoepkeD"/>
+<USERREF USERNAME="DillmanB"/>
+<USERREF USERNAME="WatkinsV"/>
+<USERREF USERNAME="DistelV"/>
+<USERREF USERNAME="WoodringS"/>
+<USERREF USERNAME="OgunnaikeK"/>
+<USERREF USERNAME="HoganT"/>
+<USERREF USERNAME="BurkhartM"/>
+<USERREF USERNAME="ZPFaflathers"/>
+<USERREF USERNAME="ZPFskonig"/>
+<USERREF USERNAME="InoueT"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
