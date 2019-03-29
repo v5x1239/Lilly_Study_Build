@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<REPORTINGGROUP
+GROUPNAME="Ad Hoc Users"
+GROUPDESCRIPTION="Users who have access to Ad Hoc Reporting">
+<!-- Insert Users -->
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="xdqi"/>
+<USERREF USERNAME="bhandarir"/>
+<USERREF USERNAME="I3Y-CR-JPBQ_RE"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="z3x2635"/>
+<USERREF USERNAME="c173388"/>
+</REPORTINGGROUP>
+
+<QUERYGROUP
+GROUPNAME="CDM_CRA Query"
+GROUPDESCRIPTION="CDM_CRA Query">
+<!-- Insert Users -->
+<USERREF USERNAME="autoquery"/>
+<USERREF USERNAME="xdqi"/>
+<USERREF USERNAME="mmehta"/>
+<USERREF USERNAME="ychen"/>
+<USERREF USERNAME="tianma"/>
+<USERREF USERNAME="amyli"/>
+<USERREF USERNAME="mwang"/>
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="donie"/>
+<USERREF USERNAME="ivguo"/>
+<USERREF USERNAME="xfdeng"/>
+<USERREF USERNAME="doliu"/>
+<USERREF USERNAME="z3x2635"/>
+<USERREF USERNAME="bhandarir"/>
+<USERREF USERNAME="kgautam"/>
+<USERREF USERNAME="c173388"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="yzhao"/>
+<USERREF USERNAME="hailu"/>
+<USERREF USERNAME="kouyang"/>
+<USERREF USERNAME="mchen"/>
+</QUERYGROUP>
+
+<QUERYGROUP
+GROUPNAME="Coding Query Group"
+GROUPDESCRIPTION="Coding Query Group">
+<!-- Insert Users -->
+<USERREF USERNAME="z1x5587"/>
+<USERREF USERNAME="c197814"/>
+<USERREF USERNAME="z1x5585"/>
+<USERREF USERNAME="coder_query"/>
+</QUERYGROUP>
+
+<SIGNATUREGROUP
+GROUPNAME="PI Signature"
+GROUPDESCRIPTION="PI Signature"
+CRBMEANING="Approved"
+
+CRBTEXT="By my dated signature below, I  %s  %s, verify that all case report form pages accurately display the results of the examinations, tests, evaluations and treatments performed on this patient.&lt;BR&gt;&lt;BR&gt;Pursuant to Section 11.100 of Title 21 of the Code of Federal Regulations, this is to certify that I intend that this electronic signature is to be the legally binding equivalent of my handwritten signature. &lt;BR&gt;&lt;BR&gt;To this I do attest by supplying my user name and password and clicking the button marked &lt;B&gt;Submit&lt;/B&gt; below"
+ LANGUAGE="en-US">
+<!-- Insert Users -->
+<USERREF USERNAME="dvorobiof"/>
+<USERREF USERNAME="rszheng"/>
+<USERREF USERNAME="gmodi"/>
+<USERREF USERNAME="jliu"/>
+<USERREF USERNAME="ymyin"/>
+<USERREF USERNAME="jyang"/>
+<USERREF USERNAME="pshen"/>
+<USERREF USERNAME="zfjiang"/>
+<USERREF USERNAME="yklu"/>
+<USERREF USERNAME="xnouyang"/>
+<USERREF USERNAME="wjhu"/>
+<USERREF USERNAME="tsliu"/>
+<USERREF USERNAME="nliao"/>
+<USERREF USERNAME="xhwu"/>
+<USERREF USERNAME="qyzhang"/>
+<USERREF USERNAME="hxwang"/>
+<USERREF USERNAME="ycheng"/>
+<USERREF USERNAME="qsun"/>
+<USERREF USERNAME="qliu"/>
+<USERREF USERNAME="aagarwal"/>
+<USERREF USERNAME="gkanakasetty"/>
+<USERREF USERNAME="nkilara"/>
+<USERREF USERNAME="xchu"/>
+<USERREF USERNAME="hpli"/>
+<USERREF USERNAME="kwshen"/>
+<USERREF USERNAME="hzheng"/>
+<USERREF USERNAME="syyu"/>
+<USERREF USERNAME="sswang"/>
+<USERREF USERNAME="tsun"/>
+<USERREF USERNAME="qcouyang"/>
+<USERREF USERNAME="jhuang"/>
+<USERREF USERNAME="ypliu"/>
+<USERREF USERNAME="jcheng"/>
+<USERREF USERNAME="myan"/>
+<USERREF USERNAME="yzhang"/>
+<USERREF USERNAME="cgoswami"/>
+<USERREF USERNAME="jbajpai"/>
+<USERREF USERNAME="snag"/>
+<USERREF USERNAME="rchacko"/>
+<USERREF USERNAME="mcocciaportugal"/>
+<USERREF USERNAME="brapoport"/>
+<USERREF USERNAME="zstong"/>
+<USERREF USERNAME="jffeng"/>
+<USERREF USERNAME="xjwang"/>
+<USERREF USERNAME="yjwang"/>
+<USERREF USERNAME="yjliu"/>
+</SIGNATUREGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Publishers"
+GROUPDESCRIPTION="Users who can create folders and other content within the Public Folder space">
+<!-- Insert Users -->
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="ZPFkbarkoczi"/>
+<USERREF USERNAME="ZPFaverpeleti"/>
+<USERREF USERNAME="I3Y-CR-JPBQ_RE"/>
+<USERREF USERNAME="ZPFkhahn"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="c173388"/>
+<USERREF USERNAME="bhandarir"/>
+<USERREF USERNAME="xdqi"/>
+<USERREF USERNAME="z3x2635"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Report Administrators"
+GROUPDESCRIPTION="Users who can administer authorized public content such as setting permissions on folders and reports">
+<!-- Insert Users -->
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="xdqi"/>
+<USERREF USERNAME="z3x2635"/>
+<USERREF USERNAME="c173388"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="bhandarir"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Site Users"
+GROUPDESCRIPTION="Site Users">
+<!-- Insert Users -->
+<USERREF USERNAME="dvorobiof"/>
+<USERREF USERNAME="ntabane"/>
+<USERREF USERNAME="ccochrane"/>
+<USERREF USERNAME="rszheng"/>
+<USERREF USERNAME="tsliu"/>
+<USERREF USERNAME="nliao"/>
+<USERREF USERNAME="xhwu"/>
+<USERREF USERNAME="qyzhang"/>
+<USERREF USERNAME="hxwang"/>
+<USERREF USERNAME="ycheng"/>
+<USERREF USERNAME="qsun"/>
+<USERREF USERNAME="qliu"/>
+<USERREF USERNAME="aagarwal"/>
+<USERREF USERNAME="gkanakasetty"/>
+<USERREF USERNAME="nkilara"/>
+<USERREF USERNAME="xchu"/>
+<USERREF USERNAME="hpli"/>
+<USERREF USERNAME="kwshen"/>
+<USERREF USERNAME="hzheng"/>
+<USERREF USERNAME="syyu"/>
+<USERREF USERNAME="sswang"/>
+<USERREF USERNAME="tsun"/>
+<USERREF USERNAME="qcouyang"/>
+<USERREF USERNAME="jhuang"/>
+<USERREF USERNAME="ypliu"/>
+<USERREF USERNAME="jcheng"/>
+<USERREF USERNAME="myan"/>
+<USERREF USERNAME="yzhang"/>
+<USERREF USERNAME="cgoswami"/>
+<USERREF USERNAME="jbajpai"/>
+<USERREF USERNAME="snag"/>
+<USERREF USERNAME="rchacko"/>
+<USERREF USERNAME="Pmahadevan"/>
+<USERREF USERNAME="pshukla"/>
+<USERREF USERNAME="cmohammed"/>
+<USERREF USERNAME="oogude"/>
+<USERREF USERNAME="mcocciaportugal"/>
+<USERREF USERNAME="brapoport"/>
+<USERREF USERNAME="zstong"/>
+<USERREF USERNAME="jffeng"/>
+<USERREF USERNAME="xjwang"/>
+<USERREF USERNAME="yjwang"/>
+<USERREF USERNAME="yjliu"/>
+<USERREF USERNAME="wjhu"/>
+<USERREF USERNAME="xnouyang"/>
+<USERREF USERNAME="yklu"/>
+<USERREF USERNAME="zfjiang"/>
+<USERREF USERNAME="pshen"/>
+<USERREF USERNAME="jyang"/>
+<USERREF USERNAME="ymyin"/>
+<USERREF USERNAME="jliu"/>
+<USERREF USERNAME="atanwar"/>
+<USERREF USERNAME="anagaraj"/>
+<USERREF USERNAME="sbalaraju"/>
+<USERREF USERNAME="sgoswami"/>
+<USERREF USERNAME="ykembhavi"/>
+<USERREF USERNAME="knair"/>
+<USERREF USERNAME="sdavid"/>
+<USERREF USERNAME="gmodi"/>
+<USERREF USERNAME="schan"/>
+<USERREF USERNAME="lmcmichael"/>
+<USERREF USERNAME="mvisser"/>
+<USERREF USERNAME="cbarker"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="Sponsor Users"
+GROUPDESCRIPTION="Sponsor Users">
+<!-- Insert Users -->
+<USERREF USERNAME="z2x0010"/>
+<USERREF USERNAME="z1x5587"/>
+<USERREF USERNAME="jfan"/>
+<USERREF USERNAME="hylan"/>
+<USERREF USERNAME="mwang"/>
+<USERREF USERNAME="ccarreira"/>
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="xywang"/>
+<USERREF USERNAME="ybzhang"/>
+<USERREF USERNAME="cwang"/>
+<USERREF USERNAME="donie"/>
+<USERREF USERNAME="ivguo"/>
+<USERREF USERNAME="xfdeng"/>
+<USERREF USERNAME="doliu"/>
+<USERREF USERNAME="xdqi"/>
+<USERREF USERNAME="bhandarir"/>
+<USERREF USERNAME="kgautam"/>
+<USERREF USERNAME="c173388"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="coder_query"/>
+<USERREF USERNAME="z1x5585"/>
+<USERREF USERNAME="z1x4636"/>
+<USERREF USERNAME="xfliang"/>
+<USERREF USERNAME="ywu"/>
+<USERREF USERNAME="yzhou"/>
+<USERREF USERNAME="arong"/>
+<USERREF USERNAME="yzhao"/>
+<USERREF USERNAME="hailu"/>
+<USERREF USERNAME="kouyang"/>
+<USERREF USERNAME="mchen"/>
+<USERREF USERNAME="z3x1508"/>
+<USERREF USERNAME="tianma"/>
+<USERREF USERNAME="ychen"/>
+<USERREF USERNAME="emueller"/>
+<USERREF USERNAME="mmehta"/>
+<USERREF USERNAME="z3x2635"/>
+<USERREF USERNAME="I3Y-CR-JPBQ_RE"/>
+<USERREF USERNAME="c197814"/>
+<USERREF USERNAME="amyli"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Admin Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data including password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="donie"/>
+<USERREF USERNAME="z3x2635"/>
+<USERREF USERNAME="mmehta"/>
+<USERREF USERNAME="ychen"/>
+<USERREF USERNAME="tianma"/>
+<USERREF USERNAME="mchen"/>
+<USERREF USERNAME="kouyang"/>
+<USERREF USERNAME="hailu"/>
+<USERREF USERNAME="yzhao"/>
+<USERREF USERNAME="z3x3216"/>
+<USERREF USERNAME="c173388"/>
+<USERREF USERNAME="kgautam"/>
+<USERREF USERNAME="bhandarir"/>
+<USERREF USERNAME="amyli"/>
+<USERREF USERNAME="mwang"/>
+<USERREF USERNAME="dubeym"/>
+<USERREF USERNAME="I3Y-CR-JPBQ_RE"/>
+<USERREF USERNAME="ivguo"/>
+<USERREF USERNAME="xfdeng"/>
+<USERREF USERNAME="doliu"/>
+<USERREF USERNAME="xdqi"/>
+</REPORTINGGROUP>
+
+<REPORTINGGROUP
+GROUPNAME="User Info Data Users"
+GROUPDESCRIPTION="Users who have access to user data except password related data">
+<!-- Insert Users -->
+<USERREF USERNAME="emueller"/>
+<USERREF USERNAME="arong"/>
+<USERREF USERNAME="yzhou"/>
+<USERREF USERNAME="jfan"/>
+<USERREF USERNAME="xfliang"/>
+<USERREF USERNAME="ybzhang"/>
+<USERREF USERNAME="xywang"/>
+<USERREF USERNAME="ccarreira"/>
+<USERREF USERNAME="hylan"/>
+<USERREF USERNAME="ywu"/>
+</REPORTINGGROUP>
+
+</MEDMLDATA>
