@@ -1,0 +1,24 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		 -DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITRM/Panels/CM717_GS*SQL*
+	PROJECT NAME			: I8B
+	DESCRIPTION			: No Insulin therapies should be present with a start date after V2 unless start date is Treatment Disposition date or 
+                                          during Treatment Interruption.
+        SPECIFICATION LOCATION/NAME	: I8B_MC_ITRM_Manual Data Verification Plan listings specification_V1.0.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001_all,sv1001_all,EX1001_ALL
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITRM
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	05jun2018           Sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/

@@ -1,0 +1,23 @@
+/*soh*****************************************************************************************************
+	Eli Lilly and Company		 -DSS
+	LOCATION/NAME			: J-Review:PRD934/I8-MC-ITRM/Panels/CM710_GS*SQL*
+	PROJECT NAME			: I8B
+	DESCRIPTION			: If Subject Status is continuing at Visit 2, all Concomitant Medication forms must be present. 
+	SPECIFICATION LOCATION/NAME	: I8B_MC_ITRM_Manual Data Verification Plan_V2.0.xlsx	  
+	VALIDATION APPROACH		: Peer Review
+	SOFTWARE/VERSION#		: J-Review/Version 11.0.1
+	INPUT LOCATION/NAME		: J-Review/Panels/CM1001_all,STATGUT_ALL,inf_subject,inf_site_update
+	OUTPUT LOCATION/NAME		: Interactive J-Review Report (view-only)
+	STUDY REFERENCE			: PRD934.I8-MC-ITRM
+
+	SPECIAL INSTRUCTIONS		:  NA
+	
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------	
+	Version History:
+
+	Ver#	Date		Author			Code History Description
+	----	-------		---------------		----------------------------------------------------------
+	1.0	19MAR2018        Sruthi		      Original Version of the Report
+
+*eoh*****************************************************************************************************/
