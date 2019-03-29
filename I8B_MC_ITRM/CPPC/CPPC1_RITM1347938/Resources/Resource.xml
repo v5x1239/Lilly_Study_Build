@@ -1,0 +1,17 @@
+<RESOURCEDATA xmlns="PhaseForward-MedML-Inform4">
+
+  <RESOURCE
+	FILENAME="LOGIN.HTML"
+    UUID="PF_RESOURCE_GENERIC_LOGIN"
+    DESCRIPTION="LOGIN.HTML"
+    DATATYPE="TEXT"
+    LANGUAGE="English"/>
+	
+  <RESOURCE
+	FILENAME=".\images\en-US\Logo.gif"
+    UUID="151"
+    DESCRIPTION="Sponsor Logo"
+    DATATYPE="GIF"
+    LANGUAGE="English"/>
+	
+</RESOURCEDATA>
