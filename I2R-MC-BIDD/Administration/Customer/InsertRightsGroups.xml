@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="Adjudicator">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Answer Query"/>
+<RIGHTREF RIGHT="Change Query State from Answered to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Open to Closed"/>
+<RIGHTREF RIGHT="Edit Data on a CRF"/>
+<RIGHTREF RIGHT="Enter Comments into a CRF"/>
+<RIGHTREF RIGHT="Enter Data into a CRF"/>
+<RIGHTREF RIGHT="Enter Query in Open State"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Re-issue Query in Open State"/>
+<RIGHTREF RIGHT="Sign a CRF"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Auditor">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Central Grp">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Answer Query"/>
+<RIGHTREF RIGHT="Edit Data on a CRF"/>
+<RIGHTREF RIGHT="Enter Comments into a CRF"/>
+<RIGHTREF RIGHT="Enter Data into a CRF"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Sign a CRF"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Coding Query Rights Group">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Print"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Data Manager">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Change Query State from Answered to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Candidate to Deleted"/>
+<RIGHTREF RIGHT="Change Query State from Candidate to Open"/>
+<RIGHTREF RIGHT="Change Query State from Open to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Reissued Candidate to Closed"/>
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Enter Query in Candidate State"/>
+<RIGHTREF RIGHT="Enter Query in Open State"/>
+<RIGHTREF RIGHT="Lock a CRF"/>
+<RIGHTREF RIGHT="Lock a CRB"/>
+<RIGHTREF RIGHT="Monitor"/>
+<RIGHTREF RIGHT="Patient Transfer"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Re-issue Query in Candidate State"/>
+<RIGHTREF RIGHT="Re-issue Query in Open State"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="Unfreeze a CRF"/>
+<RIGHTREF RIGHT="Unlock a CRF"/>
+<RIGHTREF RIGHT="Unlock a CRB"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Developer">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Deactivate a Rule"/>
+<RIGHTREF RIGHT="Modify a Rule"/>
+<RIGHTREF RIGHT="Run a Rule"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="GPS">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Change Query State from Answered to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Candidate to Deleted"/>
+<RIGHTREF RIGHT="Change Query State from Candidate to Open"/>
+<RIGHTREF RIGHT="Change Query State from Open to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Reissued Candidate to Closed"/>
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Enter Query in Candidate State"/>
+<RIGHTREF RIGHT="Enter Query in Open State"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Re-issue Query in Candidate State"/>
+<RIGHTREF RIGHT="Re-issue Query in Open State"/>
+<RIGHTREF RIGHT="View CRF"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Change Query State from Answered to Closed"/>
+<RIGHTREF RIGHT="Change Query State from Open to Closed"/>
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Enter Query in Open State"/>
+<RIGHTREF RIGHT="Freeze a CRF"/>
+<RIGHTREF RIGHT="Mark and Unmark a CRF as SVed"/>
+<RIGHTREF RIGHT="Monitor"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Re-issue Query in Open State"/>
+<RIGHTREF RIGHT="Unfreeze a CRF"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor Manager">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Enter Query in Candidate State"/>
+<RIGHTREF RIGHT="Monitor"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PFView Only">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Navigate by Form"/>
+<RIGHTREF RIGHT="Navigate by Visit"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+<RIGHTREF RIGHT="View Connections"/>
+<RIGHTREF RIGHT="View Default Connection"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Answer Query"/>
+<RIGHTREF RIGHT="Edit Data on a CRF"/>
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Enter Comments into a CRF"/>
+<RIGHTREF RIGHT="Enter Data into a CRF"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Sign a CRF"/>
+<RIGHTREF RIGHT="Sign a CRB"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI Sign Only">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Sign a CRF"/>
+<RIGHTREF RIGHT="Sign a CRB"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Creator">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Enter Query in Candidate State"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Extractor">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Answer Query"/>
+<RIGHTREF RIGHT="Edit Data on a CRF"/>
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Enter Comments into a CRF"/>
+<RIGHTREF RIGHT="Enter Data into a CRF"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Reordering of Patients"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Study Manager">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="UMG">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Print"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Activator RG">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Activate Site User"/>
+<RIGHTREF RIGHT="Activate Sponser User"/>
+<RIGHTREF RIGHT="Deactivate Site User"/>
+<RIGHTREF RIGHT="Deactivate Sponser User"/>
+<RIGHTREF RIGHT="Deactivate a Rule"/>
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Monitor"/>
+<RIGHTREF RIGHT="Navigate by Form"/>
+<RIGHTREF RIGHT="Navigate by Visit"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="Run a Rule"/>
+<RIGHTREF RIGHT="Terminate User"/>
+<RIGHTREF RIGHT="Make User Operative"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Manager RG">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Create User"/>
+<RIGHTREF RIGHT="Deactivate a Rule"/>
+<RIGHTREF RIGHT="Enable/Disable Connections"/>
+<RIGHTREF RIGHT="Enroll Patients"/>
+<RIGHTREF RIGHT="Manage Other Groups"/>
+<RIGHTREF RIGHT="Manage Rights Groups"/>
+<RIGHTREF RIGHT="Manage Sites"/>
+<RIGHTREF RIGHT="Manage Software Patch"/>
+<RIGHTREF RIGHT="Modify Connections"/>
+<RIGHTREF RIGHT="Modify Default Connection"/>
+<RIGHTREF RIGHT="Modify System Configuration"/>
+<RIGHTREF RIGHT="Modify User Information"/>
+<RIGHTREF RIGHT="Monitor"/>
+<RIGHTREF RIGHT="Navigate by Form"/>
+<RIGHTREF RIGHT="Navigate by Visit"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="Resolve Query in Conflict"/>
+<RIGHTREF RIGHT="Run a Rule"/>
+<RIGHTREF RIGHT="Synchronize All/Re-Send Message"/>
+<RIGHTREF RIGHT="Synchronize New Data"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+<RIGHTREF RIGHT="View Connections"/>
+<RIGHTREF RIGHT="View Default Connection"/>
+<RIGHTREF RIGHT="View Software Patch Status"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="VO">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Run Admin Reports"/>
+<RIGHTREF RIGHT="Canned Reports"/>
+<RIGHTREF RIGHT="Custom Reports"/>
+<RIGHTREF RIGHT="Data Export Listings"/>
+<RIGHTREF RIGHT="Print"/>
+<RIGHTREF RIGHT="View CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRF"/>
+<RIGHTREF RIGHT="View Signature History for CRB"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
