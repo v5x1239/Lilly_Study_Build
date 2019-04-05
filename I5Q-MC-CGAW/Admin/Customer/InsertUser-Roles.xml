@@ -1,0 +1,364 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="Coding Query Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Data Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="c241335"/>
+<USERREF USERNAME="z2x8001"/>
+<USERREF USERNAME="pe87568"/>
+<USERREF USERNAME="v6x6306"/>
+<USERREF USERNAME="z1x0506"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor">
+<!-- Insert Users -->
+<USERREF USERNAME="C243740"/>
+<USERREF USERNAME="Z1X0689"/>
+<USERREF USERNAME="C241301"/>
+<USERREF USERNAME="C235937"/>
+<USERREF USERNAME="C240719"/>
+<USERREF USERNAME="C261407"/>
+<USERREF USERNAME="Z1X0687"/>
+<USERREF USERNAME="C200015"/>
+<USERREF USERNAME="C244597"/>
+<USERREF USERNAME="C243002"/>
+<USERREF USERNAME="C184367"/>
+<USERREF USERNAME="C257131"/>
+<USERREF USERNAME="C250867"/>
+<USERREF USERNAME="C216838"/>
+<USERREF USERNAME="Z2X6670"/>
+<USERREF USERNAME="C252668"/>
+<USERREF USERNAME="C211960"/>
+<USERREF USERNAME="C251513"/>
+<USERREF USERNAME="C256737"/>
+<USERREF USERNAME="C229415"/>
+<USERREF USERNAME="C239382"/>
+<USERREF USERNAME="C226977"/>
+<USERREF USERNAME="Z2X7245"/>
+<USERREF USERNAME="Z1X1807"/>
+<USERREF USERNAME="C232284"/>
+<USERREF USERNAME="C243000"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="Z2X6140"/>
+<USERREF USERNAME="C214648"/>
+<USERREF USERNAME="Z1X2099"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="ODM Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="cc_auth"/>
+<USERREF USERNAME="odm_user"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PFView Only">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFkbarkoczi"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI">
+<!-- Insert Users -->
+<USERREF USERNAME="jlainez"/>
+<USERREF USERNAME="aboeger"/>
+<USERREF USERNAME="yrizova"/>
+<USERREF USERNAME="ddolezil"/>
+<USERREF USERNAME="aoterinoduran"/>
+<USERREF USERNAME="naggarwal"/>
+<USERREF USERNAME="pstude"/>
+<USERREF USERNAME="stronnerova"/>
+<USERREF USERNAME="mholikova"/>
+<USERREF USERNAME="abajacekova"/>
+<USERREF USERNAME="jsmelikova"/>
+<USERREF USERNAME="pvotypkova"/>
+<USERREF USERNAME="mjiravova"/>
+<USERREF USERNAME="nvlam"/>
+<USERREF USERNAME="vquintanilla"/>
+<USERREF USERNAME="iniedermayerova"/>
+<USERREF USERNAME="dhollelee"/>
+<USERREF USERNAME="dsmajlovic"/>
+<USERREF USERNAME="kborzova"/>
+<USERREF USERNAME="ccreach"/>
+<USERREF USERNAME="pstorch"/>
+<USERREF USERNAME="ureuter"/>
+<USERREF USERNAME="mbajacek"/>
+<USERREF USERNAME="ecouturier"/>
+<USERREF USERNAME="wmulleners"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI Sign Only">
+<!-- Insert Users -->
+<USERREF USERNAME="clucas"/>
+<USERREF USERNAME="ktaylor"/>
+<USERREF USERNAME="gberman"/>
+<USERREF USERNAME="cfisher"/>
+<USERREF USERNAME="mhkim"/>
+<USERREF USERNAME="pgross"/>
+<USERREF USERNAME="pbharti"/>
+<USERREF USERNAME="bkkim"/>
+<USERREF USERNAME="usmesny"/>
+<USERREF USERNAME="kstandley"/>
+<USERREF USERNAME="kpaemeleire"/>
+<USERREF USERNAME="sdiazinsa"/>
+<USERREF USERNAME="aguerreroperal"/>
+<USERREF USERNAME="mhuerta"/>
+<USERREF USERNAME="apatel"/>
+<USERREF USERNAME="akhan"/>
+<USERREF USERNAME="fahmed"/>
+<USERREF USERNAME="mlanteriminet"/>
+<USERREF USERNAME="hsmoon"/>
+<USERREF USERNAME="mkchu"/>
+<USERREF USERNAME="mbutz"/>
+<USERREF USERNAME="jversijpt"/>
+<USERREF USERNAME="dhenry"/>
+<USERREF USERNAME="cstrout"/>
+<USERREF USERNAME="sdevries"/>
+<USERREF USERNAME="avandycke"/>
+<USERREF USERNAME="pgoadsby"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Extractor">
+<!-- Insert Users -->
+<USERREF USERNAME="i5qmccgaw_RE"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+<!-- Insert Users -->
+<USERREF USERNAME="apaquette"/>
+<USERREF USERNAME="mgruber"/>
+<USERREF USERNAME="tneyman"/>
+<USERREF USERNAME="ksullivan"/>
+<USERREF USERNAME="cquintard"/>
+<USERREF USERNAME="ccox"/>
+<USERREF USERNAME="jkuerth"/>
+<USERREF USERNAME="gcote"/>
+<USERREF USERNAME="vgallardo"/>
+<USERREF USERNAME="evanmassenhove"/>
+<USERREF USERNAME="ckaal"/>
+<USERREF USERNAME="rsmal"/>
+<USERREF USERNAME="gvanvemde"/>
+<USERREF USERNAME="nschulzkruckow"/>
+<USERREF USERNAME="cherzau"/>
+<USERREF USERNAME="sheudre"/>
+<USERREF USERNAME="swesley"/>
+<USERREF USERNAME="jholland"/>
+<USERREF USERNAME="ewilcox"/>
+<USERREF USERNAME="smiller"/>
+<USERREF USERNAME="ccamporeale"/>
+<USERREF USERNAME="lbatorski"/>
+<USERREF USERNAME="wdiaz"/>
+<USERREF USERNAME="jvillar"/>
+<USERREF USERNAME="fdemeulemeester"/>
+<USERREF USERNAME="vvandamme"/>
+<USERREF USERNAME="kkukan"/>
+<USERREF USERNAME="psantruckova"/>
+<USERREF USERNAME="wjohn"/>
+<USERREF USERNAME="khaws"/>
+<USERREF USERNAME="jnguyen"/>
+<USERREF USERNAME="rfranklin"/>
+<USERREF USERNAME="kmaples"/>
+<USERREF USERNAME="rgregar"/>
+<USERREF USERNAME="mzein"/>
+<USERREF USERNAME="sjakubova"/>
+<USERREF USERNAME="jperez"/>
+<USERREF USERNAME="vschotte"/>
+<USERREF USERNAME="tarts"/>
+<USERREF USERNAME="jherzstein"/>
+<USERREF USERNAME="mmaterna"/>
+<USERREF USERNAME="asternberg"/>
+<USERREF USERNAME="onamous"/>
+<USERREF USERNAME="sromettino"/>
+<USERREF USERNAME="vquarshie"/>
+<USERREF USERNAME="mbyeon"/>
+<USERREF USERNAME="sditommaso"/>
+<USERREF USERNAME="jbarker"/>
+<USERREF USERNAME="kgaston"/>
+<USERREF USERNAME="akemp"/>
+<USERREF USERNAME="pborg"/>
+<USERREF USERNAME="spobla"/>
+<USERREF USERNAME="mmaldonado"/>
+<USERREF USERNAME="avanremortel"/>
+<USERREF USERNAME="cfletcher"/>
+<USERREF USERNAME="sknop"/>
+<USERREF USERNAME="mkleinschmidt"/>
+<USERREF USERNAME="hisrael-willner"/>
+<USERREF USERNAME="sschulze"/>
+<USERREF USERNAME="freyesmunoz"/>
+<USERREF USERNAME="fgreenwood"/>
+<USERREF USERNAME="hslee"/>
+<USERREF USERNAME="jshim"/>
+<USERREF USERNAME="jskrei"/>
+<USERREF USERNAME="cmichaels"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Tier1_Admin">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFralorico"/>
+<USERREF USERNAME="mate.zsoldos@oracle.com"/>
+<USERREF USERNAME="viktor.balint@oracle.com"/>
+<USERREF USERNAME="ZPFvbalint"/>
+<USERREF USERNAME="ZPFmcabuhayan"/>
+<USERREF USERNAME="ZPFkcco"/>
+<USERREF USERNAME="ZPFidanyi"/>
+<USERREF USERNAME="imre.danyi@oracle.com"/>
+<USERREF USERNAME="ZPFedervishaj"/>
+<USERREF USERNAME="ZPFadonio"/>
+<USERREF USERNAME="aungie.donio@oracle.com"/>
+<USERREF USERNAME="ZPFndoria"/>
+<USERREF USERNAME="ZPFrducusin"/>
+<USERREF USERNAME="ZPFoely"/>
+<USERREF USERNAME="ZPFbgonzalez"/>
+<USERREF USERNAME="toshiomi.ishizuka@oracle.com"/>
+<USERREF USERNAME="ZPFtishizuka"/>
+<USERREF USERNAME="ZPFdkawashima"/>
+<USERREF USERNAME="dai.kawashima@oracle.com"/>
+<USERREF USERNAME="ZPFakisfaludy"/>
+<USERREF USERNAME="anna.kisfaludy@oracle.com"/>
+<USERREF USERNAME="ZPFekosa"/>
+<USERREF USERNAME="ZPFmlalangan"/>
+<USERREF USERNAME="ZPFlmate"/>
+<USERREF USERNAME="ZPFnmiklosi"/>
+<USERREF USERNAME="norbert.miklosi@oracle.com"/>
+<USERREF USERNAME="ZPFdmorales"/>
+<USERREF USERNAME="ZPFpmore"/>
+<USERREF USERNAME="petra.more@oracle.com"/>
+<USERREF USERNAME="ZPFdnagy"/>
+<USERREF USERNAME="akihiro.nakai@oracle.com"/>
+<USERREF USERNAME="ZPFanakai"/>
+<USERREF USERNAME="ZPFhnarwan"/>
+<USERREF USERNAME="ZPFanyiri"/>
+<USERREF USERNAME="alexandra.nyiri@oracle.com"/>
+<USERREF USERNAME="ZPFrpadilla"/>
+<USERREF USERNAME="peter.safar@oracle.com"/>
+<USERREF USERNAME="ZPFpsafar"/>
+<USERREF USERNAME="ZPFdszerencses"/>
+<USERREF USERNAME="david.szerencses@oracle.com"/>
+<USERREF USERNAME="ZPFmtiamzon"/>
+<USERREF USERNAME="ZPFmtolgyesi"/>
+<USERREF USERNAME="mate.tolgyesi@oracle.com"/>
+<USERREF USERNAME="ZPFaktoth"/>
+<USERREF USERNAME="akos.toth@oracle.com"/>
+<USERREF USERNAME="ZPFpvallar"/>
+<USERREF USERNAME="ZPFevoubou"/>
+<USERREF USERNAME="etienne.voubou@oracle.com"/>
+<USERREF USERNAME="ZPFawarsama"/>
+<USERREF USERNAME="ZPFmzsoldos"/>
+<USERREF USERNAME="ZPFmandone"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Activator RG">
+<!-- Insert Users -->
+<USERREF USERNAME="raul.carlos.alorico@oracle.com"/>
+<USERREF USERNAME="grigore-mihai.andone@oracle.com"/>
+<USERREF USERNAME="erald.dervishaj@oracle.com"/>
+<USERREF USERNAME="daniel.nagy@oracle.com"/>
+<USERREF USERNAME="ZPFmiwaki"/>
+<USERREF USERNAME="marie.iwaki@oracle.com"/>
+<USERREF USERNAME="rodulf.ducusin@oracle.com"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Manager RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFprajeshw"/>
+<USERREF USERNAME="prashant.rajeshware@oracle.com"/>
+<USERREF USERNAME="ZPFnreis"/>
+<USERREF USERNAME="nuno.reis@oracle.com"/>
+<USERREF USERNAME="ZPFasalazar"/>
+<USERREF USERNAME="allan.salazar@oracle.com"/>
+<USERREF USERNAME="ZPFasollano"/>
+<USERREF USERNAME="arnel.sollano@oracle.com"/>
+<USERREF USERNAME="ZPFasomogyi"/>
+<USERREF USERNAME="alexandra.somogyi@oracle.com"/>
+<USERREF USERNAME="ZPFtszabo"/>
+<USERREF USERNAME="timea.szabo@oracle.com"/>
+<USERREF USERNAME="merlinda.tiamzon@oracle.com"/>
+<USERREF USERNAME="hidehiro.tsuchida@oracle.com"/>
+<USERREF USERNAME="ZPFhtsuchida"/>
+<USERREF USERNAME="paulnino.vallar@oracle.com"/>
+<USERREF USERNAME="ferenc.v.varga@oracle.com"/>
+<USERREF USERNAME="ZPFfvarga"/>
+<USERREF USERNAME="ahmed.warsama@oracle.com"/>
+<USERREF USERNAME="ZPFmyuta"/>
+<USERREF USERNAME="mayumi.yuta@oracle.com"/>
+<USERREF USERNAME="ZPFvzdirko"/>
+<USERREF USERNAME="viktor.zdirko@oracle.com"/>
+<USERREF USERNAME="naiza.abogado@oracle.com"/>
+<USERREF USERNAME="ZPFnabogado"/>
+<USERREF USERNAME="sergio.aguilar.aguilar@oracle.com"/>
+<USERREF USERNAME="juan.albento@oracle.com"/>
+<USERREF USERNAME="ZPFjalbento"/>
+<USERREF USERNAME="ZPFkalonzo"/>
+<USERREF USERNAME="kyle.alonzo@oracle.com"/>
+<USERREF USERNAME="christine.arbolado@oracle.com"/>
+<USERREF USERNAME="ZPFcarbolado"/>
+<USERREF USERNAME="ZPFlbalubar"/>
+<USERREF USERNAME="lei-anne.balubar@oracle.com"/>
+<USERREF USERNAME="katalin.b.barkoczi@oracle.com"/>
+<USERREF USERNAME="ZPFtcabanes"/>
+<USERREF USERNAME="teresa.cabanes@oracle.com"/>
+<USERREF USERNAME="mary.cabuhayan@oracle.com"/>
+<USERREF USERNAME="ZPFccangayao"/>
+<USERREF USERNAME="CARLO.CANGAYAO@ORACLE.COM"/>
+<USERREF USERNAME="kerwin.carson.co@oracle.com"/>
+<USERREF USERNAME="novelyn.doria@oracle.com"/>
+<USERREF USERNAME="tamas.x.fabian@oracle.com"/>
+<USERREF USERNAME="ZPFtfabian"/>
+<USERREF USERNAME="Brenda.Gonzalez@oracle.com"/>
+<USERREF USERNAME="eniko.hagymasi@oracle.com"/>
+<USERREF USERNAME="ZPFehagymasi"/>
+<USERREF USERNAME="jozsef.istenes@oracle.com"/>
+<USERREF USERNAME="ZPFjistenes"/>
+<USERREF USERNAME="francis.jarobilla@oracle.com"/>
+<USERREF USERNAME="ZPFfjarobilla"/>
+<USERREF USERNAME="ikinder.johl.singh@oracle.com"/>
+<USERREF USERNAME="ZPFijohl"/>
+<USERREF USERNAME="szilvia.kholti@oracle.com"/>
+<USERREF USERNAME="ZPFskholti"/>
+<USERREF USERNAME="eniko.kosa@oracle.com"/>
+<USERREF USERNAME="menard.lalangan@oracle.com"/>
+<USERREF USERNAME="ZPFklim"/>
+<USERREF USERNAME="kok.koang.lim@oracle.com"/>
+<USERREF USERNAME="ZPFhmasuda"/>
+<USERREF USERNAME="haruko.m.masuda@oracle.com"/>
+<USERREF USERNAME="laszlo.mate@oracle.com"/>
+<USERREF USERNAME="ray-an.menor@oracle.com"/>
+<USERREF USERNAME="ZPFrmenor"/>
+<USERREF USERNAME="darisse.morales@oracle.com"/>
+<USERREF USERNAME="syed.nizamoddin@oracle.com"/>
+<USERREF USERNAME="ZPFsnizamoddin"/>
+<USERREF USERNAME="ZPFrnoveno"/>
+<USERREF USERNAME="richard.noveno@oracle.com"/>
+<USERREF USERNAME="christine.ocampo@oracle.com"/>
+<USERREF USERNAME="ZPFcocampo"/>
+<USERREF USERNAME="MAKI.O.OGAWA@ORACLE.COM"/>
+<USERREF USERNAME="osweld.ely@oracle.com"/>
+<USERREF USERNAME="rudolf.padilla@oracle.com"/>
+<USERREF USERNAME="ZPFjpati"/>
+<USERREF USERNAME="johanna.pati@oracle.com"/>
+<USERREF USERNAME="ZPFapervaiz"/>
+<USERREF USERNAME="afnan.pervaiz@oracle.com"/>
+<USERREF USERNAME="xiaoyu.qi@oracle.com"/>
+<USERREF USERNAME="ZPFnqi"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
