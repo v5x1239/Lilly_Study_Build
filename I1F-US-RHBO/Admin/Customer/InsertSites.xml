@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<SITE  NAME="(100) Mount Sinai School of Medicine Dermatology Clinical Trials"    MNEMONIC="100"
+ADDRESS="5 East 98th Street 5th Floor"
+ADDRESS2="Box 1048"
+CITY="New York"
+STATE="New York"
+POSTCODE="10029"
+COUNTRY="UNITED STATES"
+PHONE="12122417568"
+ALTPHONE="1"
+FAX="1"
+TIMEZONE="(GMT-05:00) Eastern Time (US &#38; Canada)"
+SITEDATEFORMAT="DAY_MONTH_YEAR"
+STARTDATE="02/26/2015"
+STUDYLOCALE="en-US"
+SVAUTOSELECTRATE="100"
+SVFIRSTNSUBJECTS="100"
+/>
+
+
+</MEDMLDATA>
