@@ -1,0 +1,6 @@
+Instructions to run the workaround script for defect INF-14628 against the I4DMCJTJH study schema. 
+
+1. Stop trial 
+2. log in as trialUID/PID
+3. Execute script 'Workaround_INF-14628.sql'
+4. Start trial
