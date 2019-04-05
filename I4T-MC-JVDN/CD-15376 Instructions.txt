@@ -1,0 +1,17 @@
+Instructions to run the workaround script for defect CD-15376 against the I4TMCJVDN study schema. 
+
+
+1. Save the file, CD-15376_detect.sql, to the file system. 
+
+2. In a command window navigate to the directory where the files were saved.
+
+3. Connect to SQLPLUS as trial schema user and Execute CD-15376_detect.sql
+
+            Example:  sqlplus <Trial UID>/<Trial PID>@<Connection String> @ CD-15376_detect.sql
+
+       Note: An output file will be generated (CD-15376_fix.sql). 
+
+4.  Connect to SQLPLUS as trial schema user and Execute CD-15376_fix.sql
+
+            Example:  sqlplus <Trial UID>/<Trial PID>@<Connection String> @ CD-15376_fix.sql
+
