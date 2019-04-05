@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<USER USERNAME="InFormPortalAdmin"
+USERTYPE="SPONSOR"
+ACTIVESTATE="TRUE"
+DELETESTATE="FALSE"
+FIRSTNAME=""
+LASTNAME=""
+DISPLAYNAME="InFormPortalAdmin"
+TITLE=""
+HOMESCREENURL="./Portal/default.htm"
+PHONE=""
+FAX=""
+ALTPHONE=""
+EMAIL=""
+ADDRESS=""
+ADDRESS2=""
+CITY=""
+STATE=""
+ZIPCODE=""
+COUNTRY=""
+BEEPER=""
+USERMUSTRESETPASSWORD="TRUE"
+DESCRIPTION=""
+PASSWORD="InFormPoPwd1898"
+PRODUCTLOCALE="en-US" 
+STUDYLOCALE="en-US" />
+
+
+<RIGHTSGROUP GROUPNAME="InForm Portal Admin">
+ <!-- Insert Rights -->
+<RIGHTREF RIGHT="Modify User Information"/>
+ <!-- Insert Users -->
+<USERREF USERNAME="InFormPortalAdmin"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>
