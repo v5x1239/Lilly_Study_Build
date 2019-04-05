@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+<RIGHTSGROUP GROUPNAME="Data Manager">
+<ITEMGROUPREF REFNAME="nonData_Manager_ReadOnly" 
+DISPLAYOVERRIDE="EDITABLE"/>
+<ITEMGROUPREF REFNAME="Data_Manager_ReadOnly" 
+DISPLAYOVERRIDE="READONLY"/>
+</RIGHTSGROUP>
+
+</MEDMLDATA>
