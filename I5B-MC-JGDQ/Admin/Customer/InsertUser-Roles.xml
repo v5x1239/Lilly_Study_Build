@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<MEDMLDATA xmlns="PhaseForward-MedML-Inform4">
+
+
+<RIGHTSGROUP  GROUPNAME="Coding Query Rights Group">
+<!-- Insert Users -->
+<USERREF USERNAME="coder_query"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Data Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="c161432"/>
+<USERREF USERNAME="z3x1197"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="GPS">
+<!-- Insert Users -->
+<USERREF USERNAME="c039853"/>
+<USERREF USERNAME="c015393"/>
+<USERREF USERNAME="ye91098"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Monitor Manager">
+<!-- Insert Users -->
+<USERREF USERNAME="z3x2517"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PFView Only">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFawarsama"/>
+<USERREF USERNAME="ZPFkbarkoczi"/>
+<USERREF USERNAME="ZPFaverpeleti"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="PI Sign Only">
+<!-- Insert Users -->
+<USERREF USERNAME="wtap"/>
+<USERREF USERNAME="pschoffski"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Report Extractor">
+<!-- Insert Users -->
+<USERREF USERNAME="i5bmcjgdq_RE"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="SC">
+<!-- Insert Users -->
+<USERREF USERNAME="amoniquet"/>
+<USERREF USERNAME="jcostermans"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="Tier1_Admin">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFadonio"/>
+<USERREF USERNAME="ZPFpvamos"/>
+<USERREF USERNAME="ZPFkcco"/>
+<USERREF USERNAME="ZPFpvallar"/>
+<USERREF USERNAME="ZPFvbalint"/>
+<USERREF USERNAME="ZPFmlalangan"/>
+<USERREF USERNAME="ZPFrducusin"/>
+<USERREF USERNAME="ZPFstayco"/>
+<USERREF USERNAME="ZPFdnagy"/>
+<USERREF USERNAME="ZPFkkovacs"/>
+<USERREF USERNAME="ZPFoely"/>
+<USERREF USERNAME="ZPFralorico"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Activator RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFmiwaki"/>
+<USERREF USERNAME="ZPFabalogh"/>
+<USERREF USERNAME="ZPFcmolom"/>
+<USERREF USERNAME="ZPFedervishaj"/>
+<USERREF USERNAME="ZPFmandone"/>
+<USERREF USERNAME="ZPFprojas"/>
+<USERREF USERNAME="ZPFsdamato"/>
+
+</RIGHTSGROUP>
+
+<RIGHTSGROUP  GROUPNAME="User Manager RG">
+<!-- Insert Users -->
+<USERREF USERNAME="ZPFddiomede"/>
+<USERREF USERNAME="ZPFnqi"/>
+<USERREF USERNAME="ZPFgyvarga"/>
+<USERREF USERNAME="ZPFhhamada"/>
+<USERREF USERNAME="ZPFhtsuchida"/>
+<USERREF USERNAME="ZPFlmate"/>
+<USERREF USERNAME="ZPFsaguilar"/>
+<USERREF USERNAME="ZPFskholti"/>
+<USERREF USERNAME="ZPFkcsobalyka"/>
+<USERREF USERNAME="ZPFvzdirko"/>
+<USERREF USERNAME="ZPFklim"/>
+<USERREF USERNAME="ZPFlcseke"/>
+<USERREF USERNAME="ZPFlbalubar"/>
+<USERREF USERNAME="ZPFekosa"/>
+<USERREF USERNAME="ZPFfvarga"/>
+<USERREF USERNAME="ZPFsdasilva"/>
+<USERREF USERNAME="ZPFmyuta"/>
+<USERREF USERNAME="ZPFtszabo"/>
+<USERREF USERNAME="ZPFnvergara"/>
+<USERREF USERNAME="ZPFtcabanes"/>
+<USERREF USERNAME="ZPFgkrucso"/>
+<USERREF USERNAME="ZPFijohl"/>
+<USERREF USERNAME="ZPFnreis"/>
+<USERREF USERNAME="ZPFaterjek"/>
+<USERREF USERNAME="ZPFjistenes"/>
+<USERREF USERNAME="ZPFtfabian"/>
+<USERREF USERNAME="ZPFasomogyi"/>
+<USERREF USERNAME="ZPFapervaiz"/>
+<USERREF USERNAME="ZPFkpinter"/>
+
+</RIGHTSGROUP>
+
+</MEDMLDATA>

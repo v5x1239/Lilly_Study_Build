@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<METADATA xmlns="PhaseForward-MedML-Inform4">
+
+<!-- Define Form for changing the site for a patient.
+     Prefix the refnames with PSC for Patient Site Change.
+ -->
+<PFELEMENT REFNAME="_SYS_PSC_UNKNSTR" LABEL="Unknown"       TYPE="STRING"  VALUE="UNK" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="不明" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+<TEXTCONTROL REFNAME="PSC_CURRENTSITE_CONTROL" NAME="PSC_CURRENTSITE_CONTROL" UUID="f9622684-7dca-4813-89b8-baaa4a5fe85e" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_PATIENTNUMBER_CONTROL" NAME="PSC_PATIENTNUMBER_CONTROL" UUID="6d90bd16-578f-4a7c-abf3-3e44a49bd93d" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_SIGNATURES_CONTROL" NAME="PSC_SIGNATURES_CONTROL" UUID="d3efb6c3-bc17-4796-90fe-7451ee2be375" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_QUERIES_CONTROL" NAME="PSC_QUERIES_CONTROL" UUID="a4872d8b-94a9-4ec8-8f75-b5ef21702443" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_SOURCEVERIFICATION_CONTROL" NAME="PSC_SOURCEVERIFICATION_CONTROL" UUID="8440d35c-a129-4595-a883-f511f03ba07a" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_NO_SIGNATURES_CONTROL" NAME="PSC_NO_SIGNATURES_CONTROL" UUID="80b73da9-c52b-4dd5-84bb-8fbed6687d21" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_NO_QUERIES_CONTROL" NAME="PSC_NO_QUERIES_CONTROL" UUID="1ad0097b-8113-454a-9813-d2245be29a4c" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<TEXTCONTROL REFNAME="PSC_NO_SOURCEVERIFICATION_CONTROL" NAME="PSC_NO_SOURCEVERIFICATION_CONTROL" UUID="ed238573-d10f-4407-8fe5-54663da1ed41" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<PULLDOWNCONTROL REFNAME="PSC_NEWSITE_CONTROL" NAME="PSC_NEWSITE_CONTROL" UUID="1e6e9bcc-aa82-4206-bd71-9b906a6cb19a">
+	<ELEMENTREF REFNAME="_SYS_PSC_UNKNSTR"	ORDER="1"/>   <!-- Gets replaced by list of sites at run-time -->
+</PULLDOWNCONTROL>
+<TEXTCONTROL REFNAME="PSC_NO_NEWSITE_CONTROL" NAME="PSC_NO_NEWSITE_CONTROL" UUID="8dda547f-47fc-4069-b3b9-531660f4939f" HEIGHT="1" LENGTH="30" MAXLENGTH="255" DATATYPE="STRING"/>
+<PFELEMENT REFNAME="PSC_REASON11"	LABEL="Subject change of address"	TYPE="STRING" VALUE="Subject change of address" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="症例が居住地を変更" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+<PFELEMENT REFNAME="PSC_REASON21"	LABEL="Subject is seasonal resident"	TYPE="STRING" VALUE="Subject is seasonal resident" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="症例は季節限定の住人" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+<PFELEMENT REFNAME="PSC_REASON3"	LABEL="Investigator no longer with study"	TYPE="STRING" VALUE="Investigator no longer with study" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="医師はもうスタディを担当していない" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+
+<TEXTCONTROL REFNAME="PSC_OTHERREASONTEXT" UUID="7ac789dc-0fde-45bc-ab0c-820d443a9460"
+	NAME="PSC_OTHERREASONTEXT"
+	HEIGHT="7"
+	LENGTH="45"
+    MAXLENGTH="255"
+	DATATYPE="STRING"
+	CAPTION="Other:"
+	CAPTIONALIGN="top"
+	LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="CAPTION" DISPLAYTEXT="その他:" LOCALE="ja-JP" />
+	</TRANSLATIONS>	
+</TEXTCONTROL>	
+
+<PULLDOWNCONTROL REFNAME="PSC_CHANGEREASONPULLDOWN" UUID="39288ee3-0aa4-4010-9b2d-06ea9b6df526"
+	NAME="PSC_CHANGEREASONPULLDOWN">
+	<ELEMENTREF REFNAME="PSC_REASON11"	ORDER="1"/>
+	<ELEMENTREF REFNAME="PSC_REASON21"		ORDER="2"/>
+	<ELEMENTREF REFNAME="PSC_REASON3"	ORDER="3"/>
+</PULLDOWNCONTROL>
+	
+<RADIOCONTROL REFNAME="PSC_REASON_CONTROL" UUID="8ab0bbea-4b57-4a3a-90b8-148fa3f630b9"
+	NAME="PSC_REASON_CONTROL" LAYOUT="VERTICAL">
+	<CONTROLREF REFNAME="PSC_CHANGEREASONPULLDOWN"	ORDER="1"/>
+	<CONTROLREF REFNAME="PSC_OTHERREASONTEXT"		ORDER="2"/>
+</RADIOCONTROL>
+
+<PFELEMENT REFNAME="_SYS_PSC_YES" LABEL="Yes" TYPE="STRING" VALUE="Y" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="はい" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+<PFELEMENT REFNAME="_SYS_PSC_NO" LABEL="No" TYPE="STRING" VALUE="N" LANGUAGE="English">
+	<TRANSLATIONS>
+		<TRANSLATION NAME="LABEL" DISPLAYTEXT="いいえ" LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</PFELEMENT>
+<SIMPLECONTROL REFNAME="PSC_YES" NAME="PSC_YES"><ELEMENTREF REFNAME="_SYS_PSC_YES"/></SIMPLECONTROL>
+<SIMPLECONTROL REFNAME="PSC_NO" NAME="PSC_NO"><ELEMENTREF REFNAME="_SYS_PSC_NO"/></SIMPLECONTROL>
+ 
+<ITEM REFNAME="PSC_CURRENTSITE_ITEM" QUESTION="Current Site" UUID="acc246bb-ec8c-4117-a7af-3491bcbfff03" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_CURRENTSITE_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="現在の施設" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_NEWSITE_ITEM" QUESTION="Destination Site" UUID="1e052016-fe23-458e-9379-7d0cff97d6c8" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_NEWSITE_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="移動先の施設" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_PATIENTNUMBER_ITEM" QUESTION="Subject Number" UUID="e089b167-3a45-42e0-bc50-c89c43cb7fb6" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_PATIENTNUMBER_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="症例番号" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_REASON_ITEM" QUESTION="Reason for Change" UUID="db1f07b9-e58a-4caf-9042-2c61d7119e32" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_REASON_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="変更理由" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_SIGNATURES_ITEM" QUESTION="&lt;font color=red&gt;Signature Status&lt;/font&gt;" UUID="52abe53f-0aa8-4f2c-ab0f-0399c62d2f0f" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_SIGNATURES_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="&lt;font color=red&gt;署名ステータス&lt;/font&gt;" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_QUERIES_ITEM" QUESTION="&lt;font color=red&gt;Query Status&lt;/font&gt;" UUID="6345ced5-caa9-4232-ae79-844d43612694" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_QUERIES_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="&lt;font color=red&gt;クエリステータス&lt;/font&gt;" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_SOURCEVERIFICATION_ITEM" QUESTION="&lt;font color=red&gt;Source Verification Status&lt;/font&gt;" UUID="227d2ace-3d16-48ea-9719-d7f45c211e5f" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_SOURCEVERIFICATION_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="&lt;font color=red&gt;SDVステータス&lt;/font&gt;" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+
+<ITEM REFNAME="PSC_NO_SIGNATURES_ITEM" QUESTION="Signature Status" 
+	UUID="c7e0ab73-cff2-49fb-8f2c-0873bb071975" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_NO_SIGNATURES_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="署名ステータス" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_NO_QUERIES_ITEM" QUESTION="Query Status" 
+	UUID="c6a183f5-d08c-460b-b0aa-2d760a7d1ca0" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_NO_QUERIES_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="クエリステータス" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_NO_SOURCEVERIFICATION_ITEM" QUESTION="Source Verification Status" 
+	UUID="44861e0e-8325-4385-aab2-79248ab962f6" CALCULATED="TRUE" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_NO_SOURCEVERIFICATION_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="SDVステータス" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+<ITEM REFNAME="PSC_NO_NEWSITE_ITEM" QUESTION="&lt;font color=red&gt;Destination Site&lt;/font&gt;"
+	UUID="d0094605-833d-4cb2-a301-f31577e20452" LANGUAGE="English">
+   <CONTROLREF REFNAME="PSC_NO_NEWSITE_CONTROL"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="QUESTION" DISPLAYTEXT="&lt;font color=red&gt;移動先施設&lt;/font&gt;" LOCALE="ja-JP" />
+	</TRANSLATIONS>   
+</ITEM>
+
+<SECTION REFNAME="PSC_SECT" UUID="b6f9ffe2-e181-4207-9669-6aca07343240"
+	TITLE="Enter Subject Record Transfer Information"
+	NOTE="Choose a new site from a list of acceptable destination sites. Destination sites must be running a study version that is the same as or greater than the study version at the current site."
+	LANGUAGE="English">
+	
+	<ITEMREF REFNAME="PSC_CURRENTSITE_ITEM" ORDER="1"/>
+	<ITEMREF REFNAME="PSC_NEWSITE_ITEM" ORDER="2"/>
+	<ITEMREF REFNAME="PSC_NO_NEWSITE_ITEM" ORDER="3"/>
+	<ITEMREF REFNAME="PSC_PATIENTNUMBER_ITEM" ORDER="4"/>
+	<ITEMREF REFNAME="PSC_REASON_ITEM" ORDER="5"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="TITLE" DISPLAYTEXT="症例レコードの移動に関する情報" LOCALE="ja-JP" />
+		<TRANSLATION NAME="NOTE" DISPLAYTEXT="施設リストから新たな移動先の施設を選択してください。移動先施設のスタディバージョンは、現在のスタディバージョンと同じかそれ以上である必要があります。" LOCALE="ja-JP" />
+	</TRANSLATIONS>	
+</SECTION>
+
+<SECTION REFNAME="PSC_SECT2" UUID="ed59ce75-43d9-4503-ab96-db519b200a71" TITLE="Subject Status" NOTE="View subject status here. Ensure that all forms are in as complete and clean a state as your internal guidelines require for subject transfers." LANGUAGE="English">
+	<ITEMREF REFNAME="PSC_SIGNATURES_ITEM" ORDER="1"/>
+	<ITEMREF REFNAME="PSC_NO_SIGNATURES_ITEM" ORDER="2"/>
+	<ITEMREF REFNAME="PSC_QUERIES_ITEM" ORDER="3"/>
+	<ITEMREF REFNAME="PSC_NO_QUERIES_ITEM" ORDER="4"/>
+	<ITEMREF REFNAME="PSC_SOURCEVERIFICATION_ITEM" ORDER="5"/>
+	<ITEMREF REFNAME="PSC_NO_SOURCEVERIFICATION_ITEM" ORDER="6"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="TITLE" DISPLAYTEXT="症例ステータス" LOCALE="ja-JP" />
+		<TRANSLATION NAME="NOTE" DISPLAYTEXT="症例ステータスを確認して、症例移動時におけるガイドラインを満たすようにすべてのフォームが完了しクリーンな状態であることを確認してください。" LOCALE="ja-JP" />		
+	</TRANSLATIONS>
+</SECTION>
+
+<FORM REFNAME="PSC_FORM" UUID="3389a7c6-cba5-46f2-b48f-8e034a28a349"
+	NOTE="&lt;TABLE BORDER=&quot;0&quot;CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; ID=&quot;Table1&quot;&gt;
+			&lt;TR&gt;
+				&lt;TD CLASS=&quot;ttl&quot;&gt;&lt;B&gt;Subject Record Transfer Affidavit:&lt;/B&gt;&lt;/TD&gt;
+			&lt;/TR&gt;
+			&lt;TR&gt;
+				&lt;TD&gt;&lt;TABLE CLASS=&quot;tbl&quot; BORDER=&quot;1&quot; CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; BORDERCOLOR=&quot;#003366&quot;
+						ID=&quot;Table2&quot;&gt;
+						&lt;TR&gt;
+							&lt;TD&gt;&lt;TABLE BORDER=&quot;0&quot; CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; ID=&quot;Table3&quot;&gt;
+									&lt;TR&gt;
+										&lt;TD&gt;&lt;P&gt;The sponsor takes responsibility for and has clear processes/procedures in place 
+			around the handling of subject transfers and coordinating across sites to ensure 
+			that:&lt;/P&gt;
+		&lt;P&gt;1. The target site accepts responsibility for the management of any outstanding queries and possible data issues following the patient record transfer, since the originating site will no longer have modification access.&lt;/P&gt;
+		&lt;P&gt;2. Trial version differences due to protocol amendments or country specific data requirements are acknowledged and the sponsor has appropriate regulatory approvals in place to support patient record transfer. &lt;/P&gt;
+		&lt;P&gt;3. The patient(s) being transferred are fully enrolled and a Case Book has been created for each patient. &lt;/P&gt;
+		&lt;P&gt;4. It is acceptable for the originating site to retain access to a read-only archive of their patient data, which includes items designated as hidden items in the trial. &lt;/P&gt;		
+		&lt;/TD&gt;
+									&lt;/TR&gt;
+								&lt;/TABLE&gt;
+					&lt;/TABLE&gt;
+		&lt;/TABLE&gt;"
+	TITLE="Subject Record Transfer Form" MNEMONIC="PSC_FORM"
+	QUESTIONWIDTH="30" CONTROLWIDTH="70" TYPE="CUSTOMTRIAL" LANGUAGE="English">
+	<SECTIONREF REFNAME="PSC_SECT2"/>
+	<SECTIONREF REFNAME="PSC_SECT"/>
+	<TRANSLATIONS>
+		<TRANSLATION NAME="TITLE" DISPLAYTEXT="症例レコード移動のフォーム" LOCALE="ja-JP" />
+		<TRANSLATION NAME="MNEMONIC" DISPLAYTEXT="PSC_FORM" LOCALE="ja-JP" />
+		<TRANSLATION NAME="NOTE" DISPLAYTEXT="&lt;TABLE BORDER=&quot;0&quot;CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; ID=&quot;Table1&quot;&gt;
+			&lt;TR&gt;
+				&lt;TD CLASS=&quot;ttl&quot;&gt;&lt;B&gt;症例レコード移動宣誓書: &lt;/B&gt;&lt;/TD&gt;
+			&lt;/TR&gt;
+			&lt;TR&gt;
+				&lt;TD&gt;&lt;TABLE CLASS=&quot;tbl&quot; BORDER=&quot;1&quot; CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; BORDERCOLOR=&quot;#003366&quot;
+						ID=&quot;Table2&quot;&gt;
+						&lt;TR&gt;
+							&lt;TD&gt;&lt;TABLE BORDER=&quot;0&quot; CELLPADDING=&quot;4&quot; CELLSPACING=&quot;0&quot; WIDTH=&quot;100%%&quot; ID=&quot;Table3&quot;&gt;
+									&lt;TR&gt;
+										&lt;TD&gt;&lt;P&gt;依頼者は、症例移動の処理方法および施設間の調整に関する明確なプロセスおよび手順を保有し、次の条件を満たす責務を負います。:&lt;/P&gt;
+		&lt;P&gt;1. 移動元の施設は、移動対象すべての症例について最新 CRF データの正コピーを、移動に先立って作成または受領していること。&lt;/P&gt;
+		&lt;P&gt;2. 症例レコードの移動後は、移動元の施設には修正する権限がなくなるため、移動先の施設が未解決のクエリーの管理およびデータクリーニングの責任を負うこと。&lt;/P&gt;
+		&lt;P&gt;3. プロトコルの変更、または各国特有のデータ要件によるトライアルバージョンの違いを認識し、依頼者は症例レコードの移動に対応するべく規制当局による適切な許可を得ていること。&lt;/P&gt;
+		&lt;P&gt;4. 移動対象の症例は完全に登録されており、各症例について CRB が作成されていること。&lt;/P&gt;
+		&lt;/TD&gt;
+									&lt;/TR&gt;
+								&lt;/TABLE&gt;
+					&lt;/TABLE&gt;
+		&lt;/TABLE&gt;"  LOCALE="ja-JP" />
+	</TRANSLATIONS>
+</FORM>
+
+</METADATA>
