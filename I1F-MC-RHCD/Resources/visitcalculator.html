@@ -1,0 +1,60 @@
+﻿<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+%s
+<title>Visit Calculator </title>
+<script language=Javascript>
+function ParseMonth(oM){
+//parseInt has a bug which forces this to be done
+var m=oM[oM.selectedIndex].value
+if(m=="08")return 8
+if(m=="09")return 9
+return parseInt(m)}
+function Days(oM,oD,oY){
+var nM=ParseMonth(oM),nY=parseInt(oY[oY.selectedIndex].value),nD=parseInt(oD[oD.selectedIndex].value)
+switch(nM){
+case 9:case 4:case 6:case 11:nTot=30;break
+case 2:nTot=isNaN(nY)?29:((nY%%4==0&&nY%%200!=100)?29:28);break
+default:nTot=31;break}
+if(nD>nTot){
+sMsg=nM+'/'+nD
+if(!isNaN(nY))sMsg+='/'+nY
+alert(sMsg+' is not a valid date.' )
+oM.options[0].selected=oD.options[0].selected=oY.options[0].selected=true
+oD.focus()
+nD=0}
+aOP=new Array(nTot+1)
+aOP[0]=new Option(" ",0)
+for(i=1;i<=nTot;i++)aOP[i]=new Option(i,i)
+for(i=0;i<=nTot;i++){
+eval("oD.options[i]=aOP[i]")
+if(i==nD)oD.options[i].selected=true}
+for(i=oD.options.length;i>nTot;i--)oD.options[i]=null
+if(isNaN(nY)||isNaN(nM)||isNaN(nD))nD=0
+return nD}
+function ChgDate(oM,oD,oY){
+var sID=%li,PtID=%li,nM,nY,nD
+if(Days(oM,oD,oY)>0){
+nM=ParseMonth(oM)
+nY=parseInt(oY[oY.selectedIndex].value)
+nD=parseInt(oD[oD.selectedIndex].value)
+location.replace('%s&pfM='+nM+'&pfD='+nD+'&pfY='+nY+'&%s='+sID+'&%s='+PtID)}}
+function LD(){var F=document.Schedule;Days(F.Month,F.Day,F.Year);window.focus()}
+</script>
+<link rel=stylesheet type="text/css" href=%s>
+</head>
+<body lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;<o:p></o:p></p>
+
+<p align="center"><strong><big>Please click &#34;Go to First Visit&#34; button below to continue.
+</big></strong></p>
+
+</div>
+
+</body></html>
